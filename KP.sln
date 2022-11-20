@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KP", "KP\KP.csproj", "{E08E90F0-D8E3-4260-B045-EF86AEE59AE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageHeaven", "ImageHeaven\ImageHeaven.csproj", "{CAA21B39-4B84-40FF-8BBA-711491F323D5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E08E90F0-D8E3-4260-B045-EF86AEE59AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08E90F0-D8E3-4260-B045-EF86AEE59AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08E90F0-D8E3-4260-B045-EF86AEE59AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08E90F0-D8E3-4260-B045-EF86AEE59AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA21B39-4B84-40FF-8BBA-711491F323D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA21B39-4B84-40FF-8BBA-711491F323D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA21B39-4B84-40FF-8BBA-711491F323D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA21B39-4B84-40FF-8BBA-711491F323D5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9D311138-17E0-49B1-8A05-4EAC0DAA924D}
+	EndGlobalSection
+EndGlobal
