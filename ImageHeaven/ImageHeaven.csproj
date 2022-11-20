@@ -54,11 +54,20 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProject.Designer.cs">
+      <DependentUpon>frmProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="ihConstants.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProject.resx">
+      <DependentUpon>frmProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -86,6 +95,10 @@
     <ProjectReference Include="..\LItems\LItems.csproj">
       <Project>{ba9e5332-adc1-43d6-958e-4244db23f412}</Project>
       <Name>LItems</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nControls\nControls.csproj">
+      <Project>{0643997c-a50c-469d-806d-6d7f72e80693}</Project>
+      <Name>nControls</Name>
     </ProjectReference>
     <ProjectReference Include="..\NovaNet\Utils\Utils.csproj">
       <Project>{23ba0929-405a-470d-bdea-1000d9eedc3a}</Project>

@@ -359,6 +359,7 @@ namespace ImageHeaven
             this.projectToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.projectToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.projectToolStripMenuItem.Text = "&Project Creation";
+            this.projectToolStripMenuItem.Click += new System.EventHandler(this.projectToolStripMenuItem_Click);
             // 
             // batchToolStripMenuItem
             // 

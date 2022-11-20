@@ -627,5 +627,20 @@ namespace ImageHeaven
             p = prmpwd;
             rbc.changePassword(p.UserId, p.UserName, p.Password);
         }
+
+        private void projectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmProject dispProject;
+                wi = new wfeProject(sqlCon);
+                dispProject = new frmProject(wi, sqlCon, crd);
+                dispProject.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

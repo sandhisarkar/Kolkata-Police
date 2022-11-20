@@ -288,3 +288,12 @@ F:\CAG\NovaNet\wfe\obj\Debug\wfe.csproj.CoreCompileInputs.cache
 F:\CAG\NovaNet\wfe\obj\Debug\wfe.csproj.CopyComplete
 F:\CAG\NovaNet\wfe\obj\Debug\NovaNet.wfe.dll
 F:\CAG\NovaNet\wfe\obj\Debug\NovaNet.wfe.pdb
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\bin\Debug\NovaNet.wfe.dll.config
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\bin\Debug\NovaNet.wfe.dll
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\bin\Debug\NovaNet.wfe.pdb
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\bin\Debug\NovaNet.Utils.dll
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\obj\Debug\wfe.csproj.AssemblyReference.cache
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\obj\Debug\wfe.csproj.CoreCompileInputs.cache
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\obj\Debug\wfe.csproj.CopyComplete
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\obj\Debug\NovaNet.wfe.dll
+D:\Sandhi Software New\sandhi\KP\KP\NovaNet\wfe\obj\Debug\NovaNet.wfe.pdb

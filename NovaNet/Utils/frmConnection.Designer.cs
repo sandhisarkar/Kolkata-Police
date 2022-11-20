@@ -91,7 +91,7 @@ namespace NovaNet
             this.txtSchema.Name = "txtSchema";
             this.txtSchema.Size = new System.Drawing.Size(262, 21);
             this.txtSchema.TabIndex = 4;
-            this.txtSchema.Text = "cag_db";
+            this.txtSchema.Text = "kp_db";
             // 
             // txtPassword
             // 
