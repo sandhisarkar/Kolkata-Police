@@ -72,5 +72,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageHeaven\ImageHeaven.csproj">
+      <Project>{caa21b39-4b84-40ff-8bba-711491f323d5}</Project>
+      <Name>ImageHeaven</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NovaNet\Utils\Utils.csproj">
+      <Project>{23ba0929-405a-470d-bdea-1000d9eedc3a}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
