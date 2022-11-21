@@ -642,5 +642,20 @@ namespace ImageHeaven
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void batchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                frmBatch dispProject;
+                wi = new wfeBatch(sqlCon);
+                dispProject = new frmBatch(wi, sqlCon, DataLayerDefs.Mode._Add, crd);
+                dispProject.ShowDialog(this);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

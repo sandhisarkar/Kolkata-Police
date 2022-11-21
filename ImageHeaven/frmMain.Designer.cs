@@ -367,6 +367,7 @@ namespace ImageHeaven
             this.batchToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             this.batchToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.batchToolStripMenuItem.Text = "&Batch Creation";
+            this.batchToolStripMenuItem.Click += new System.EventHandler(this.batchToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 

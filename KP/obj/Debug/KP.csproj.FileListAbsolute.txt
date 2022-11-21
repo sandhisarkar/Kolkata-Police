@@ -18,3 +18,9 @@ D:\Sandhi Software New\sandhi\KP\KP\KP\obj\Debug\KP.csproj.CoreCompileInputs.cac
 D:\Sandhi Software New\sandhi\KP\KP\KP\obj\Debug\KP.csproj.CopyComplete
 D:\Sandhi Software New\sandhi\KP\KP\KP\obj\Debug\KP.exe
 D:\Sandhi Software New\sandhi\KP\KP\KP\obj\Debug\KP.pdb
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.dll
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\nControls.dll
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\DgvFilterPopup.dll
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.pdb
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.dll.config
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\nControls.pdb

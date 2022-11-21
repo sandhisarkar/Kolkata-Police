@@ -15,6 +15,7 @@ D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\NovaNet.Utils.dll.conf
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\NovaNet.wfe.pdb
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\NovaNet.wfe.dll.config
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.csproj.AssemblyReference.cache
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBatch.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmMain.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmProject.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.Properties.Resources.resources
