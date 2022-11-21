@@ -85,6 +85,7 @@ namespace ImageHeaven
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseCompatibleTextRendering = true;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel4
             // 
@@ -283,6 +284,7 @@ namespace ImageHeaven
             this.deButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.deButton1.UseCompatibleTextRendering = true;
             this.deButton1.UseVisualStyleBackColor = false;
+            this.deButton1.Click += new System.EventHandler(this.deButton1_Click);
             // 
             // txtCreateDate
             // 
