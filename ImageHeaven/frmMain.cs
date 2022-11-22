@@ -657,5 +657,63 @@ namespace ImageHeaven
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            rbc.UnLockedUser(crd.created_by.ToString());
+            this.Close();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AssemblyName assemName = Assembly.GetExecutingAssembly().GetName();
+            this.Text = "B'Zer - Kolkata Police" + "           Version: " + assemName.Version.ToString() + "    Database name: " + sqlCon.Database.ToString();
+            sqlCon.Close();
+
+
+            sqlCon.Open();
+
+            menuStrip1.Visible = false;
+            rbc.UnLockedUser(crd.created_by.ToString());
+            frmMain_Load(sender, e);
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            About frm = new About();
+            frm.ShowDialog(this);
+        }
+
+        private void newPasswordToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PwdChange pwdCh = new PwdChange(ref p, getCPwd);
+            pwdCh.ShowDialog(this);
+        }
+
+        private void newUserToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNewUser nwUsr = new AddNewUser(getnwusrData, sqlCon);
+            nwUsr.ShowDialog(this);
+        }
+        void getnwusrData(ref NovaNet.Utils.Profile prmp)
+        {
+            p = prmp;
+            if (rbc.addUser(p.UserId, p.UserName, p.Role_des, p.Password) == false)
+            {
+                AddNewUser nwUsr = new AddNewUser(getnwusrData, sqlCon);
+                nwUsr.ShowDialog(this);
+            }
+        }
+
+        private void onlineUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLoggedUser loged = new frmLoggedUser(rbc, crd);
+            loged.ShowDialog(this);
+        }
+
+        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.nevaehtech.com/");
+        }
     }
 }

@@ -179,18 +179,21 @@ namespace ImageHeaven
             this.newPasswordToolStripMenuItem.Name = "newPasswordToolStripMenuItem";
             this.newPasswordToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.newPasswordToolStripMenuItem.Text = "Change Password";
+            this.newPasswordToolStripMenuItem.Click += new System.EventHandler(this.newPasswordToolStripMenuItem_Click);
             // 
             // newUserToolStripMenuItem
             // 
             this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
             this.newUserToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.newUserToolStripMenuItem.Text = "New User";
+            this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
             // 
             // onlineUsersToolStripMenuItem
             // 
             this.onlineUsersToolStripMenuItem.Name = "onlineUsersToolStripMenuItem";
             this.onlineUsersToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.onlineUsersToolStripMenuItem.Text = "Online Users";
+            this.onlineUsersToolStripMenuItem.Click += new System.EventHandler(this.onlineUsersToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -203,14 +206,16 @@ namespace ImageHeaven
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
             this.logoutToolStripMenuItem.Size = new System.Drawing.Size(57, 22);
             this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // bundleScanToolStripMenuItem
             // 
@@ -322,6 +327,7 @@ namespace ImageHeaven
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(276, 24);
             this.toolStripStatusLabel1.Text = "  Developed By : Nevaeh Technology Pvt. Ltd.  ";
+            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // menuStrip1
             // 
@@ -374,6 +380,7 @@ namespace ImageHeaven
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(200, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // transactionsToolStripMenuItem
             // 
