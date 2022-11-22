@@ -715,5 +715,18 @@ namespace ImageHeaven
         {
             System.Diagnostics.Process.Start("https://www.nevaehtech.com/");
         }
+
+        private void dataEntryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NovaNet.wfe.eSTATES[] state = new NovaNet.wfe.eSTATES[2];
+            //state[0] = NovaNet.wfe.eSTATES.POLICY_EXCEPTION;
+            state[0] = NovaNet.wfe.eSTATES.METADATA_ENTRY;
+
+
+
+            frmEntrySummary fm = new frmEntrySummary(sqlCon, crd, state);
+
+            fm.ShowDialog(this);
+        }
     }
 }

@@ -58,11 +58,29 @@
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="DataLayerDefs.cs" />
+    <Compile Include="Files.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Files.Designer.cs">
+      <DependentUpon>Files.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBatch.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmBatch.Designer.cs">
       <DependentUpon>frmBatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBundleSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBundleSelect.Designer.cs">
+      <DependentUpon>frmBundleSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEntrySummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEntrySummary.Designer.cs">
+      <DependentUpon>frmEntrySummary.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -83,8 +101,17 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Files.resx">
+      <DependentUpon>Files.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmBatch.resx">
       <DependentUpon>frmBatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBundleSelect.resx">
+      <DependentUpon>frmBundleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEntrySummary.resx">
+      <DependentUpon>frmEntrySummary.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
