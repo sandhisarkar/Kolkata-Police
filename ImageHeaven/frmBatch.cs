@@ -357,6 +357,16 @@ namespace ImageHeaven
                                 if (DateTime.TryParse(isDate, out temp) && DateTime.TryParse(nextDate, out temp) && DateTime.Parse(isDate) <= DateTime.Parse(currDate))
                                 {
                                     checking = isDate.Substring(0, 2) + isDate.Substring(3, 4);
+                                    bundleCount = category + "_" + divCode + "_" + psCode;
+                                    bundleCount = bundleCount + "_" + checking;
+
+
+                                    string bundleCode = bundleCount;
+
+                                    textBox3.Text = bundleCode;
+                                    textBox4.Text = bundleCode;
+
+                                    button2.Enabled = true;
                                 }
                                 else
                                 {
@@ -365,7 +375,12 @@ namespace ImageHeaven
 
                                     dateTimePicker1.Select();
                                     //validateBol = false;
+                                    
 
+                                    textBox3.Text = string.Empty;
+                                    textBox4.Text = string.Empty;
+
+                                    button2.Enabled = false;
                                 }
                             }
                             else
@@ -375,6 +390,16 @@ namespace ImageHeaven
                                 if (DateTime.TryParse(isDate, out temp) && DateTime.TryParse(nextDate, out temp) && DateTime.Parse(isDate) <= DateTime.Parse(currDate))
                                 {
                                     checking = isDate.Substring(3, 4) + "_" + getBundleCount(deComboBox2.Text, psCode, deComboBox1.Text, divCode, deComboBox3.Text);
+                                    bundleCount = category + "_" + divCode + "_" + psCode;
+                                    bundleCount = bundleCount + "_" + checking;
+
+
+                                    string bundleCode = bundleCount;
+
+                                    textBox3.Text = bundleCode;
+                                    textBox4.Text = bundleCode;
+
+                                    button2.Enabled = true;
                                 }
                                 else
                                 {
@@ -383,20 +408,16 @@ namespace ImageHeaven
 
                                     dateTimePicker1.Select();
                                     //validateBol = false;
+                                    
 
+                                    textBox3.Text = string.Empty;
+                                    textBox4.Text = string.Empty;
+
+                                    button2.Enabled = false;
                                 }
                             }
 
-                            bundleCount = category + "_" + divCode + "_" + psCode;
-                            bundleCount = bundleCount + "_" + checking;
-
-
-                            string bundleCode = bundleCount;
-
-                            textBox3.Text = bundleCode;
-                            textBox4.Text = bundleCode;
-
-                            button2.Enabled = true;
+                            
                         }
                         else
                         {
@@ -592,10 +613,10 @@ namespace ImageHeaven
                 //errList.Add("Modified_DTTM", Constants.NOT_VALID);
             }
 
-            if (cmd.batch_code.Substring(0, 1).ToUpper() != deComboBox1.Text.Substring(0, 1).ToUpper())
-            {
-                validateBol = false;
-            }
+            //if (cmd.batch_code.Substring(0, 1).ToUpper() != deComboBox1.Text.Substring(0, 1).ToUpper())
+            //{
+            //    validateBol = false;
+            //}
 
             return validateBol;
         }
@@ -619,7 +640,7 @@ namespace ImageHeaven
             }
 
             sqlStr = @"insert into bundle_master(proj_code,bundle_code,category,bundle_name,ps_name,ps_code,div_name,div_code,created_by" +
-                ",Created_DTTM,batch_path) values(" +
+                ",Created_DTTM,bundle_path) values(" +
                 objBatch.proj_code + ",'" + objBatch.batch_code.ToUpper() + "','" + deComboBox3.Text.Trim() + "','" + objBatch.batch_name + "'," +
                 "'" + deComboBox2.Text.Trim() + "','" + pC + "','" + deComboBox1.Text.Trim() + "','" + dC + "'," +
                 "'" + objBatch.Created_By + "','" + objBatch.Created_DTTM + "','" +

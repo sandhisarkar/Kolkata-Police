@@ -1,0 +1,12 @@
+11/22/2022 11:30:35 AM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software New\sandhi\KP\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------
+11/22/2022 11:47:30 AM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software New\sandhi\KP\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------
