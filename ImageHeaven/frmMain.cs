@@ -134,7 +134,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = true;
                         onlineUsersToolStripMenuItem.Visible = true;
-                        officeNameConfigurationToolStripMenuItem.Visible = true;
 
                         toolStrip1.Visible = true;
                         toolStripButton1.Visible = false;
@@ -194,7 +193,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = false;
                         onlineUsersToolStripMenuItem.Visible = false;
-                        officeNameConfigurationToolStripMenuItem.Visible = false;
 
                         toolStrip1.Visible = false;
                         toolStripButton1.Visible = false;
@@ -253,7 +251,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = false;
                         onlineUsersToolStripMenuItem.Visible = false;
-                        officeNameConfigurationToolStripMenuItem.Visible = false;
 
                         toolStrip1.Visible = true;
                         toolStripButton1.Visible = false;
@@ -312,7 +309,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = false;
                         onlineUsersToolStripMenuItem.Visible = false;
-                        officeNameConfigurationToolStripMenuItem.Visible = false;
 
                         toolStrip1.Visible = false;
                         toolStripButton1.Visible = false;
@@ -371,7 +367,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = false;
                         onlineUsersToolStripMenuItem.Visible = false;
-                        officeNameConfigurationToolStripMenuItem.Visible = false;
 
                         toolStrip1.Visible = false;
                         toolStripButton1.Visible = false;
@@ -430,7 +425,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = false;
                         onlineUsersToolStripMenuItem.Visible = false;
-                        officeNameConfigurationToolStripMenuItem.Visible = false;
 
                         toolStrip1.Visible = false;
                         toolStripButton1.Visible = false;
@@ -490,7 +484,6 @@ namespace ImageHeaven
                         newPasswordToolStripMenuItem.Visible = true;
                         newUserToolStripMenuItem.Visible = false;
                         onlineUsersToolStripMenuItem.Visible = false;
-                        officeNameConfigurationToolStripMenuItem.Visible = false;
 
                         toolStrip1.Visible = true;
                         toolStripButton1.Visible = false;

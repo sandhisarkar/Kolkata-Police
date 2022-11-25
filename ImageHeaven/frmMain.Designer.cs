@@ -43,7 +43,6 @@ namespace ImageHeaven
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.officeNameConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newPasswordToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newUserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.onlineUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -154,7 +153,6 @@ namespace ImageHeaven
             // 
             this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.configurationToolStripMenuItem,
-            this.officeNameConfigurationToolStripMenuItem,
             this.newPasswordToolStripMenuItem,
             this.newUserToolStripMenuItem,
             this.onlineUsersToolStripMenuItem});
@@ -167,12 +165,6 @@ namespace ImageHeaven
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
             this.configurationToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.configurationToolStripMenuItem.Text = "Configuration";
-            // 
-            // officeNameConfigurationToolStripMenuItem
-            // 
-            this.officeNameConfigurationToolStripMenuItem.Name = "officeNameConfigurationToolStripMenuItem";
-            this.officeNameConfigurationToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.officeNameConfigurationToolStripMenuItem.Text = "Office Name Configuration";
             // 
             // newPasswordToolStripMenuItem
             // 
@@ -466,7 +458,6 @@ namespace ImageHeaven
         private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem toolsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem configurationToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem officeNameConfigurationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newPasswordToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newUserToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem onlineUsersToolStripMenuItem;

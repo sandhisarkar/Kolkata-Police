@@ -25,3 +25,6 @@ D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.csproj.Cor
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComplete
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.dll
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.pdb
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.Files.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBundleSelect.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmEntrySummary.resources
