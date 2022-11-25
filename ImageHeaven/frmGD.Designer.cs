@@ -56,14 +56,18 @@ namespace ImageHeaven
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.deTextBox10 = new nControls.deTextBox();
             this.deLabel15 = new nControls.deLabel();
+            this.deTextBox9 = new nControls.deTextBox();
             this.deTextBox11 = new nControls.deTextBox();
+            this.deLabel9 = new nControls.deLabel();
+            this.deLabel11 = new nControls.deLabel();
             this.deLabel13 = new nControls.deLabel();
+            this.deTextBox13 = new nControls.deTextBox();
             this.deTextBox12 = new nControls.deTextBox();
             this.deLabel10 = new nControls.deLabel();
-            this.deTextBox13 = new nControls.deTextBox();
-            this.deLabel11 = new nControls.deLabel();
-            this.deTextBox9 = new nControls.deTextBox();
-            this.deLabel9 = new nControls.deLabel();
+            this.deTextBox6 = new nControls.deTextBox();
+            this.deTextBox7 = new nControls.deTextBox();
+            this.deLabel6 = new nControls.deLabel();
+            this.deLabel7 = new nControls.deLabel();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -76,7 +80,7 @@ namespace ImageHeaven
             this.deTextBox5.Enabled = false;
             this.deTextBox5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deTextBox5.ForeColor = System.Drawing.Color.Black;
-            this.deTextBox5.Location = new System.Drawing.Point(281, 77);
+            this.deTextBox5.Location = new System.Drawing.Point(278, 108);
             this.deTextBox5.Mandatory = true;
             this.deTextBox5.Name = "deTextBox5";
             this.deTextBox5.Size = new System.Drawing.Size(218, 23);
@@ -124,13 +128,13 @@ namespace ImageHeaven
             this.deLabel4.Name = "deLabel4";
             this.deLabel4.Size = new System.Drawing.Size(120, 15);
             this.deLabel4.TabIndex = 13;
-            this.deLabel4.Text = "Ploice Station Name :";
+            this.deLabel4.Text = "Police Station Name :";
             // 
             // deLabel5
             // 
             this.deLabel5.AutoSize = true;
             this.deLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel5.Location = new System.Drawing.Point(210, 81);
+            this.deLabel5.Location = new System.Drawing.Point(207, 112);
             this.deLabel5.Name = "deLabel5";
             this.deLabel5.Size = new System.Drawing.Size(61, 15);
             this.deLabel5.TabIndex = 14;
@@ -266,6 +270,10 @@ namespace ImageHeaven
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.deTextBox6);
+            this.groupBox1.Controls.Add(this.deTextBox7);
+            this.groupBox1.Controls.Add(this.deLabel6);
+            this.groupBox1.Controls.Add(this.deLabel7);
             this.groupBox1.Controls.Add(this.deTextBox5);
             this.groupBox1.Controls.Add(this.deTextBox3);
             this.groupBox1.Controls.Add(this.deTextBox4);
@@ -280,7 +288,7 @@ namespace ImageHeaven
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(700, 109);
+            this.groupBox1.Size = new System.Drawing.Size(700, 139);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Batch Details :";
@@ -305,7 +313,7 @@ namespace ImageHeaven
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(700, 328);
+            this.panel1.Size = new System.Drawing.Size(700, 347);
             this.panel1.TabIndex = 1;
             // 
             // groupBox3
@@ -313,9 +321,9 @@ namespace ImageHeaven
             this.groupBox3.Controls.Add(this.deButton2);
             this.groupBox3.Controls.Add(this.deButtonSave);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Location = new System.Drawing.Point(0, 273);
+            this.groupBox3.Location = new System.Drawing.Point(0, 295);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(700, 55);
+            this.groupBox3.Size = new System.Drawing.Size(700, 52);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             // 
@@ -327,7 +335,7 @@ namespace ImageHeaven
             this.deButton2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.deButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deButton2.Location = new System.Drawing.Point(594, 14);
+            this.deButton2.Location = new System.Drawing.Point(594, 11);
             this.deButton2.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.deButton2.Name = "deButton2";
             this.deButton2.Size = new System.Drawing.Size(90, 33);
@@ -346,7 +354,7 @@ namespace ImageHeaven
             this.deButtonSave.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.deButtonSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deButtonSave.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deButtonSave.Location = new System.Drawing.Point(457, 14);
+            this.deButtonSave.Location = new System.Drawing.Point(457, 11);
             this.deButtonSave.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
             this.deButtonSave.Name = "deButtonSave";
             this.deButtonSave.Size = new System.Drawing.Size(90, 35);
@@ -379,9 +387,9 @@ namespace ImageHeaven
             this.groupBox2.Controls.Add(this.deLabel10);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(0, 109);
+            this.groupBox2.Location = new System.Drawing.Point(0, 139);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(700, 164);
+            this.groupBox2.Size = new System.Drawing.Size(700, 156);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "General Diary Entry :";
@@ -411,6 +419,17 @@ namespace ImageHeaven
             this.deLabel15.TabIndex = 105;
             this.deLabel15.Text = "-";
             // 
+            // deTextBox9
+            // 
+            this.deTextBox9.BackColor = System.Drawing.Color.White;
+            this.deTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deTextBox9.ForeColor = System.Drawing.Color.Black;
+            this.deTextBox9.Location = new System.Drawing.Point(227, 91);
+            this.deTextBox9.Mandatory = true;
+            this.deTextBox9.Name = "deTextBox9";
+            this.deTextBox9.Size = new System.Drawing.Size(333, 23);
+            this.deTextBox9.TabIndex = 97;
+            // 
             // deTextBox11
             // 
             this.deTextBox11.BackColor = System.Drawing.Color.White;
@@ -425,6 +444,26 @@ namespace ImageHeaven
             this.deTextBox11.Size = new System.Drawing.Size(47, 22);
             this.deTextBox11.TabIndex = 101;
             // 
+            // deLabel9
+            // 
+            this.deLabel9.AutoSize = true;
+            this.deLabel9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel9.Location = new System.Drawing.Point(76, 95);
+            this.deLabel9.Name = "deLabel9";
+            this.deLabel9.Size = new System.Drawing.Size(142, 15);
+            this.deLabel9.TabIndex = 96;
+            this.deLabel9.Text = "* GD Serial Number Start :";
+            // 
+            // deLabel11
+            // 
+            this.deLabel11.AutoSize = true;
+            this.deLabel11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel11.Location = new System.Drawing.Point(80, 126);
+            this.deLabel11.Name = "deLabel11";
+            this.deLabel11.Size = new System.Drawing.Size(138, 15);
+            this.deLabel11.TabIndex = 98;
+            this.deLabel11.Text = "* GD Serial Number End :";
+            // 
             // deLabel13
             // 
             this.deLabel13.AutoSize = true;
@@ -435,6 +474,17 @@ namespace ImageHeaven
             this.deLabel13.Size = new System.Drawing.Size(12, 15);
             this.deLabel13.TabIndex = 104;
             this.deLabel13.Text = "-";
+            // 
+            // deTextBox13
+            // 
+            this.deTextBox13.BackColor = System.Drawing.Color.White;
+            this.deTextBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deTextBox13.ForeColor = System.Drawing.Color.Black;
+            this.deTextBox13.Location = new System.Drawing.Point(227, 123);
+            this.deTextBox13.Mandatory = true;
+            this.deTextBox13.Name = "deTextBox13";
+            this.deTextBox13.Size = new System.Drawing.Size(333, 23);
+            this.deTextBox13.TabIndex = 99;
             // 
             // deTextBox12
             // 
@@ -460,52 +510,54 @@ namespace ImageHeaven
             this.deLabel10.TabIndex = 103;
             this.deLabel10.Text = "* GD Start Date :";
             // 
-            // deTextBox13
+            // deTextBox6
             // 
-            this.deTextBox13.BackColor = System.Drawing.Color.White;
-            this.deTextBox13.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deTextBox13.ForeColor = System.Drawing.Color.Black;
-            this.deTextBox13.Location = new System.Drawing.Point(227, 123);
-            this.deTextBox13.Mandatory = true;
-            this.deTextBox13.Name = "deTextBox13";
-            this.deTextBox13.Size = new System.Drawing.Size(333, 23);
-            this.deTextBox13.TabIndex = 99;
+            this.deTextBox6.BackColor = System.Drawing.Color.White;
+            this.deTextBox6.Enabled = false;
+            this.deTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deTextBox6.ForeColor = System.Drawing.Color.Black;
+            this.deTextBox6.Location = new System.Drawing.Point(120, 77);
+            this.deTextBox6.Mandatory = true;
+            this.deTextBox6.Name = "deTextBox6";
+            this.deTextBox6.Size = new System.Drawing.Size(213, 23);
+            this.deTextBox6.TabIndex = 22;
             // 
-            // deLabel11
+            // deTextBox7
             // 
-            this.deLabel11.AutoSize = true;
-            this.deLabel11.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel11.Location = new System.Drawing.Point(80, 126);
-            this.deLabel11.Name = "deLabel11";
-            this.deLabel11.Size = new System.Drawing.Size(138, 15);
-            this.deLabel11.TabIndex = 98;
-            this.deLabel11.Text = "* GD Serial Number End :";
+            this.deTextBox7.BackColor = System.Drawing.Color.White;
+            this.deTextBox7.Enabled = false;
+            this.deTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deTextBox7.ForeColor = System.Drawing.Color.Black;
+            this.deTextBox7.Location = new System.Drawing.Point(462, 77);
+            this.deTextBox7.Mandatory = true;
+            this.deTextBox7.Name = "deTextBox7";
+            this.deTextBox7.Size = new System.Drawing.Size(222, 23);
+            this.deTextBox7.TabIndex = 23;
             // 
-            // deTextBox9
+            // deLabel6
             // 
-            this.deTextBox9.BackColor = System.Drawing.Color.White;
-            this.deTextBox9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deTextBox9.ForeColor = System.Drawing.Color.Black;
-            this.deTextBox9.Location = new System.Drawing.Point(227, 91);
-            this.deTextBox9.Mandatory = true;
-            this.deTextBox9.Name = "deTextBox9";
-            this.deTextBox9.Size = new System.Drawing.Size(333, 23);
-            this.deTextBox9.TabIndex = 97;
+            this.deLabel6.AutoSize = true;
+            this.deLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel6.Location = new System.Drawing.Point(19, 80);
+            this.deLabel6.Name = "deLabel6";
+            this.deLabel6.Size = new System.Drawing.Size(86, 15);
+            this.deLabel6.TabIndex = 20;
+            this.deLabel6.Text = "Division Code :";
             // 
-            // deLabel9
+            // deLabel7
             // 
-            this.deLabel9.AutoSize = true;
-            this.deLabel9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel9.Location = new System.Drawing.Point(76, 95);
-            this.deLabel9.Name = "deLabel9";
-            this.deLabel9.Size = new System.Drawing.Size(142, 15);
-            this.deLabel9.TabIndex = 96;
-            this.deLabel9.Text = "* GD Serial Number Start :";
+            this.deLabel7.AutoSize = true;
+            this.deLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel7.Location = new System.Drawing.Point(342, 81);
+            this.deLabel7.Name = "deLabel7";
+            this.deLabel7.Size = new System.Drawing.Size(116, 15);
+            this.deLabel7.TabIndex = 21;
+            this.deLabel7.Text = "Police Station Code :";
             // 
             // frmGD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(700, 328);
+            this.ClientSize = new System.Drawing.Size(700, 347);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
@@ -558,5 +610,9 @@ namespace ImageHeaven
         private nControls.deLabel deLabel11;
         private nControls.deTextBox deTextBox9;
         private nControls.deLabel deLabel9;
+        private nControls.deTextBox deTextBox6;
+        private nControls.deTextBox deTextBox7;
+        private nControls.deLabel deLabel6;
+        private nControls.deLabel deLabel7;
     }
 }
