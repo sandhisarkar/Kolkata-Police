@@ -48,6 +48,10 @@ namespace ImageHeaven
             this.deTextBox2 = new nControls.deTextBox();
             this.deLabel12 = new nControls.deLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.deTextBox6 = new nControls.deTextBox();
+            this.deTextBox7 = new nControls.deTextBox();
+            this.deLabel6 = new nControls.deLabel();
+            this.deLabel7 = new nControls.deLabel();
             this.deTextBox1 = new nControls.deTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -64,10 +68,6 @@ namespace ImageHeaven
             this.deTextBox13 = new nControls.deTextBox();
             this.deTextBox12 = new nControls.deTextBox();
             this.deLabel10 = new nControls.deLabel();
-            this.deTextBox6 = new nControls.deTextBox();
-            this.deTextBox7 = new nControls.deTextBox();
-            this.deLabel6 = new nControls.deLabel();
-            this.deLabel7 = new nControls.deLabel();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -114,11 +114,11 @@ namespace ImageHeaven
             // 
             this.deLabel1.AutoSize = true;
             this.deLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel1.Location = new System.Drawing.Point(14, 25);
+            this.deLabel1.Location = new System.Drawing.Point(25, 25);
             this.deLabel1.Name = "deLabel1";
-            this.deLabel1.Size = new System.Drawing.Size(90, 15);
+            this.deLabel1.Size = new System.Drawing.Size(78, 15);
             this.deLabel1.TabIndex = 10;
-            this.deLabel1.Text = "Batch Number :";
+            this.deLabel1.Text = "Batch Name :";
             // 
             // deLabel4
             // 
@@ -292,6 +292,50 @@ namespace ImageHeaven
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Batch Details :";
+            // 
+            // deTextBox6
+            // 
+            this.deTextBox6.BackColor = System.Drawing.Color.White;
+            this.deTextBox6.Enabled = false;
+            this.deTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deTextBox6.ForeColor = System.Drawing.Color.Black;
+            this.deTextBox6.Location = new System.Drawing.Point(120, 77);
+            this.deTextBox6.Mandatory = true;
+            this.deTextBox6.Name = "deTextBox6";
+            this.deTextBox6.Size = new System.Drawing.Size(213, 23);
+            this.deTextBox6.TabIndex = 22;
+            // 
+            // deTextBox7
+            // 
+            this.deTextBox7.BackColor = System.Drawing.Color.White;
+            this.deTextBox7.Enabled = false;
+            this.deTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deTextBox7.ForeColor = System.Drawing.Color.Black;
+            this.deTextBox7.Location = new System.Drawing.Point(462, 77);
+            this.deTextBox7.Mandatory = true;
+            this.deTextBox7.Name = "deTextBox7";
+            this.deTextBox7.Size = new System.Drawing.Size(222, 23);
+            this.deTextBox7.TabIndex = 23;
+            // 
+            // deLabel6
+            // 
+            this.deLabel6.AutoSize = true;
+            this.deLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel6.Location = new System.Drawing.Point(19, 80);
+            this.deLabel6.Name = "deLabel6";
+            this.deLabel6.Size = new System.Drawing.Size(86, 15);
+            this.deLabel6.TabIndex = 20;
+            this.deLabel6.Text = "Division Code :";
+            // 
+            // deLabel7
+            // 
+            this.deLabel7.AutoSize = true;
+            this.deLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel7.Location = new System.Drawing.Point(342, 81);
+            this.deLabel7.Name = "deLabel7";
+            this.deLabel7.Size = new System.Drawing.Size(116, 15);
+            this.deLabel7.TabIndex = 21;
+            this.deLabel7.Text = "Police Station Code :";
             // 
             // deTextBox1
             // 
@@ -509,50 +553,6 @@ namespace ImageHeaven
             this.deLabel10.Size = new System.Drawing.Size(91, 15);
             this.deLabel10.TabIndex = 103;
             this.deLabel10.Text = "* GD Start Date :";
-            // 
-            // deTextBox6
-            // 
-            this.deTextBox6.BackColor = System.Drawing.Color.White;
-            this.deTextBox6.Enabled = false;
-            this.deTextBox6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deTextBox6.ForeColor = System.Drawing.Color.Black;
-            this.deTextBox6.Location = new System.Drawing.Point(120, 77);
-            this.deTextBox6.Mandatory = true;
-            this.deTextBox6.Name = "deTextBox6";
-            this.deTextBox6.Size = new System.Drawing.Size(213, 23);
-            this.deTextBox6.TabIndex = 22;
-            // 
-            // deTextBox7
-            // 
-            this.deTextBox7.BackColor = System.Drawing.Color.White;
-            this.deTextBox7.Enabled = false;
-            this.deTextBox7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deTextBox7.ForeColor = System.Drawing.Color.Black;
-            this.deTextBox7.Location = new System.Drawing.Point(462, 77);
-            this.deTextBox7.Mandatory = true;
-            this.deTextBox7.Name = "deTextBox7";
-            this.deTextBox7.Size = new System.Drawing.Size(222, 23);
-            this.deTextBox7.TabIndex = 23;
-            // 
-            // deLabel6
-            // 
-            this.deLabel6.AutoSize = true;
-            this.deLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel6.Location = new System.Drawing.Point(19, 80);
-            this.deLabel6.Name = "deLabel6";
-            this.deLabel6.Size = new System.Drawing.Size(86, 15);
-            this.deLabel6.TabIndex = 20;
-            this.deLabel6.Text = "Division Code :";
-            // 
-            // deLabel7
-            // 
-            this.deLabel7.AutoSize = true;
-            this.deLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel7.Location = new System.Drawing.Point(342, 81);
-            this.deLabel7.Name = "deLabel7";
-            this.deLabel7.Size = new System.Drawing.Size(116, 15);
-            this.deLabel7.TabIndex = 21;
-            this.deLabel7.Text = "Police Station Code :";
             // 
             // frmGD
             // 
