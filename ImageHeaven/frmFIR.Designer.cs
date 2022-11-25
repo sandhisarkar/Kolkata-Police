@@ -75,7 +75,7 @@ namespace ImageHeaven
             this.deTextBox5.Mandatory = true;
             this.deTextBox5.Name = "deTextBox5";
             this.deTextBox5.Size = new System.Drawing.Size(218, 23);
-            this.deTextBox5.TabIndex = 19;
+            this.deTextBox5.TabIndex = 24;
             // 
             // deTextBox3
             // 
@@ -105,11 +105,11 @@ namespace ImageHeaven
             // 
             this.deLabel1.AutoSize = true;
             this.deLabel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel1.Location = new System.Drawing.Point(14, 25);
+            this.deLabel1.Location = new System.Drawing.Point(25, 25);
             this.deLabel1.Name = "deLabel1";
-            this.deLabel1.Size = new System.Drawing.Size(90, 15);
+            this.deLabel1.Size = new System.Drawing.Size(78, 15);
             this.deLabel1.TabIndex = 10;
-            this.deLabel1.Text = "Batch Number :";
+            this.deLabel1.Text = "Batch Name :";
             // 
             // deLabel4
             // 
@@ -325,7 +325,7 @@ namespace ImageHeaven
             this.deTextBox9.Mandatory = true;
             this.deTextBox9.Name = "deTextBox9";
             this.deTextBox9.Size = new System.Drawing.Size(333, 23);
-            this.deTextBox9.TabIndex = 97;
+            this.deTextBox9.TabIndex = 103;
             // 
             // deTextBox11
             // 
