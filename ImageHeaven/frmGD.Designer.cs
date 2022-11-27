@@ -164,6 +164,7 @@ namespace ImageHeaven
             this.deTextBox14.Name = "deTextBox14";
             this.deTextBox14.Size = new System.Drawing.Size(44, 22);
             this.deTextBox14.TabIndex = 107;
+            this.deTextBox14.Leave += new System.EventHandler(this.deTextBox14_Leave);
             // 
             // deLabel16
             // 
@@ -389,6 +390,7 @@ namespace ImageHeaven
             this.deButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.deButton2.UseCompatibleTextRendering = true;
             this.deButton2.UseVisualStyleBackColor = false;
+            this.deButton2.Click += new System.EventHandler(this.deButton2_Click);
             // 
             // deButtonSave
             // 
@@ -408,6 +410,7 @@ namespace ImageHeaven
             this.deButtonSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.deButtonSave.UseCompatibleTextRendering = true;
             this.deButtonSave.UseVisualStyleBackColor = false;
+            this.deButtonSave.Click += new System.EventHandler(this.deButtonSave_Click);
             // 
             // groupBox2
             // 
@@ -451,6 +454,7 @@ namespace ImageHeaven
             this.deTextBox10.Name = "deTextBox10";
             this.deTextBox10.Size = new System.Drawing.Size(44, 22);
             this.deTextBox10.TabIndex = 100;
+            this.deTextBox10.Leave += new System.EventHandler(this.deTextBox10_Leave);
             // 
             // deLabel15
             // 
@@ -564,6 +568,7 @@ namespace ImageHeaven
             this.Name = "frmGD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGD";
+            this.Load += new System.EventHandler(this.frmGD_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
