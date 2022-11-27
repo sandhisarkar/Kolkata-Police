@@ -164,6 +164,7 @@ namespace ImageHeaven
             this.deTextBox14.Name = "deTextBox14";
             this.deTextBox14.Size = new System.Drawing.Size(44, 22);
             this.deTextBox14.TabIndex = 107;
+            this.deTextBox14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox14_KeyPress);
             this.deTextBox14.Leave += new System.EventHandler(this.deTextBox14_Leave);
             // 
             // deLabel16
@@ -454,6 +455,7 @@ namespace ImageHeaven
             this.deTextBox10.Name = "deTextBox10";
             this.deTextBox10.Size = new System.Drawing.Size(44, 22);
             this.deTextBox10.TabIndex = 100;
+            this.deTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox10_KeyPress);
             this.deTextBox10.Leave += new System.EventHandler(this.deTextBox10_Leave);
             // 
             // deLabel15
@@ -477,6 +479,7 @@ namespace ImageHeaven
             this.deTextBox9.Name = "deTextBox9";
             this.deTextBox9.Size = new System.Drawing.Size(333, 23);
             this.deTextBox9.TabIndex = 110;
+            this.deTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox9_KeyPress);
             // 
             // deTextBox11
             // 
@@ -533,6 +536,7 @@ namespace ImageHeaven
             this.deTextBox13.Name = "deTextBox13";
             this.deTextBox13.Size = new System.Drawing.Size(333, 23);
             this.deTextBox13.TabIndex = 111;
+            this.deTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox13_KeyPress);
             // 
             // deTextBox12
             // 
@@ -569,6 +573,7 @@ namespace ImageHeaven
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGD";
             this.Load += new System.EventHandler(this.frmGD_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmGD_KeyUp);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

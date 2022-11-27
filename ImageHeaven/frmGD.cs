@@ -720,5 +720,62 @@ namespace ImageHeaven
             }
 
         }
+
+        private void frmGD_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+            {
+                DialogResult result = MessageBox.Show("Do you want to Exit ? ", "B'Zer - Confirmation !", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    this.Close();
+
+                }
+                else
+                {
+                    return;
+                }
+            }
+        }
+
+        private void deTextBox10_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Regex.IsMatch(e.KeyChar.ToString(), @"^[0-9\s\b]*$")))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void deTextBox14_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Regex.IsMatch(e.KeyChar.ToString(), @"^[0-9\s\b]*$")))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void deTextBox9_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Regex.IsMatch(e.KeyChar.ToString(), @"^[0-9\s\b]*$")))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void deTextBox13_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Regex.IsMatch(e.KeyChar.ToString(), @"^[0-9\s\b]*$")))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
     }
 }
