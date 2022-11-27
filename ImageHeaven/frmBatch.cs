@@ -375,7 +375,7 @@ namespace ImageHeaven
 
                                     dateTimePicker1.Select();
                                     //validateBol = false;
-                                    
+
 
                                     textBox3.Text = string.Empty;
                                     textBox4.Text = string.Empty;
@@ -408,7 +408,7 @@ namespace ImageHeaven
 
                                     dateTimePicker1.Select();
                                     //validateBol = false;
-                                    
+
 
                                     textBox3.Text = string.Empty;
                                     textBox4.Text = string.Empty;
@@ -417,7 +417,7 @@ namespace ImageHeaven
                                 }
                             }
 
-                            
+
                         }
                         else
                         {
@@ -639,10 +639,13 @@ namespace ImageHeaven
                 scanbatchPath = dsPath.Tables[0].Rows[0]["project_Path"] + "\\" + objBatch.batch_code;
             }
 
-            sqlStr = @"insert into bundle_master(proj_code,bundle_code,category,bundle_name,ps_name,ps_code,div_name,div_code,created_by" +
+            string isDate = dateTimePicker1.Text;
+            txtCreateDate.Text = isDate;
+
+            sqlStr = @"insert into bundle_master(proj_code,bundle_code,category,bundle_name,ps_name,ps_code,div_name,div_code,month_year,created_by" +
                 ",Created_DTTM,bundle_path) values(" +
                 objBatch.proj_code + ",'" + objBatch.batch_code.ToUpper() + "','" + deComboBox3.Text.Trim() + "','" + objBatch.batch_name + "'," +
-                "'" + deComboBox2.Text.Trim() + "','" + pC + "','" + deComboBox1.Text.Trim() + "','" + dC + "'," +
+                "'" + deComboBox2.Text.Trim() + "','" + pC + "','" + deComboBox1.Text.Trim() + "','" + dC + "','" + txtCreateDate.Text + "'" +
                 "'" + objBatch.Created_By + "','" + objBatch.Created_DTTM + "','" +
                 scanbatchPath.Replace("\\", "\\\\") + "')";
             try
