@@ -251,7 +251,8 @@ namespace ImageHeaven
 
                     if (category.ToString() == "General Diary")
                     {
-                        
+                        frmGD fr = new frmGD(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
+                        fr.ShowDialog(this);
                     }
                     else if (category.ToString() == "FIR")
                     {
