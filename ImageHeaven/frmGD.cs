@@ -678,7 +678,7 @@ namespace ImageHeaven
             { return; }
             else
             {
-                if (deTextBox10.Text.Length < 2)
+                if (deTextBox10.Text.Length <= 2)
                 {
                     deTextBox10.Text = deTextBox10.Text.PadLeft(2, '0');
                     DateTime dt = new DateTime(Convert.ToInt32(deTextBox12.Text), Convert.ToInt32(deTextBox11.Text), Convert.ToInt32(deTextBox10.Text));
@@ -686,18 +686,26 @@ namespace ImageHeaven
                     deTextBox14.Text = nextDate.Substring(0, 2);
 
                     string month_year = _GetBundleDetails().Rows[0][8].ToString();
-                    if (month_year.Substring(0, 2).ToString() == nextDate.Substring(2, 2) &&
-                        month_year.Substring(3, 4).ToString() == nextDate.Substring(4, 4))
-                    {
-
-                    }
-                    else
-                    {
-                        MessageBox.Show(this, "Please select valid GD start date...", "B'Zer", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        deTextBox10.Focus();
-                        deTextBox10.Select();
-                        return;
-                    }
+                    //if (month_year.Substring(0, 2).ToString() == nextDate.Substring(2, 2) &&
+                    //    month_year.Substring(3, 4).ToString() == nextDate.Substring(4, 4))
+                    //{
+                    deTextBox15.Text = nextDate.Substring(0, 2).ToString();
+                    deTextBox15.Text = nextDate.Substring(2, 2).ToString();
+                    deTextBox16.Text = nextDate.Substring(4, 4).ToString();
+                    deTextBox14.Enabled = false;
+                    deTextBox15.Enabled = false;
+                    deTextBox16.Enabled = false;
+                    //}
+                    //else
+                    //{
+                    //    MessageBox.Show(this, "Please select valid GD start date...", "B'Zer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //    deTextBox15.Text = string.Empty;
+                    //    deTextBox15.Text = string.Empty;
+                    //    deTextBox16.Text = string.Empty;
+                    //    deTextBox10.Focus();
+                    //    deTextBox10.Select();
+                    //    return;
+                    //}
                 }
             }
             if (_mode == Mode._Add)

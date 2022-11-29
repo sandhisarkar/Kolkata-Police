@@ -10,3 +10,9 @@ Failure sending mail.
    at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software New\sandhi\KP\KP\NovaNet\Utils\emailLogger.cs:line 83
 System
 --------End--------
+11/29/2022 12:58:06 PM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software New\sandhi\KP\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------

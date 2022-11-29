@@ -28,3 +28,8 @@ D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.pdb
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.Files.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBundleSelect.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmEntrySummary.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmMR.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmCR.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmCI.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmFIR.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmGD.resources

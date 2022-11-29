@@ -645,7 +645,7 @@ namespace ImageHeaven
             sqlStr = @"insert into bundle_master(proj_code,bundle_code,category,bundle_name,ps_name,ps_code,div_name,div_code,month_year,created_by" +
                 ",Created_DTTM,bundle_path) values(" +
                 objBatch.proj_code + ",'" + objBatch.batch_code.ToUpper() + "','" + deComboBox3.Text.Trim() + "','" + objBatch.batch_name + "'," +
-                "'" + deComboBox2.Text.Trim() + "','" + pC + "','" + deComboBox1.Text.Trim() + "','" + dC + "','" + txtCreateDate.Text + "'" +
+                "'" + deComboBox2.Text.Trim() + "','" + pC + "','" + deComboBox1.Text.Trim() + "','" + dC + "','" + txtCreateDate.Text + "'," +
                 "'" + objBatch.Created_By + "','" + objBatch.Created_DTTM + "','" +
                 scanbatchPath.Replace("\\", "\\\\") + "')";
             try
