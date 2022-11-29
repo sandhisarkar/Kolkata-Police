@@ -97,6 +97,8 @@ namespace ImageHeaven
             this.deTextBox1.Name = "deTextBox1";
             this.deTextBox1.Size = new System.Drawing.Size(99, 23);
             this.deTextBox1.TabIndex = 1;
+            this.deTextBox1.Enter += new System.EventHandler(this.deTextBox1_Enter);
+            this.deTextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.deTextBox1_KeyUp);
             // 
             // cmdSearch
             // 
@@ -114,6 +116,7 @@ namespace ImageHeaven
             this.cmdSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.cmdSearch.UseCompatibleTextRendering = true;
             this.cmdSearch.UseVisualStyleBackColor = true;
+            this.cmdSearch.Click += new System.EventHandler(this.cmdSearch_Click);
             // 
             // deLabel10
             // 
@@ -182,6 +185,10 @@ namespace ImageHeaven
             this.lstDeeds.TabIndex = 0;
             this.lstDeeds.UseCompatibleStateImageBehavior = false;
             this.lstDeeds.View = System.Windows.Forms.View.Details;
+            this.lstDeeds.SelectedIndexChanged += new System.EventHandler(this.lstDeeds_SelectedIndexChanged);
+            this.lstDeeds.DoubleClick += new System.EventHandler(this.lstDeeds_DoubleClick);
+            this.lstDeeds.KeyUp += new System.Windows.Forms.KeyEventHandler(this.lstDeeds_KeyUp);
+            this.lstDeeds.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstDeeds_MouseClick);
             // 
             // columnHeader1
             // 
@@ -228,6 +235,7 @@ namespace ImageHeaven
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Files";
             this.Load += new System.EventHandler(this.Files_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Files_KeyUp);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
