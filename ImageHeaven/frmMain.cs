@@ -721,5 +721,11 @@ namespace ImageHeaven
 
             fm.ShowDialog(this);
         }
+
+        private void batchUploadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBundleUpload frm = new frmBundleUpload(sqlCon, crd);
+            frm.ShowDialog(this);
+        }
     }
 }

@@ -24,3 +24,4 @@ D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\DgvFilterPopup.dll
 D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.pdb
 D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.dll.config
 D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\nControls.pdb
+D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\itextsharp.dll

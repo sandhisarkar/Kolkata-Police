@@ -163,27 +163,27 @@ namespace ImageHeaven
             // configurationToolStripMenuItem
             // 
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
-            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.configurationToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.configurationToolStripMenuItem.Text = "Configuration";
             // 
             // newPasswordToolStripMenuItem
             // 
             this.newPasswordToolStripMenuItem.Name = "newPasswordToolStripMenuItem";
-            this.newPasswordToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.newPasswordToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.newPasswordToolStripMenuItem.Text = "Change Password";
             this.newPasswordToolStripMenuItem.Click += new System.EventHandler(this.newPasswordToolStripMenuItem_Click);
             // 
             // newUserToolStripMenuItem
             // 
             this.newUserToolStripMenuItem.Name = "newUserToolStripMenuItem";
-            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.newUserToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.newUserToolStripMenuItem.Text = "New User";
             this.newUserToolStripMenuItem.Click += new System.EventHandler(this.newUserToolStripMenuItem_Click);
             // 
             // onlineUsersToolStripMenuItem
             // 
             this.onlineUsersToolStripMenuItem.Name = "onlineUsersToolStripMenuItem";
-            this.onlineUsersToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.onlineUsersToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.onlineUsersToolStripMenuItem.Text = "Online Users";
             this.onlineUsersToolStripMenuItem.Click += new System.EventHandler(this.onlineUsersToolStripMenuItem_Click);
             // 
@@ -408,6 +408,7 @@ namespace ImageHeaven
             this.batchUploadToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.batchUploadToolStripMenuItem.Text = "&Batch Upload";
             this.batchUploadToolStripMenuItem.Visible = false;
+            this.batchUploadToolStripMenuItem.Click += new System.EventHandler(this.batchUploadToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 

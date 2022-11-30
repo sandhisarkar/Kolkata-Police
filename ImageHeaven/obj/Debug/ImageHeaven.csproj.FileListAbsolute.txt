@@ -6,7 +6,6 @@ D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\nControls.dll
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\NovaNet.Utils.dll
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\NovaNet.wfe.dll
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\DgvFilterPopup.dll
-D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\Interop.ClearImage.dll
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\LItems.pdb
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\LItems.dll.config
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\nControls.pdb
@@ -33,3 +32,9 @@ D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmCR.reso
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmCI.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmFIR.resources
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmGD.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\ClearImageNet.70.dll
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\itextsharp.dll
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\TwainUtils.dll
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\TwainUtils.pdb
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\TwainUtils.dll.config
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBundleUpload.resources
