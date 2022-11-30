@@ -480,6 +480,7 @@ namespace ImageHeaven
             this.deTextBox9.Size = new System.Drawing.Size(333, 23);
             this.deTextBox9.TabIndex = 110;
             this.deTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox9_KeyPress);
+            this.deTextBox9.Leave += new System.EventHandler(this.deTextBox9_Leave);
             // 
             // deTextBox11
             // 
@@ -537,6 +538,7 @@ namespace ImageHeaven
             this.deTextBox13.Size = new System.Drawing.Size(333, 23);
             this.deTextBox13.TabIndex = 111;
             this.deTextBox13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox13_KeyPress);
+            this.deTextBox13.Leave += new System.EventHandler(this.deTextBox13_Leave);
             // 
             // deTextBox12
             // 

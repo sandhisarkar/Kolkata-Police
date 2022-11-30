@@ -295,7 +295,8 @@ namespace ImageHeaven
                     }
                     else if (category.ToString() == "Malkhana Register")
                     {
-
+                        frmMR fm1 = new frmMR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Edit, filename, "Entry");
+                        fm1.ShowDialog();
                     }
                     else if (category.ToString() == "Case Records")
                     {
@@ -404,22 +405,49 @@ namespace ImageHeaven
                     string divCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][7].ToString();
                     string gdserialDate = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][12].ToString();
                     string fircaseno = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][13].ToString();
-                    
+
 
                     fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
                         "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nGD Serial Date : " + gdserialDate + "\nFIR Case No : " + fircaseno;
                 }
                 else if (category.ToString() == "Crime Index")
                 {
+                    string psName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][4].ToString();
+                    string psCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][5].ToString();
+                    string divName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][6].ToString();
+                    string divCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][7].ToString();
+                    string CIDate = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][15].ToString();
+                    string CIcaseno = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][14].ToString();
 
+
+                    fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
+                        "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nDate : " + CIDate + "\nCase No : " + CIcaseno;
                 }
                 else if (category.ToString() == "Malkhana Register")
                 {
+                    string psName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][4].ToString();
+                    string psCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][5].ToString();
+                    string divName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][6].ToString();
+                    string divCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][7].ToString();
+                    string MRDate = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][18].ToString();
+                    string MRserialno = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][19].ToString();
+                    string MRcaseno = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][20].ToString();
 
+                    fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
+                        "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nDate : " + MRDate + "\nSerial No : " + MRserialno + "\nCase No : " + MRcaseno;
                 }
                 else if (category.ToString() == "Case Records")
                 {
+                    string psName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][4].ToString();
+                    string psCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][5].ToString();
+                    string divName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][6].ToString();
+                    string divCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][7].ToString();
+                    string CRDate = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][17].ToString();
+                    string CRcaseno = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][16].ToString();
 
+
+                    fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
+                        "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nDate : " + CRDate + "\nCase No : " + CRcaseno;
                 }
                 else if (category.ToString() == "General Register")
                 {

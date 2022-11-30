@@ -269,7 +269,9 @@ namespace ImageHeaven
                     }
                     else if (category.ToString() == "Malkhana Register")
                     {
-                       
+                        this.SetTopLevel(false);
+                        frmMR fr = new frmMR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
+                        fr.ShowDialog(this);
                     }
                     else if (category.ToString() == "Case Records")
                     {

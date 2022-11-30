@@ -1660,5 +1660,17 @@ namespace ImageHeaven
             else
                 e.Handled = true;
         }
+
+        private void deTextBox9_Leave(object sender, EventArgs e)
+        {
+            if (deTextBox9.Text == "" || deTextBox9.Text == null || String.IsNullOrEmpty(deTextBox9.Text) || String.IsNullOrWhiteSpace(deTextBox9.Text))
+            { return; }
+        }
+
+        private void deTextBox13_Leave(object sender, EventArgs e)
+        {
+            if (deTextBox13.Text == "" || deTextBox13.Text == null || String.IsNullOrEmpty(deTextBox13.Text) || String.IsNullOrWhiteSpace(deTextBox13.Text))
+            { return; }
+        }
     }
 }

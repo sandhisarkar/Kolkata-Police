@@ -1350,7 +1350,7 @@ namespace ImageHeaven
         private void deTextBox9_Leave(object sender, EventArgs e)
         {
             if (deTextBox9.Text == "" || deTextBox9.Text == null || String.IsNullOrEmpty(deTextBox9.Text) || String.IsNullOrWhiteSpace(deTextBox9.Text))
-            { }
+            { return; }
             else
             {
                 if (_mode == Mode._Add)
