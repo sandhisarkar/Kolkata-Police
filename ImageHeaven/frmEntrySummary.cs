@@ -263,7 +263,9 @@ namespace ImageHeaven
                     }
                     else if (category.ToString() == "Crime Index")
                     {
-                        
+                        this.SetTopLevel(false);
+                        frmCI fr = new frmCI(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
+                        fr.ShowDialog(this);
                     }
                     else if (category.ToString() == "Malkhana Register")
                     {
