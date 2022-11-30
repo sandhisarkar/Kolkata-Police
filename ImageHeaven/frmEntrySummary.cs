@@ -251,6 +251,7 @@ namespace ImageHeaven
 
                     if (category.ToString() == "General Diary")
                     {
+                        this.SetTopLevel(false);
                         frmGD fr = new frmGD(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
                         fr.ShowDialog(this);
                     }
@@ -274,6 +275,7 @@ namespace ImageHeaven
                     {
                         
                     }
+                    this.SetTopLevel(true);
                 }
                 else
                 {
@@ -321,6 +323,7 @@ namespace ImageHeaven
                     {
                         return;
                     }
+                    this.SetTopLevel(true);
                 }
                 else
                 {
