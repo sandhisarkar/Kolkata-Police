@@ -257,7 +257,9 @@ namespace ImageHeaven
                     }
                     else if (category.ToString() == "FIR")
                     {
-                        
+                        this.SetTopLevel(false);
+                        frmFIR fr = new frmFIR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
+                        fr.ShowDialog(this);
                     }
                     else if (category.ToString() == "Crime Index")
                     {

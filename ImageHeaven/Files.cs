@@ -285,7 +285,8 @@ namespace ImageHeaven
                     }
                     else if (category.ToString() == "FIR")
                     {
-
+                        frmFIR fm1 = new frmFIR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Edit, filename, "Entry");
+                        fm1.ShowDialog();
                     }
                     else if (category.ToString() == "Crime Index")
                     {
@@ -395,7 +396,16 @@ namespace ImageHeaven
                 }
                 else if (category.ToString() == "FIR")
                 {
+                    string psName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][4].ToString();
+                    string psCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][5].ToString();
+                    string divName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][6].ToString();
+                    string divCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][7].ToString();
+                    string gdserialDate = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][12].ToString();
+                    string fircaseno = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][13].ToString();
+                    
 
+                    fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
+                        "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nGD Serial Date : " + gdserialDate + "\nFIR Case No : " + fircaseno;
                 }
                 else if (category.ToString() == "Crime Index")
                 {

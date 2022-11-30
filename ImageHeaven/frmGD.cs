@@ -235,8 +235,6 @@ namespace ImageHeaven
                 deTextBox10.Focus();
                 deTextBox10.Select();
 
-                deTextBox7.Focus();
-                deTextBox7.Select();
             }
         }
 
