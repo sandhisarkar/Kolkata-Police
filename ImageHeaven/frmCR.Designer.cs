@@ -295,6 +295,7 @@ namespace ImageHeaven
             this.deButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.deButton2.UseCompatibleTextRendering = true;
             this.deButton2.UseVisualStyleBackColor = false;
+            this.deButton2.Click += new System.EventHandler(this.deButton2_Click);
             // 
             // deButtonSave
             // 
@@ -314,6 +315,7 @@ namespace ImageHeaven
             this.deButtonSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.deButtonSave.UseCompatibleTextRendering = true;
             this.deButtonSave.UseVisualStyleBackColor = false;
+            this.deButtonSave.Click += new System.EventHandler(this.deButtonSave_Click);
             // 
             // groupBox2
             // 
@@ -348,6 +350,7 @@ namespace ImageHeaven
             this.deTextBox10.Name = "deTextBox10";
             this.deTextBox10.Size = new System.Drawing.Size(44, 22);
             this.deTextBox10.TabIndex = 100;
+            this.deTextBox10.Leave += new System.EventHandler(this.deTextBox10_Leave);
             // 
             // deLabel15
             // 
@@ -370,6 +373,8 @@ namespace ImageHeaven
             this.deTextBox9.Name = "deTextBox9";
             this.deTextBox9.Size = new System.Drawing.Size(333, 23);
             this.deTextBox9.TabIndex = 97;
+            this.deTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox9_KeyPress);
+            this.deTextBox9.Leave += new System.EventHandler(this.deTextBox9_Leave);
             // 
             // deTextBox11
             // 
@@ -384,6 +389,8 @@ namespace ImageHeaven
             this.deTextBox11.Name = "deTextBox11";
             this.deTextBox11.Size = new System.Drawing.Size(47, 22);
             this.deTextBox11.TabIndex = 101;
+            this.deTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox11_KeyPress);
+            this.deTextBox11.Leave += new System.EventHandler(this.deTextBox11_Leave);
             // 
             // deLabel9
             // 
@@ -440,6 +447,8 @@ namespace ImageHeaven
             this.Name = "frmCR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmGD";
+            this.Load += new System.EventHandler(this.frmCR_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.frmCR_KeyUp);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);

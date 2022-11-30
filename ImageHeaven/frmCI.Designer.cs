@@ -390,6 +390,8 @@ namespace ImageHeaven
             this.deTextBox11.Name = "deTextBox11";
             this.deTextBox11.Size = new System.Drawing.Size(47, 22);
             this.deTextBox11.TabIndex = 99;
+            this.deTextBox11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.deTextBox11_KeyPress);
+            this.deTextBox11.Leave += new System.EventHandler(this.deTextBox11_Leave);
             // 
             // deLabel9
             // 

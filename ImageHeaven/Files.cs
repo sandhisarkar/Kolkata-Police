@@ -299,7 +299,8 @@ namespace ImageHeaven
                     }
                     else if (category.ToString() == "Case Records")
                     {
-
+                        frmCR fm1 = new frmCR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Edit, filename, "Entry");
+                        fm1.ShowDialog();
                     }
                     else if (category.ToString() == "General Register")
                     {

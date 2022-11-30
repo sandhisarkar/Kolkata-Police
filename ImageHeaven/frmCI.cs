@@ -1344,11 +1344,6 @@ namespace ImageHeaven
                     deTextBox10.Text = deTextBox10.Text.PadLeft(2, '0');
                 }
             }
-            if (_mode == Mode._Add)
-            {
-                string filenumber = "CI" + deTextBox9.Text.Trim() + deTextBox12.Text;
-                checkFileNotExists(projKey, bundleKey, filenumber.Trim());
-            }
         }
 
         private void deTextBox9_Leave(object sender, EventArgs e)
@@ -1400,6 +1395,34 @@ namespace ImageHeaven
             }
             else
                 e.Handled = true;
+        }
+
+        private void deTextBox11_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((Regex.IsMatch(e.KeyChar.ToString(), @"^[0-9\s\b]*$")))
+            {
+                e.Handled = false;
+            }
+            else
+                e.Handled = true;
+        }
+
+        private void deTextBox11_Leave(object sender, EventArgs e)
+        {
+            if (deTextBox11.Text == "" || deTextBox11.Text == null || String.IsNullOrEmpty(deTextBox11.Text) || String.IsNullOrWhiteSpace(deTextBox11.Text))
+            { return; }
+            else
+            {
+                if (deTextBox11.Text.Length <= 2)
+                {
+                    deTextBox11.Text = deTextBox11.Text.PadLeft(2, '0');
+                }
+            }
+            if (_mode == Mode._Add)
+            {
+                string filenumber = "CI" + deTextBox9.Text.Trim() + deTextBox12.Text;
+                checkFileNotExists(projKey, bundleKey, filenumber.Trim());
+            }
         }
     }
 }
