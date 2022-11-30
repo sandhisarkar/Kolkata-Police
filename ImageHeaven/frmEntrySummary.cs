@@ -312,7 +312,7 @@ namespace ImageHeaven
                         Form activeChild = this.ActiveMdiChild;
                         if (activeChild == null)
                         {
-
+                            this.SetTopLevel(false);
                             Files fm = new Files(sqlCon, DataLayerDefs.Mode._Edit, txn, crd);
                             fm.ShowDialog(this);
                         }
