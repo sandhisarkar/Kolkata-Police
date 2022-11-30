@@ -271,7 +271,7 @@ namespace ImageHeaven
                 index = lstDeeds.FocusedItem.Index;
 
                 filename = lstDeeds.Items[index].SubItems[0].Text;
-                
+
                 if (_mode == DataLayerDefs.Mode._Edit)
                 {
                     //this.Hide();
@@ -361,8 +361,8 @@ namespace ImageHeaven
         public DataTable _GetFileCaseDetailsIndividual(string proj, string bundle, string fileName)
         {
             DataTable dt = new DataTable();
-            string sql = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date_date,'%Y-%m-%d')," +
-                "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' and filename = '" + fileName + "' ";
+            string sql = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' and filename = '" + fileName + "' ";
             OdbcCommand cmd = new OdbcCommand(sql, sqlCon, txn);
             OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
             odap.Fill(dt);
@@ -388,10 +388,10 @@ namespace ImageHeaven
                     string gdendDate = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][9].ToString();
                     string gdsatrtserail = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][10].ToString();
                     string gdendSerial = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][11].ToString();
-                    
+
 
                     fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
-                        "\nGD Start Date : " + gdstartDate + "\nGD End Date : " + gdendDate + "\nGD Start Serial :" + gdsatrtserail + "\nGD End Serial : " + gdendSerial;
+                        "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nGD Start Date : " + gdstartDate + "\nGD End Date : " + gdendDate + "\nGD Start Serial :" + gdsatrtserail + "\nGD End Serial : " + gdendSerial;
                 }
                 else if (category.ToString() == "FIR")
                 {
