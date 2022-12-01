@@ -167,6 +167,19 @@
     <Compile Include="PopupPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs" />
+    <Compile Include="Resources1.Designer.cs" />
+    <Compile Include="Strings.Designer.cs" />
+    <Compile Include="Strings1.Designer.cs" />
+    <Compile Include="VS2003AutoHideStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VS2003DockPaneCaption.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VS2003DockPaneStrip.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +235,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources.resx" />
+    <EmbeddedResource Include="Strings.resx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -255,6 +270,10 @@
     <ProjectReference Include="..\TwainUtils\TwainUtils.csproj">
       <Project>{0c48842a-7d30-45b3-9860-25822b4f15d4}</Project>
       <Name>TwainUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\wSelect\wSelect\wSelect\wSelect.csproj">
+      <Project>{464a1fb1-88e1-478e-892d-087aa908b297}</Project>
+      <Name>wSelect</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
