@@ -1260,290 +1260,290 @@ namespace ImageHeaven
                         }
                     }
                 }
-                //if (currStage == "FQC")
-                //{
-                //    if (validate() == true)
-                //    {
-                //        string sDate = string.Empty;
-                //        string eDate = string.Empty;
-
-                //        string divname = deTextBox3.Text.Trim();
-                //        string psname = deTextBox4.Text.Trim();
-
-                //        string divcode = deTextBox6.Text.Trim();
-                //        string pscode = deTextBox7.Text.Trim();
-
-                //        string category = deTextBox5.Text.Trim();
-
-                //        if (deTextBox12.Text != "" && deTextBox11.Text != "" && deTextBox10.Text != "")
-                //        {
-                //            sDate = deTextBox12.Text + "-" + deTextBox11.Text + "-" + deTextBox10.Text;
-                //        }
-                //        else
-                //        {
-                //            sDate = "";
-                //        }
-
-                //        if (deTextBox16.Text != "" && deTextBox15.Text != "" && deTextBox14.Text != "")
-                //        {
-                //            eDate = deTextBox16.Text + "-" + deTextBox15.Text + "-" + deTextBox14.Text;
-                //        }
-                //        else
-                //        {
-                //            eDate = "";
-                //        }
-
-                //        string filenumber = "GD" + deTextBox10.Text + deTextBox11.Text + deTextBox12.Text;
-                //        filename = filenumber;
-
-                //        if (filenumber.Trim() != aeFQC.filename)
-                //        {
-                //            if (checkFileNotExistsEdit(filenumber.Trim(), projKey, bundleKey) == true)
-                //            {
-                //                casefile = filenumber.Trim();
-
-
-                //                string gdSTSerial = deTextBox9.Text.Trim();
-                //                string gdEdSerial = deTextBox13.Text.Trim();
-
-
-                //                filename = casefile;
-
-
-                //                bool updateMeta = updateMetaEdit(divname, divcode, psname, pscode, sDate, eDate, gdSTSerial, gdEdSerial);
-                //                bool updateimageMaster = updateImageEdit();
-                //                bool updatetransLog = updateTransLogEdit();
-                //                bool updatecusExc = updateCustExcEdit();
-                //                bool updateQa = updateQaEdit();
-
-                                
-                //                if (updateMeta == true && updateimageMaster == true && updatetransLog == true && updatecusExc == true && updateQa == true)
-                //                {
-                //                    //if (txn == null || txn.Connection == null)
-                //                    //{
-                //                    //    txn = sqlCon.BeginTransaction();
-                //                    //}
-                //                    //txn.Commit();
-                //                    //txn = null;
-
-                //                    string pathTemp = GetPolicyPath();
-
-                //                    string pathFinal = pathTemp + "\\" + old_filename;
-                //                    string pathDest = pathTemp + "\\" + filename;
-                //                    //Directory Rename
-                //                    if (old_filename != filename)
-                //                    {
-                //                        if (Directory.Exists(pathFinal))
-                //                        {
-
-                //                            Directory.Move(pathFinal, pathDest);
-
-                //                        }
-                //                    }
-
-                //                    //Scan folder check 
-                //                    string pathScan = pathTemp + "\\" + filename + "\\Scan";
-                //                    //Qc folder check 
-                //                    string pathQc = pathTemp + "\\" + filename + "\\QC";
-                //                    //Deleted
-                //                    string pathDeleted = pathScan + "\\" + ihConstants._DELETE_FOLDER;
-
-                //                    // Files Rename scan
-                //                    if (Directory.Exists(pathScan))
-                //                    {
-                //                        DirectoryInfo DirInfo = new DirectoryInfo(pathScan);
-                //                        FileInfo[] names = DirInfo.GetFiles();
-                //                        foreach (FileInfo f in names)
-                //                        {
-                //                            if (f.Name.Contains(old_filename + "_"))
-                //                            {
-                //                                string str1 = f.Name;
-
-                //                                string str2 = f.Name.Replace(old_filename + "_", filename + "_");
-
-                //                                File.Move(pathScan + "\\" + str1, pathScan + "\\" + str2);
-                //                            }
+                if (currStage == "FQC")
+                {
+                    if (validate() == true)
+                    {
+                        string sDate = string.Empty;
+                        string eDate = string.Empty;
+
+                        string divname = deTextBox3.Text.Trim();
+                        string psname = deTextBox4.Text.Trim();
+
+                        string divcode = deTextBox6.Text.Trim();
+                        string pscode = deTextBox7.Text.Trim();
+
+                        string category = deTextBox5.Text.Trim();
+
+                        if (deTextBox12.Text != "" && deTextBox11.Text != "" && deTextBox10.Text != "")
+                        {
+                            sDate = deTextBox12.Text + "-" + deTextBox11.Text + "-" + deTextBox10.Text;
+                        }
+                        else
+                        {
+                            sDate = "";
+                        }
+
+                        if (deTextBox16.Text != "" && deTextBox15.Text != "" && deTextBox14.Text != "")
+                        {
+                            eDate = deTextBox16.Text + "-" + deTextBox15.Text + "-" + deTextBox14.Text;
+                        }
+                        else
+                        {
+                            eDate = "";
+                        }
+
+                        string filenumber = "GD" + deTextBox10.Text + deTextBox11.Text + deTextBox12.Text;
+                        filename = filenumber;
+
+                        if (filenumber.Trim() != aeFQC.filename)
+                        {
+                            if (checkFileNotExistsEdit(filenumber.Trim(), projKey, bundleKey) == true)
+                            {
+                                casefile = filenumber.Trim();
+
+
+                                string gdSTSerial = deTextBox9.Text.Trim();
+                                string gdEdSerial = deTextBox13.Text.Trim();
+
+
+                                filename = casefile;
+
+
+                                bool updateMeta = updateMetaEdit(divname, divcode, psname, pscode, sDate, eDate, gdSTSerial, gdEdSerial);
+                                bool updateimageMaster = updateImageEdit();
+                                bool updatetransLog = updateTransLogEdit();
+                                bool updatecusExc = updateCustExcEdit();
+                                bool updateQa = updateQaEdit();
+
+
+                                if (updateMeta == true && updateimageMaster == true && updatetransLog == true && updatecusExc == true && updateQa == true)
+                                {
+                                    //if (txn == null || txn.Connection == null)
+                                    //{
+                                    //    txn = sqlCon.BeginTransaction();
+                                    //}
+                                    //txn.Commit();
+                                    //txn = null;
+
+                                    string pathTemp = GetPolicyPath();
+
+                                    string pathFinal = pathTemp + "\\" + old_filename;
+                                    string pathDest = pathTemp + "\\" + filename;
+                                    //Directory Rename
+                                    if (old_filename != filename)
+                                    {
+                                        if (Directory.Exists(pathFinal))
+                                        {
+
+                                            Directory.Move(pathFinal, pathDest);
+
+                                        }
+                                    }
 
-                //                        }
-                //                    }
+                                    //Scan folder check 
+                                    string pathScan = pathTemp + "\\" + filename + "\\Scan";
+                                    //Qc folder check 
+                                    string pathQc = pathTemp + "\\" + filename + "\\QC";
+                                    //Deleted
+                                    string pathDeleted = pathScan + "\\" + ihConstants._DELETE_FOLDER;
+
+                                    // Files Rename scan
+                                    if (Directory.Exists(pathScan))
+                                    {
+                                        DirectoryInfo DirInfo = new DirectoryInfo(pathScan);
+                                        FileInfo[] names = DirInfo.GetFiles();
+                                        foreach (FileInfo f in names)
+                                        {
+                                            if (f.Name.Contains(old_filename + "_"))
+                                            {
+                                                string str1 = f.Name;
+
+                                                string str2 = f.Name.Replace(old_filename + "_", filename + "_");
 
-                //                    //// Files Rename Qc
-                //                    if (Directory.Exists(pathQc))
-                //                    {
-                //                        DirectoryInfo DirInfo = new DirectoryInfo(pathQc);
-                //                        FileInfo[] names = DirInfo.GetFiles();
-                //                        foreach (FileInfo f in names)
-                //                        {
-                //                            if (f.Name.Contains(old_filename + "_"))
-                //                            {
-                //                                string str1 = f.Name;
+                                                File.Move(pathScan + "\\" + str1, pathScan + "\\" + str2);
+                                            }
 
-                //                                string str2 = f.Name.Replace(old_filename + "_", filename + "_");
+                                        }
+                                    }
 
-                //                                File.Move(pathQc + "\\" + str1, pathQc + "\\" + str2);
-                //                            }
+                                    //// Files Rename Qc
+                                    if (Directory.Exists(pathQc))
+                                    {
+                                        DirectoryInfo DirInfo = new DirectoryInfo(pathQc);
+                                        FileInfo[] names = DirInfo.GetFiles();
+                                        foreach (FileInfo f in names)
+                                        {
+                                            if (f.Name.Contains(old_filename + "_"))
+                                            {
+                                                string str1 = f.Name;
 
-                //                        }
-                //                    }
+                                                string str2 = f.Name.Replace(old_filename + "_", filename + "_");
 
-                //                    //// Files Rename deleted
-                //                    if (Directory.Exists(pathDeleted))
-                //                    {
-                //                        DirectoryInfo DirInfo = new DirectoryInfo(pathDeleted);
-                //                        FileInfo[] names = DirInfo.GetFiles();
-                //                        foreach (FileInfo f in names)
-                //                        {
-                //                            if (f.Name.Contains(old_filename + "_"))
-                //                            {
-                //                                string str1 = f.Name;
+                                                File.Move(pathQc + "\\" + str1, pathQc + "\\" + str2);
+                                            }
 
-                //                                string str2 = f.Name.Replace(old_filename + "_", filename + "_");
+                                        }
+                                    }
 
-                //                                File.Move(pathDeleted + "\\" + str1, pathDeleted + "\\" + str2);
-                //                            }
+                                    //// Files Rename deleted
+                                    if (Directory.Exists(pathDeleted))
+                                    {
+                                        DirectoryInfo DirInfo = new DirectoryInfo(pathDeleted);
+                                        FileInfo[] names = DirInfo.GetFiles();
+                                        foreach (FileInfo f in names)
+                                        {
+                                            if (f.Name.Contains(old_filename + "_"))
+                                            {
+                                                string str1 = f.Name;
 
-                //                        }
-                //                    }
+                                                string str2 = f.Name.Replace(old_filename + "_", filename + "_");
 
-                //                    MessageBox.Show(this, "Record Saved Successfully...", "B'Zer", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                                File.Move(pathDeleted + "\\" + str1, pathDeleted + "\\" + str2);
+                                            }
 
-                //                    this.Close();
+                                        }
+                                    }
 
-                //                }
-                //                else
-                //                {
+                                    MessageBox.Show(this, "Record Saved Successfully...", "B'Zer", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                //                    MessageBox.Show(this, "Ooops!!! There is an Error - Record not Saved...", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    this.Close();
 
-                //                    return;
+                                }
+                                else
+                                {
 
-                //                }
-                //            }
-                //        }
-                //        else
-                //        {
-                //            casefile = filenumber.Trim();
+                                    MessageBox.Show(this, "Ooops!!! There is an Error - Record not Saved...", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+                                    return;
 
-                //            string gdSTSerial = deTextBox9.Text.Trim();
-                //            string gdEdSerial = deTextBox13.Text.Trim();
+                                }
+                            }
+                        }
+                        else
+                        {
+                            casefile = filenumber.Trim();
 
 
-                //            filename = casefile;
+                            string gdSTSerial = deTextBox9.Text.Trim();
+                            string gdEdSerial = deTextBox13.Text.Trim();
 
-                //            bool updateMeta = updateMetaEdit(divname, divcode, psname, pscode, sDate, eDate, gdSTSerial, gdEdSerial);
-                //            bool updateimageMaster = updateImageEdit();
-                //            bool updatetransLog = updateTransLogEdit();
-                //            bool updatecusExc = updateCustExcEdit();
-                //            bool updateQa = updateQaEdit();
 
+                            filename = casefile;
 
-                //            if (updateMeta == true && updateimageMaster == true && updatetransLog == true && updatecusExc == true && updateQa == true)
-                //            {
-                //                //if (txn == null || txn.Connection == null)
-                //                //{
-                //                //    txn = sqlCon.BeginTransaction();
-                //                //}
-                //                //txn.Commit();
-                //                //txn = null;
+                            bool updateMeta = updateMetaEdit(divname, divcode, psname, pscode, sDate, eDate, gdSTSerial, gdEdSerial);
+                            bool updateimageMaster = updateImageEdit();
+                            bool updatetransLog = updateTransLogEdit();
+                            bool updatecusExc = updateCustExcEdit();
+                            bool updateQa = updateQaEdit();
 
-                //                string pathTemp = GetPolicyPath();
 
-                //                string pathFinal = pathTemp + "\\" + old_filename;
-                //                string pathDest = pathTemp + "\\" + filename;
+                            if (updateMeta == true && updateimageMaster == true && updatetransLog == true && updatecusExc == true && updateQa == true)
+                            {
+                                //if (txn == null || txn.Connection == null)
+                                //{
+                                //    txn = sqlCon.BeginTransaction();
+                                //}
+                                //txn.Commit();
+                                //txn = null;
 
-                //                //Directory Rename
-                //                if (old_filename != filename)
-                //                {
-                //                    if (Directory.Exists(pathFinal))
-                //                    {
+                                string pathTemp = GetPolicyPath();
 
-                //                        Directory.Move(pathFinal, pathDest);
+                                string pathFinal = pathTemp + "\\" + old_filename;
+                                string pathDest = pathTemp + "\\" + filename;
 
-                //                    }
-                //                }
+                                //Directory Rename
+                                if (old_filename != filename)
+                                {
+                                    if (Directory.Exists(pathFinal))
+                                    {
 
+                                        Directory.Move(pathFinal, pathDest);
 
-                //                //Scan folder check 
-                //                string pathScan = pathTemp + "\\" + filename + "\\Scan";
-                //                //Qc folder check 
-                //                string pathQc = pathTemp + "\\" + filename + "\\QC";
-                //                //Deleted
-                //                string pathDeleted = pathScan + "\\" + ihConstants._DELETE_FOLDER;
+                                    }
+                                }
 
-                //                // Files Rename scan
-                //                if (Directory.Exists(pathScan))
-                //                {
-                //                    DirectoryInfo DirInfo = new DirectoryInfo(pathScan);
-                //                    FileInfo[] names = DirInfo.GetFiles();
-                //                    foreach (FileInfo f in names)
-                //                    {
-                //                        if (f.Name.Contains(old_filename + "_"))
-                //                        {
-                //                            string str1 = f.Name;
 
-                //                            string str2 = f.Name.Replace(old_filename + "_", filename + "_");
+                                //Scan folder check 
+                                string pathScan = pathTemp + "\\" + filename + "\\Scan";
+                                //Qc folder check 
+                                string pathQc = pathTemp + "\\" + filename + "\\QC";
+                                //Deleted
+                                string pathDeleted = pathScan + "\\" + ihConstants._DELETE_FOLDER;
 
-                //                            File.Move(pathScan + "\\" + str1, pathScan + "\\" + str2);
-                //                        }
+                                // Files Rename scan
+                                if (Directory.Exists(pathScan))
+                                {
+                                    DirectoryInfo DirInfo = new DirectoryInfo(pathScan);
+                                    FileInfo[] names = DirInfo.GetFiles();
+                                    foreach (FileInfo f in names)
+                                    {
+                                        if (f.Name.Contains(old_filename + "_"))
+                                        {
+                                            string str1 = f.Name;
 
-                //                    }
-                //                }
+                                            string str2 = f.Name.Replace(old_filename + "_", filename + "_");
 
-                //                //// Files Rename Qc
-                //                if (Directory.Exists(pathQc))
-                //                {
-                //                    DirectoryInfo DirInfo = new DirectoryInfo(pathQc);
-                //                    FileInfo[] names = DirInfo.GetFiles();
-                //                    foreach (FileInfo f in names)
-                //                    {
-                //                        if (f.Name.Contains(old_filename + "_"))
-                //                        {
-                //                            string str1 = f.Name;
+                                            File.Move(pathScan + "\\" + str1, pathScan + "\\" + str2);
+                                        }
 
-                //                            string str2 = f.Name.Replace(old_filename + "_", filename + "_");
+                                    }
+                                }
 
-                //                            File.Move(pathQc + "\\" + str1, pathQc + "\\" + str2);
-                //                        }
+                                //// Files Rename Qc
+                                if (Directory.Exists(pathQc))
+                                {
+                                    DirectoryInfo DirInfo = new DirectoryInfo(pathQc);
+                                    FileInfo[] names = DirInfo.GetFiles();
+                                    foreach (FileInfo f in names)
+                                    {
+                                        if (f.Name.Contains(old_filename + "_"))
+                                        {
+                                            string str1 = f.Name;
 
-                //                    }
-                //                }
+                                            string str2 = f.Name.Replace(old_filename + "_", filename + "_");
 
-                //                //// Files Rename deleted
-                //                if (Directory.Exists(pathDeleted))
-                //                {
-                //                    DirectoryInfo DirInfo = new DirectoryInfo(pathDeleted);
-                //                    FileInfo[] names = DirInfo.GetFiles();
-                //                    foreach (FileInfo f in names)
-                //                    {
-                //                        if (f.Name.Contains(old_filename + "_"))
-                //                        {
-                //                            string str1 = f.Name;
+                                            File.Move(pathQc + "\\" + str1, pathQc + "\\" + str2);
+                                        }
 
-                //                            string str2 = f.Name.Replace(old_filename + "_", filename + "_");
+                                    }
+                                }
 
-                //                            File.Move(pathDeleted + "\\" + str1, pathDeleted + "\\" + str2);
-                //                        }
+                                //// Files Rename deleted
+                                if (Directory.Exists(pathDeleted))
+                                {
+                                    DirectoryInfo DirInfo = new DirectoryInfo(pathDeleted);
+                                    FileInfo[] names = DirInfo.GetFiles();
+                                    foreach (FileInfo f in names)
+                                    {
+                                        if (f.Name.Contains(old_filename + "_"))
+                                        {
+                                            string str1 = f.Name;
 
-                //                    }
-                //                }
+                                            string str2 = f.Name.Replace(old_filename + "_", filename + "_");
 
-                //                MessageBox.Show(this, "Record Saved Successfully...", "Record Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                            File.Move(pathDeleted + "\\" + str1, pathDeleted + "\\" + str2);
+                                        }
 
-                //                this.Close();
+                                    }
+                                }
 
-                //            }
-                //            else
-                //            {
+                                MessageBox.Show(this, "Record Saved Successfully...", "Record Management", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                //                MessageBox.Show(this, "Ooops!!! There is an Error - Record not Saved...", "B'Zer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                this.Close();
 
-                //                return;
+                            }
+                            else
+                            {
 
-                //            }
-                //        }
-                //    }
-                //}
+                                MessageBox.Show(this, "Ooops!!! There is an Error - Record not Saved...", "B'Zer", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                                return;
+
+                            }
+                        }
+                    }
+                }
             }
         }
 
