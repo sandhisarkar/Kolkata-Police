@@ -38,3 +38,4 @@ D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\TwainUtils.dll
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\TwainUtils.pdb
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\bin\Debug\TwainUtils.dll.config
 D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBundleUpload.resources
+D:\Sandhi Software New\sandhi\KP\KP\ImageHeaven\obj\Debug\ImageHeaven.frmDataImport.resources

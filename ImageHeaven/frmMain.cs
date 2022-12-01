@@ -727,5 +727,11 @@ namespace ImageHeaven
             frmBundleUpload frm = new frmBundleUpload(sqlCon, crd);
             frm.ShowDialog(this);
         }
+
+        private void imageImportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDataImport frm = new frmDataImport(sqlCon, crd);
+            frm.ShowDialog(this);
+        }
     }
 }

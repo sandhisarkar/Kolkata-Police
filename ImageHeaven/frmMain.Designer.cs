@@ -81,6 +81,7 @@ namespace ImageHeaven
             this.imageImportToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.I)));
             this.imageImportToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.imageImportToolStripMenuItem.Text = "Image &Import";
+            this.imageImportToolStripMenuItem.Click += new System.EventHandler(this.imageImportToolStripMenuItem_Click);
             // 
             // qualityControlFinalToolStripMenuItem
             // 

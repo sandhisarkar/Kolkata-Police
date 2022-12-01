@@ -282,7 +282,7 @@ namespace LItems
             {
 
                // sqlStr = "select policy_number from policy_master where proj_key='" + proj_key + "'and batch_key= '" + batch_key + "' and status = '16' order by CONVERT(page_from,UNSIGNED INTEGER)";
-                sqlStr = "select filename from metadata_entry where proj_code='" + proj_key + "'and batch_key= '" + batch_key + "' ";
+                sqlStr = "select filename from metadata_entry where proj_code='" + proj_key + "'and bundle_key= '" + batch_key + "' ";
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
                 sqlAdap.Fill(policyDs);
             }
