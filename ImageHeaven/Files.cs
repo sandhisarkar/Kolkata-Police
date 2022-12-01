@@ -283,7 +283,7 @@ namespace ImageHeaven
                         frmGD fm1 = new frmGD(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Edit, filename, "Entry");
                         fm1.ShowDialog();
                     }
-                    else if (category.ToString() == "FIR")
+                    else if (category.ToString() == "First Information Report")
                     {
                         frmFIR fm1 = new frmFIR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Edit, filename, "Entry");
                         fm1.ShowDialog();
@@ -397,7 +397,7 @@ namespace ImageHeaven
                     fileRemarks.Text = "Category : " + category + "\nDivision Name : " + divName + "\nDivision Code : " + divCode +
                         "\nPS Name: " + psName + "\nPS Code : " + psCode + "\nGD Start Date : " + gdstartDate + "\nGD End Date : " + gdendDate + "\nGD Start Serial :" + gdsatrtserail + "\nGD End Serial : " + gdendSerial;
                 }
-                else if (category.ToString() == "FIR")
+                else if (category.ToString() == "First Information Report")
                 {
                     string psName = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][4].ToString();
                     string psCode = _GetFileCaseDetailsIndividual(projKey, bundleKey, filename).Rows[0][5].ToString();

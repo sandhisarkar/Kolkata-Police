@@ -255,7 +255,7 @@ namespace ImageHeaven
                         frmGD fr = new frmGD(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
                         fr.ShowDialog(this);
                     }
-                    else if (category.ToString() == "FIR")
+                    else if (category.ToString() == "First Information Report")
                     {
                         this.SetTopLevel(false);
                         frmFIR fr = new frmFIR(projKey, bundleKey, sqlCon, crd, DataLayerDefs.Mode._Add, state);
