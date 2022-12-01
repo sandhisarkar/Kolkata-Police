@@ -593,18 +593,3 @@ F:\CAG\LItems\obj\Debug\LItems.csproj.CoreCompileInputs.cache
 F:\CAG\LItems\obj\Debug\LItems.csproj.CopyComplete
 F:\CAG\LItems\obj\Debug\LItems.dll
 F:\CAG\LItems\obj\Debug\LItems.pdb
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\LItems.dll.config
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\LItems.dll
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\LItems.pdb
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\NovaNet.Utils.dll
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\NovaNet.wfe.dll
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\Interop.ClearImage.dll
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\NovaNet.Utils.pdb
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\NovaNet.Utils.dll.config
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\NovaNet.wfe.pdb
-D:\Sandhi Software New\sandhi\KP\KP\LItems\bin\Debug\NovaNet.wfe.dll.config
-D:\Sandhi Software New\sandhi\KP\KP\LItems\obj\Debug\LItems.csproj.AssemblyReference.cache
-D:\Sandhi Software New\sandhi\KP\KP\LItems\obj\Debug\LItems.csproj.CoreCompileInputs.cache
-D:\Sandhi Software New\sandhi\KP\KP\LItems\obj\Debug\LItems.csproj.CopyComplete
-D:\Sandhi Software New\sandhi\KP\KP\LItems\obj\Debug\LItems.dll
-D:\Sandhi Software New\sandhi\KP\KP\LItems\obj\Debug\LItems.pdb

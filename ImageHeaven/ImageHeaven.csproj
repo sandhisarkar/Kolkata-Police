@@ -61,6 +61,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\KP\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="About.cs">
@@ -70,6 +73,8 @@
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
     <Compile Include="DataLayerDefs.cs" />
+    <Compile Include="DockHelper.cs" />
+    <Compile Include="Extender.cs" />
     <Compile Include="Files.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +104,12 @@
     </Compile>
     <Compile Include="frmDataImport.Designer.cs">
       <DependentUpon>frmDataImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdialog.Designer.cs">
+      <DependentUpon>frmdialog.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMR.cs">
       <SubType>Form</SubType>
@@ -150,6 +161,10 @@
     </Compile>
     <Compile Include="HealthCheck.cs" />
     <Compile Include="ihConstants.cs" />
+    <Compile Include="InertButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PopupPoint.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="About.resx">
@@ -169,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDataImport.resx">
       <DependentUpon>frmDataImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdialog.resx">
+      <DependentUpon>frmdialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMR.resx">
       <DependentUpon>frmMR.cs</DependentUpon>
