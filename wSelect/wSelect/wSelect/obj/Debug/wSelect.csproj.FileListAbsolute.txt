@@ -767,3 +767,23 @@ D:\Sandhi Software New\sandhi\KP\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.cs
 D:\Sandhi Software New\sandhi\KP\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.csproj.CopyComplete
 D:\Sandhi Software New\sandhi\KP\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.dll
 D:\Sandhi Software New\sandhi\KP\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.pdb
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\wSelect.dll.config
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\wSelect.dll
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\wSelect.pdb
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\LItems.dll
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\NovaNet.Utils.dll
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\NovaNet.wfe.dll
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\Interop.ClearImage.dll
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\LItems.pdb
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\LItems.dll.config
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\NovaNet.Utils.pdb
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\NovaNet.Utils.dll.config
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\NovaNet.wfe.pdb
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\bin\Debug\NovaNet.wfe.dll.config
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.csproj.AssemblyReference.cache
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.BoxDetails.resources
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.csproj.GenerateResource.cache
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.csproj.CoreCompileInputs.cache
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.csproj.CopyComplete
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.dll
+D:\Sandhi Software\KP\wSelect\wSelect\wSelect\obj\Debug\wSelect.pdb

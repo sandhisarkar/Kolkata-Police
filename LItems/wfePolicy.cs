@@ -394,7 +394,7 @@ namespace LItems
 			
 			sqlStr="select count(*) from metadata_entry " + 
 					" where proj_code=" + ctrlPolicy.ProjectKey + 
-				" and batch_key=" + ctrlPolicy.BatchKey + " ";
+				" and bundle_key=" + ctrlPolicy.BatchKey + " ";
 			
 			
 			try 
@@ -633,7 +633,7 @@ namespace LItems
 
             try
             {
-                sqlStr = "select created_by from metadata_entry where proj_code =" + ctrlPolicy.ProjectKey + " and batch_key =" + ctrlPolicy.BatchKey + " and filename ='" + ctrlPolicy.PolicyNumber + "'";
+                sqlStr = "select created_by from metadata_entry where proj_code =" + ctrlPolicy.ProjectKey + " and bundle_key =" + ctrlPolicy.BatchKey + " and filename ='" + ctrlPolicy.PolicyNumber + "'";
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
                 sqlAdap.Fill(policyDs);
             }
@@ -916,13 +916,13 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey ;
+                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey ;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
                    
                     for (int j = 0; j < prmState.Length; j++)
@@ -965,13 +965,13 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
                     for (int j = 0; j < prmState.Length; j++)
@@ -1014,13 +1014,13 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
                     for (int j = 0; j < prmState.Length; j++)
@@ -1063,13 +1063,13 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
                     for (int j = 0; j < prmState.Length; j++)
@@ -1112,14 +1112,14 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 6 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 6 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                     //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 6 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 6 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                         //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
@@ -1163,14 +1163,14 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 7 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 7 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                     //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 7 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 7 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                         //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
@@ -1214,14 +1214,14 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and (b.status = 6 or b.status = 7) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and (b.status = 6 or b.status = 7) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                     //sqlStr = "select case_file_no from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and (b.status = 6 or b.status = 7) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and (b.status = 6 or b.status = 7) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                         //sqlStr = "select case_file_no from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
@@ -1265,14 +1265,14 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and (b.status = 4 or b.status = 5) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and (b.status = 4 or b.status = 5) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                     //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and (b.status = 2 or b.status = 3 or b.status = 4 or b.status = 5) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and (b.status = 2 or b.status = 3 or b.status = 4 or b.status = 5) and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                         //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
@@ -1316,13 +1316,13 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey +" and entry_exception <> '' ";
+                    sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey +" and entry_exception <> '' ";
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey + " and entry_exception <> '' ";
+                        sqlStr = "select filename from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey + " and entry_exception <> '' ";
                     }
 
                     //for (int j = 0; j < prmState.Length; j++)
@@ -1415,13 +1415,13 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select filename,status from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select filename,status from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select filename,status from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select filename,status from metadata_entry where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
                     for (int j = 0; j < prmState.Length; j++)
@@ -1562,14 +1562,14 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 8 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 8 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                     //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 8 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 8 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                         //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
@@ -1613,14 +1613,14 @@ namespace LItems
             {
                 if (prmState.Length == 0)
                 {
-                    sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 9 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                    sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 9 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                     //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                 }
                 else
                 {
                     if (ctrlPolicy.BoxNumber != "0")
                     {
-                        sqlStr = "select a.filename from metadata_entry a, batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and b.status = 9 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.batch_key=" + ctrlPolicy.BatchKey;
+                        sqlStr = "select a.filename from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and b.status = 9 and b.proj_code=" + ctrlPolicy.ProjectKey + " and b.bundle_key=" + ctrlPolicy.BatchKey;
                         //sqlStr = "select filename from case_file_master where proj_code=" + ctrlPolicy.ProjectKey + " and bundle_key=" + ctrlPolicy.BatchKey;
                     }
 
@@ -1702,7 +1702,7 @@ namespace LItems
 
             try
             {
-                sqlStr = "select B.filename from metadata_entry B  where B.proj_code=" + ctrlPolicy.ProjectKey + " and B.batch_key=" + ctrlPolicy.BatchKey + " ";
+                sqlStr = "select B.filename from metadata_entry B  where B.proj_code=" + ctrlPolicy.ProjectKey + " and B.bundle_key=" + ctrlPolicy.BatchKey + " ";
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
                 sqlAdap.Fill(policyDs);
             }
@@ -2312,9 +2312,9 @@ namespace LItems
 
             OdbcCommand sqlCmd = new OdbcCommand();
 
-            sqlStr = @"update batch_master" +
+            sqlStr = @"update bundle_master" +
                 " set status=" + (int)eSTATES.BATCH_EXPORTED + " where " +
-                " batch_key=" + Batch_Key + " and proj_code = '" + Proj_Key + "'";
+                " bundle_key=" + Batch_Key + " and proj_code = '" + Proj_Key + "'";
 
             try
             {

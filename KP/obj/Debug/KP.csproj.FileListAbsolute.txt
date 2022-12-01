@@ -25,3 +25,34 @@ D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.pdb
 D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\LItems.dll.config
 D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\nControls.pdb
 D:\Sandhi Software New\sandhi\KP\KP\KP\bin\Debug\itextsharp.dll
+D:\Sandhi Software\KP\KP\bin\Debug\KP.exe.config
+D:\Sandhi Software\KP\KP\bin\Debug\KP.exe
+D:\Sandhi Software\KP\KP\bin\Debug\KP.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\ImageHeaven.dll
+D:\Sandhi Software\KP\KP\bin\Debug\NovaNet.Utils.dll
+D:\Sandhi Software\KP\KP\bin\Debug\WeifenLuo.WinFormsUI.Docking.dll
+D:\Sandhi Software\KP\KP\bin\Debug\LItems.dll
+D:\Sandhi Software\KP\KP\bin\Debug\TwainUtils.dll
+D:\Sandhi Software\KP\KP\bin\Debug\nControls.dll
+D:\Sandhi Software\KP\KP\bin\Debug\NovaNet.wfe.dll
+D:\Sandhi Software\KP\KP\bin\Debug\itextsharp.dll
+D:\Sandhi Software\KP\KP\bin\Debug\Interop.ClearImage.dll
+D:\Sandhi Software\KP\KP\bin\Debug\DgvFilterPopup.dll
+D:\Sandhi Software\KP\KP\bin\Debug\ImageHeaven.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\ImageHeaven.dll.config
+D:\Sandhi Software\KP\KP\bin\Debug\NovaNet.Utils.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\NovaNet.Utils.dll.config
+D:\Sandhi Software\KP\KP\bin\Debug\LItems.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\LItems.dll.config
+D:\Sandhi Software\KP\KP\bin\Debug\TwainUtils.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\TwainUtils.dll.config
+D:\Sandhi Software\KP\KP\bin\Debug\nControls.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\NovaNet.wfe.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\NovaNet.wfe.dll.config
+D:\Sandhi Software\KP\KP\obj\Debug\KP.csproj.AssemblyReference.cache
+D:\Sandhi Software\KP\KP\obj\Debug\KP.Properties.Resources.resources
+D:\Sandhi Software\KP\KP\obj\Debug\KP.csproj.GenerateResource.cache
+D:\Sandhi Software\KP\KP\obj\Debug\KP.csproj.CoreCompileInputs.cache
+D:\Sandhi Software\KP\KP\obj\Debug\KP.csproj.CopyComplete
+D:\Sandhi Software\KP\KP\obj\Debug\KP.exe
+D:\Sandhi Software\KP\KP\obj\Debug\KP.pdb

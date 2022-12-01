@@ -42,6 +42,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\KP\bin\Debug\ClearImageNet.70.dll</HintPath>
     </Reference>
+    <Reference Include="DgvFilterPopup, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\KP\bin\Debug\DgvFilterPopup.dll</HintPath>
+    </Reference>
     <Reference Include="Interop.ClearImage, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -49,6 +53,32 @@
     </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\KP\bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\KP\bin\Debug\Microsoft.mshtml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common">
+      <HintPath>..\KP\bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms">
+      <HintPath>..\KP\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs">
+      <HintPath>..\KP\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Compression.Base">
+      <HintPath>..\KP\bin\Debug\Syncfusion.Compression.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.OCRProcessor.Base">
+      <HintPath>..\KP\bin\Debug\Syncfusion.OCRProcessor.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Pdf.Base">
+      <HintPath>..\KP\bin\Debug\Syncfusion.Pdf.Base.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -71,6 +101,30 @@
     </Compile>
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aeConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeConfiguration.Designer.cs">
+      <DependentUpon>aeConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aeCustomExp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeCustomExp.Designer.cs">
+      <DependentUpon>aeCustomExp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aeFQC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeFQC.Designer.cs">
+      <DependentUpon>aeFQC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aeImageQc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeImageQc.Designer.cs">
+      <DependentUpon>aeImageQc.cs</DependentUpon>
     </Compile>
     <Compile Include="DataLayerDefs.cs" />
     <Compile Include="DockHelper.cs" />
@@ -99,6 +153,12 @@
     <Compile Include="frmBundleUpload.Designer.cs">
       <DependentUpon>frmBundleUpload.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCustExc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustExc.Designer.cs">
+      <DependentUpon>frmCustExc.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDataImport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +170,12 @@
     </Compile>
     <Compile Include="frmdialog.Designer.cs">
       <DependentUpon>frmdialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMR.cs">
       <SubType>Form</SubType>
@@ -153,6 +219,18 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmPolicyLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPolicyLog.Designer.cs">
+      <DependentUpon>frmPolicyLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProductionCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProductionCount.Designer.cs">
+      <DependentUpon>frmProductionCount.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmProject.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +261,18 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="aeConfiguration.resx">
+      <DependentUpon>aeConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aeCustomExp.resx">
+      <DependentUpon>aeCustomExp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aeFQC.resx">
+      <DependentUpon>aeFQC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aeImageQc.resx">
+      <DependentUpon>aeImageQc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Files.resx">
       <DependentUpon>Files.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,11 +285,17 @@
     <EmbeddedResource Include="frmBundleUpload.resx">
       <DependentUpon>frmBundleUpload.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCustExc.resx">
+      <DependentUpon>frmCustExc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDataImport.resx">
       <DependentUpon>frmDataImport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmdialog.resx">
       <DependentUpon>frmdialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMR.resx">
       <DependentUpon>frmMR.cs</DependentUpon>
@@ -221,6 +317,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPolicyLog.resx">
+      <DependentUpon>frmPolicyLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProductionCount.resx">
+      <DependentUpon>frmProductionCount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmProject.resx">
       <DependentUpon>frmProject.cs</DependentUpon>

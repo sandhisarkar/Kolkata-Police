@@ -89,6 +89,7 @@ namespace ImageHeaven
             this.qualityControlFinalToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
             this.qualityControlFinalToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.qualityControlFinalToolStripMenuItem.Text = "Quality Control(&Final)";
+            this.qualityControlFinalToolStripMenuItem.Click += new System.EventHandler(this.qualityControlFinalToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
@@ -135,6 +136,7 @@ namespace ImageHeaven
             this.imageQualityControlToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.imageQualityControlToolStripMenuItem.Size = new System.Drawing.Size(237, 22);
             this.imageQualityControlToolStripMenuItem.Text = "Image &Quality Control ";
+            this.imageQualityControlToolStripMenuItem.Click += new System.EventHandler(this.imageQualityControlToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 
@@ -166,6 +168,7 @@ namespace ImageHeaven
             this.configurationToolStripMenuItem.Name = "configurationToolStripMenuItem";
             this.configurationToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.configurationToolStripMenuItem.Text = "Configuration";
+            this.configurationToolStripMenuItem.Click += new System.EventHandler(this.configurationToolStripMenuItem_Click);
             // 
             // newPasswordToolStripMenuItem
             // 
@@ -232,14 +235,14 @@ namespace ImageHeaven
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(626, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(626, 31);
             this.toolStrip1.TabIndex = 12;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
             // 
             // toolStripButton1
             // 
@@ -255,7 +258,7 @@ namespace ImageHeaven
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(0, 22);
+            this.toolStripLabel1.Size = new System.Drawing.Size(0, 28);
             // 
             // toolStripButton3
             // 
@@ -266,6 +269,7 @@ namespace ImageHeaven
             this.toolStripButton3.Size = new System.Drawing.Size(28, 28);
             this.toolStripButton3.Text = "Quality Control";
             this.toolStripButton3.Visible = false;
+            this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click);
             // 
             // toolStripButton2
             // 
@@ -286,6 +290,7 @@ namespace ImageHeaven
             this.toolStripButton4.Size = new System.Drawing.Size(28, 28);
             this.toolStripButton4.Text = "Final Quality Control";
             this.toolStripButton4.Visible = false;
+            this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
             // 
             // pictureBox1
             // 

@@ -1812,7 +1812,7 @@ namespace LItems
             try
             {
                 wfePolicy queryPolicy = (wfePolicy)wi;
-                strQuery = "select distinct A.proj_key,A.batch_key,A.box_number,A.policy_number,A.page_name,A.doc_type from image_master A,metadata_entry B where A.proj_key=B.proj_code and A.batch_key=B.batch_key and A.policy_number=B.filename and A.proj_key=" + queryPolicy.ctrlPolicy.ProjectKey + " and A.batch_key=" + queryPolicy.ctrlPolicy.BatchKey + " and A.box_number='" + queryPolicy.ctrlPolicy.BoxNumber + "' and A.policy_number='" + queryPolicy.ctrlPolicy.PolicyNumber + "' and A.status= " + (int)prmImageState[0];
+                strQuery = "select distinct A.proj_key,A.batch_key,A.box_number,A.policy_number,A.page_name,A.doc_type from image_master A,metadata_entry B where A.proj_key=B.proj_code and A.batch_key=B.bundle_key and A.policy_number=B.filename and A.proj_key=" + queryPolicy.ctrlPolicy.ProjectKey + " and A.batch_key=" + queryPolicy.ctrlPolicy.BatchKey + " and A.box_number='" + queryPolicy.ctrlPolicy.BoxNumber + "' and A.policy_number='" + queryPolicy.ctrlPolicy.PolicyNumber + "' and A.status= " + (int)prmImageState[0];
 
                
                 wAdap = new OdbcDataAdapter(strQuery, sqlCon);
@@ -2027,7 +2027,7 @@ namespace LItems
             try
             {
                 wfePolicy queryPolicy = (wfePolicy)wi;
-                strQuery = "select distinct A.proj_key,A.batch_key,A.box_number,A.policy_number,A.page_name,A.doc_type from image_master A,metadata_entry B where A.proj_key=B.proj_code and A.batch_key=B.batch_key and A.policy_number=B.filename and A.proj_key=" + queryPolicy.ctrlPolicy.ProjectKey + " and A.batch_key=" + queryPolicy.ctrlPolicy.BatchKey + " and A.box_number='" + queryPolicy.ctrlPolicy.BoxNumber + "' and A.policy_number='" + queryPolicy.ctrlPolicy.PolicyNumber + "' and A.status= " + (int)prmImageState[0] + " and (B.status=" + 4;
+                strQuery = "select distinct A.proj_key,A.batch_key,A.box_number,A.policy_number,A.page_name,A.doc_type from image_master A,metadata_entry B where A.proj_key=B.proj_code and A.batch_key=B.bundle_key and A.policy_number=B.filename and A.proj_key=" + queryPolicy.ctrlPolicy.ProjectKey + " and A.batch_key=" + queryPolicy.ctrlPolicy.BatchKey + " and A.box_number='" + queryPolicy.ctrlPolicy.BoxNumber + "' and A.policy_number='" + queryPolicy.ctrlPolicy.PolicyNumber + "' and A.status= " + (int)prmImageState[0] + " and (B.status=" + 4;
                 //for (int j = 0; j < prmPolicyState.Length; j++)
                 //{
                 //    if ((int)prmPolicyState[j] != 0)

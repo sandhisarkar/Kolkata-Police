@@ -815,7 +815,7 @@ namespace LItems
 
             try
             {
-                sqlStr = "select batch_code,batch_name from batch_master where proj_code= '" + prmProjectKey + "' and batch_key = '" + prmBundleKey + "' ";
+                sqlStr = "select bundle_code,bundle_name from bundle_master where proj_code= '" + prmProjectKey + "' and bundle_key = '" + prmBundleKey + "' ";
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
                 sqlAdap.Fill(projDs);
             }
@@ -826,7 +826,7 @@ namespace LItems
             }
             if (projDs.Tables[0].Rows.Count > 0)
             {
-                projName = projDs.Tables[0].Rows[0]["batch_code"].ToString();
+                projName = projDs.Tables[0].Rows[0]["bundle_code"].ToString();
             }
             else
                 projName = string.Empty;

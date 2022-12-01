@@ -224,3 +224,17 @@ D:\Sandhi Software New\sandhi\KP\KP\nControls\obj\Debug\nControls.csproj.CoreCom
 D:\Sandhi Software New\sandhi\KP\KP\nControls\obj\Debug\nControls.csproj.CopyComplete
 D:\Sandhi Software New\sandhi\KP\KP\nControls\obj\Debug\nControls.dll
 D:\Sandhi Software New\sandhi\KP\KP\nControls\obj\Debug\nControls.pdb
+D:\Sandhi Software\KP\nControls\bin\Debug\nControls.dll
+D:\Sandhi Software\KP\nControls\bin\Debug\nControls.pdb
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.csproj.AssemblyReference.cache
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.deCheckBox.resources
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.deComboBox.resources
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.deDateBox.resources
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.deRadioButton.resources
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.deTextBox.resources
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.rptViewer.resources
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.csproj.GenerateResource.cache
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.csproj.CoreCompileInputs.cache
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.csproj.CopyComplete
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.dll
+D:\Sandhi Software\KP\nControls\obj\Debug\nControls.pdb

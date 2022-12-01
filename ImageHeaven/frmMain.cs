@@ -733,5 +733,159 @@ namespace ImageHeaven
             frmDataImport frm = new frmDataImport(sqlCon, crd);
             frm.ShowDialog(this);
         }
+
+        private void imageQualityControlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            eSTATES[] state = new eSTATES[1];
+            state[0] = eSTATES.POLICY_SCANNED;
+            frmBundleSelect box = new frmBundleSelect(state, sqlCon, txn, crd);
+            box.chkPhotoScan.Visible = false;
+            box.ShowDialog(this);
+
+            projKey = frmBundleSelect.projKey;
+            bundleKey = frmBundleSelect.bundleKey;
+
+            if (projKey != null && bundleKey != null)
+            {
+                //status check
+                if (_GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "2")
+                {
+                    if (Convert.ToInt32(_GetFileCount(projKey, bundleKey).ToString()) > 0)
+                    {
+
+
+                        aeImageQc frmQc = new aeImageQc(sqlCon, crd);
+                        //frmQc.MdiParent = this;
+                        //frmQc.Height = this.ClientRectangle.Height;
+                        //frmQc.Width = this.ClientRectangle.Width;
+                        frmQc.ShowDialog(this);
+                    }
+                }
+            }
+        }
+
+        private void configurationToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            aeConfiguration csvUploader = new aeConfiguration();
+            mainForm = new frmMain();
+            csvUploader.ShowDialog(mainForm);
+        }
+        public DataTable _GetBundleStatus(string proj, string bundle)
+        {
+            DataTable dt = new DataTable();
+            string sql = "select distinct status from bundle_master where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' ";
+            OdbcCommand cmd = new OdbcCommand(sql, sqlCon);
+            OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
+            odap.Fill(dt);
+            return dt;
+        }
+        public string _GetFileCount(string proj_code, string bundle_key)
+        {
+            DataTable dt = new DataTable();
+            string sql = "select COUNT(*) from metadata_entry where proj_code = '" + proj_code + "' and bundle_key = '" + bundle_key + "' ";
+            OdbcCommand cmd = new OdbcCommand(sql, sqlCon);
+            OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
+            odap.Fill(dt);
+            return dt.Rows[0][0].ToString();
+        }
+        private void qualityControlFinalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NovaNet.wfe.eSTATES[] state = new NovaNet.wfe.eSTATES[2];
+            //state[0] = NovaNet.wfe.eSTATES.POLICY_EXCEPTION;
+            state[0] = NovaNet.wfe.eSTATES.POLICY_INDEXED;
+            //state[2] = NovaNet.wfe.eSTATES.POLICY_FQC;
+            state[1] = NovaNet.wfe.eSTATES.POLICY_ON_HOLD;
+            //state[4] = NovaNet.wfe.eSTATES.POLICY_CHECKED;
+            //state[5] = NovaNet.wfe.eSTATES.POLICY_NOT_INDEXED;
+            //state[6] = NovaNet.wfe.eSTATES.POLICY_EXPORTED;
+            //state[7] = NovaNet.wfe.eSTATES.POLICY_QC;
+            //state[8] = NovaNet.wfe.eSTATES.POLICY_SUBMITTED;
+
+            frmBundleSelect box = new frmBundleSelect(state, sqlCon, txn, crd);
+            box.chkPhotoScan.Visible = false;
+            box.ShowDialog(this);
+
+            projKey = frmBundleSelect.projKey;
+            bundleKey = frmBundleSelect.bundleKey;
+
+            if (projKey != null && bundleKey != null)
+            {
+                //status check
+                if (_GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "3" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "2" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "4" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "5" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "6" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "7" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "8" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "9" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "30" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "31" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "37" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "40" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "77")
+                {
+                    if (Convert.ToInt32(_GetFileCount(projKey, bundleKey).ToString()) > 0)
+                    {
+                        aeFQC frm = new aeFQC(sqlCon, crd);
+                        frm.ShowDialog(this);
+                    }
+                }
+
+            }
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            eSTATES[] state = new eSTATES[1];
+            state[0] = eSTATES.POLICY_SCANNED;
+            frmBundleSelect box = new frmBundleSelect(state, sqlCon, txn, crd);
+            box.chkPhotoScan.Visible = false;
+            box.ShowDialog(this);
+
+            projKey = frmBundleSelect.projKey;
+            bundleKey = frmBundleSelect.bundleKey;
+
+            if (projKey != null && bundleKey != null)
+            {
+                //status check
+                if (_GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "2")
+                {
+                    if (Convert.ToInt32(_GetFileCount(projKey, bundleKey).ToString()) > 0)
+                    {
+
+
+                        aeImageQc frmQc = new aeImageQc(sqlCon, crd);
+                        //frmQc.MdiParent = this;
+                        //frmQc.Height = this.ClientRectangle.Height;
+                        //frmQc.Width = this.ClientRectangle.Width;
+                        frmQc.ShowDialog(this);
+                    }
+                }
+            }
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            NovaNet.wfe.eSTATES[] state = new NovaNet.wfe.eSTATES[2];
+            //state[0] = NovaNet.wfe.eSTATES.POLICY_EXCEPTION;
+            state[0] = NovaNet.wfe.eSTATES.POLICY_INDEXED;
+            //state[2] = NovaNet.wfe.eSTATES.POLICY_FQC;
+            state[1] = NovaNet.wfe.eSTATES.POLICY_ON_HOLD;
+            //state[4] = NovaNet.wfe.eSTATES.POLICY_CHECKED;
+            //state[5] = NovaNet.wfe.eSTATES.POLICY_NOT_INDEXED;
+            //state[6] = NovaNet.wfe.eSTATES.POLICY_EXPORTED;
+            //state[7] = NovaNet.wfe.eSTATES.POLICY_QC;
+            //state[8] = NovaNet.wfe.eSTATES.POLICY_SUBMITTED;
+
+            frmBundleSelect box = new frmBundleSelect(state, sqlCon, txn, crd);
+            box.chkPhotoScan.Visible = false;
+            box.ShowDialog(this);
+
+            projKey = frmBundleSelect.projKey;
+            bundleKey = frmBundleSelect.bundleKey;
+
+            if (projKey != null && bundleKey != null)
+            {
+                //status check
+                if (_GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "3" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "2" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "4" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "5" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "6" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "7" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "8" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "9" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "30" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "31" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "37" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "40" || _GetBundleStatus(projKey, bundleKey).Rows[0][0].ToString() == "77")
+                {
+                    if (Convert.ToInt32(_GetFileCount(projKey, bundleKey).ToString()) > 0)
+                    {
+                        aeFQC frm = new aeFQC(sqlCon, crd);
+                        frm.ShowDialog(this);
+                    }
+                }
+
+            }
+        }
     }
 }
