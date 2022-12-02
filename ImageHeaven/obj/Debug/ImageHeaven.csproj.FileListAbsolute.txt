@@ -112,3 +112,5 @@ D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.csproj.CoreCompileInputs
 D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.csproj.CopyComplete
 D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.dll
 D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.pdb
+D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.aeLicQa.resources
+D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBundleSubmit.resources

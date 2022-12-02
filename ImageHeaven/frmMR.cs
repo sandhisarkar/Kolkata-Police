@@ -142,10 +142,10 @@ namespace ImageHeaven
             deTextBox2.Text = _GetBundleDetails().Rows[0][1].ToString();
             //divname,divcode
             deTextBox3.Text = _GetBundleDetails().Rows[0][6].ToString();
-            deTextBox6.Text = _GetBundleDetails().Rows[0][7].ToString();
+            deTextBox7.Text = _GetBundleDetails().Rows[0][7].ToString();
             //psname,ps,code
             deTextBox4.Text = _GetBundleDetails().Rows[0][4].ToString();
-            deTextBox7.Text = _GetBundleDetails().Rows[0][5].ToString();
+            deTextBox8.Text = _GetBundleDetails().Rows[0][5].ToString();
             //category
             deTextBox5.Text = _GetBundleDetails().Rows[0][3].ToString();
             string month_year = _GetBundleDetails().Rows[0][8].ToString();
