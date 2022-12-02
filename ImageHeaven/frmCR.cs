@@ -745,7 +745,7 @@ namespace ImageHeaven
                             CRDate = "";
                         }
 
-                        string filenumber = "CR" + CRDate + deTextBox12.Text;
+                        string filenumber = "CR" + CRcaseNumber + deTextBox12.Text;
                         filename = filenumber;
 
                         if (checkFileNotExists(projKey, bundleKey, filename) == true)

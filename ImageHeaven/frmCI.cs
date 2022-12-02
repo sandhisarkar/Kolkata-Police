@@ -745,7 +745,7 @@ namespace ImageHeaven
                             CIDate = "";
                         }
 
-                        string filenumber = "CI" + CIDate + deTextBox12.Text;
+                        string filenumber = "CI" + CIcaseNumber + deTextBox12.Text;
                         filename = filenumber;
 
                         if (checkFileNotExists(projKey, bundleKey, filename) == true)
