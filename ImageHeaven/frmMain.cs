@@ -148,8 +148,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = true;
-                        partIIToolStripMenuItem.Visible = true;
-                        partIToolStripMenuItem.Visible = true;
+                        
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;
@@ -207,8 +206,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = false;
-                        partIIToolStripMenuItem.Visible = false;
-                        partIToolStripMenuItem.Visible = false;
+                        
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;
@@ -265,8 +263,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = false;
-                        partIIToolStripMenuItem.Visible = false;
-                        partIToolStripMenuItem.Visible = false;
+                        
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;
@@ -323,8 +320,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = false;
-                        partIIToolStripMenuItem.Visible = false;
-                        partIToolStripMenuItem.Visible = false;
+                        
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;
@@ -381,8 +377,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = true;
-                        partIIToolStripMenuItem.Visible = false;
-                        partIToolStripMenuItem.Visible = true;
+                        
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;
@@ -439,8 +434,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = true;
-                        partIIToolStripMenuItem.Visible = true;
-                        partIToolStripMenuItem.Visible = false;
+                        
 
                         logoutToolStripMenuItem.Visible = true;
 
@@ -498,8 +492,7 @@ namespace ImageHeaven
                         aboutToolStripMenuItem.Visible = true;
 
                         auditToolStripMenuItem.Visible = false;
-                        partIIToolStripMenuItem.Visible = false;
-                        partIToolStripMenuItem.Visible = false;
+                        
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;

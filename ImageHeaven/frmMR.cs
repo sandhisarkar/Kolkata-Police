@@ -794,7 +794,7 @@ namespace ImageHeaven
                                 sqlTrans = null;
                                 MessageBox.Show(this, "Record Saved Successfully...", "B'Zer ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                                if (frmCR.state[0] == eSTATES.METADATA_ENTRY)
+                                if (frmMR.state[0] == eSTATES.METADATA_ENTRY)
                                 {
                                     frmMR_Load(sender, e);
                                 }
