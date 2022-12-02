@@ -757,8 +757,8 @@ namespace ImageHeaven
                         string divname = deTextBox3.Text.Trim();
                         string psname = deTextBox4.Text.Trim();
 
-                        string divcode = deTextBox6.Text.Trim();
-                        string pscode = deTextBox7.Text.Trim();
+                        string divcode = deTextBox7.Text.Trim();
+                        string pscode = deTextBox8.Text.Trim();
 
                         string category = deTextBox5.Text.Trim();
 
@@ -1104,8 +1104,8 @@ namespace ImageHeaven
                         string divname = deTextBox3.Text.Trim();
                         string psname = deTextBox4.Text.Trim();
 
-                        string divcode = deTextBox6.Text.Trim();
-                        string pscode = deTextBox7.Text.Trim();
+                        string divcode = deTextBox7.Text.Trim();
+                        string pscode = deTextBox8.Text.Trim();
 
                         string category = deTextBox5.Text.Trim();
 
@@ -1435,6 +1435,10 @@ namespace ImageHeaven
             { return; }
             else
             {
+                if (deTextBox11.Text.Length <= 2)
+                {
+                    deTextBox11.Text = deTextBox11.Text.PadLeft(2, '0');
+                }
                 if (_mode == Mode._Add)
                 {
                     string filenumber = "MR" + deTextBox9.Text.Trim() + deTextBox12.Text;
