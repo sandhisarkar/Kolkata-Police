@@ -291,9 +291,9 @@ namespace ImageHeaven
                     textBox50.Text = divC;
                     textBox60.Text = psC;
                     label76.Text = "CI Date";
-                    textBox63.Text = GDSerialDate;
+                    textBox63.Text = CIDate;
                     label65.Text = "CI Case No";
-                    textBox61.Text = FIRCaseno;
+                    textBox61.Text = CICaseno;
 
                     label8.Visible = false;
                     label9.Visible = false;
@@ -455,9 +455,9 @@ namespace ImageHeaven
                     textBox50.Text = divC;
                     textBox60.Text = psC;
                     label76.Text = "CI Date";
-                    textBox63.Text = GDSerialDate;
+                    textBox63.Text = CIDate;
                     label65.Text = "CI Case No";
-                    textBox61.Text = FIRCaseno;
+                    textBox61.Text = CICaseno;
 
                     label8.Visible = false;
                     label9.Visible = false;
