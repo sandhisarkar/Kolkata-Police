@@ -723,13 +723,13 @@ namespace ImageHeaven
                     if (prmState.Length == 0)
                     {
                         sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
-                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode + " order by rand() limit " + limit;
+                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no,status from metadata_entry where proj_code = '" + projCode + "' and bundle_key = " + batchCode + " order by rand() limit " + limit;
                     }
                     else
                     {
 
                         sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
-                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
+                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no,status from metadata_entry where proj_code = '" + projCode + "' and bundle_key = " + batchCode;
 
 
                         for (int j = 0; j < prmState.Length; j++)
@@ -738,10 +738,10 @@ namespace ImageHeaven
                             {
                                 if (j == 0)
                                 {
-                                    sqlStr = sqlStr + " and (a.status=" + (int)prmState[j];
+                                    sqlStr = sqlStr + " and (status=" + (int)prmState[j];
                                 }
                                 else
-                                    sqlStr = sqlStr + " or a.status=" + (int)prmState[j];
+                                    sqlStr = sqlStr + " or status=" + (int)prmState[j];
                             }
                         }
                         sqlStr = sqlStr + ") order by rand() limit " + limit + " ";
@@ -752,13 +752,13 @@ namespace ImageHeaven
                     if (prmState.Length == 0)
                     {
                         sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
-                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode + " order by a.item_no asc limit " + limit;
+                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no,status from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode + "' order by item_no asc limit " + limit;
                     }
                     else
                     {
 
                         sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
-                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
+                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no,status from metadata_entry where proj_code = '" + projCode + "' and bundle_key = " + batchCode;
 
 
                         for (int j = 0; j < prmState.Length; j++)
@@ -767,13 +767,13 @@ namespace ImageHeaven
                             {
                                 if (j == 0)
                                 {
-                                    sqlStr = sqlStr + " and (a.status=" + (int)prmState[j];
+                                    sqlStr = sqlStr + " and (status=" + (int)prmState[j];
                                 }
                                 else
-                                    sqlStr = sqlStr + " or a.status=" + (int)prmState[j];
+                                    sqlStr = sqlStr + " or status=" + (int)prmState[j];
                             }
                         }
-                        sqlStr = sqlStr + ") order by a.item_no asc limit " + limit + " ";
+                        sqlStr = sqlStr + ") order by item_no asc limit " + limit + " ";
                     }
                 }
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
@@ -804,13 +804,13 @@ namespace ImageHeaven
                     //    "a.index_no,a.promotion_date,a.id_no,a.branch_name from metadata_entry A where a.proj_code=" + projCode + " and a.batch_key=" + batchCode;
 
                     sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
-                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
+                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no,status from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode + "'";
                 }
                 else
                 {
 
                     sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
-                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
+                  "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no,status from metadata_entry where proj_code = '" + projCode + "' and bundle_key = " + batchCode;
 
 
                     for (int j = 0; j < prmState.Length; j++)
@@ -819,13 +819,13 @@ namespace ImageHeaven
                         {
                             if (j == 0)
                             {
-                                sqlStr = sqlStr + " and (a.status=" + (int)prmState[j];
+                                sqlStr = sqlStr + " and (status=" + (int)prmState[j];
                             }
                             else
-                                sqlStr = sqlStr + " or a.status=" + (int)prmState[j];
+                                sqlStr = sqlStr + " or status=" + (int)prmState[j];
                         }
                     }
-                    sqlStr = sqlStr + ") order by a.item_no asc";
+                    sqlStr = sqlStr + ") order by item_no asc";
                 }
 
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
@@ -1194,17 +1194,17 @@ namespace ImageHeaven
                                 }
                             }
                         }
-                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION) || (Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION))
+                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION) || (Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION))
                         {
                             grdPolicy.Rows[l].DefaultCellStyle.ForeColor = Color.Black;
                             grdPolicy.Rows[l].DefaultCellStyle.BackColor = Color.Red;
                         }
-                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_ON_HOLD))
+                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_ON_HOLD))
                         {
                             grdPolicy.Rows[l].DefaultCellStyle.ForeColor = Color.Black;
                             grdPolicy.Rows[l].DefaultCellStyle.BackColor = Color.Turquoise;
                         }
-                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_MISSING))
+                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_MISSING))
                         {
                             grdPolicy.Rows[l].DefaultCellStyle.ForeColor = Color.Black;
                             grdPolicy.Rows[l].DefaultCellStyle.BackColor = Color.Magenta;
@@ -1611,13 +1611,13 @@ namespace ImageHeaven
 
 
                 policyRowIndex = e.RowIndex;
-                if (Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[41].Value.ToString()) > 0)
+                if (Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[20].Value.ToString()) > 0)
                 {
 
-                    lblTotFiles.Text = Convert.ToString(Math.Round(Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[41].Value.ToString()), 2));
-                    lblAvgSize.Text = Convert.ToString(Math.Round(Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[42].Value.ToString()), 2)) + " KB";
-                    lblDock.Text = Convert.ToString(Math.Round(Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[43].Value.ToString()), 2)) + " KB";
-                    policyStatus = Convert.ToInt32(grdPolicy.Rows[e.RowIndex].Cells[44].Value.ToString());
+                    lblTotFiles.Text = Convert.ToString(Math.Round(Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[20].Value.ToString()), 2));
+                    lblAvgSize.Text = Convert.ToString(Math.Round(Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[21].Value.ToString()), 2)) + " KB";
+                    lblDock.Text = Convert.ToString(Math.Round(Convert.ToDouble(grdPolicy.Rows[e.RowIndex].Cells[22].Value.ToString()), 2)) + " KB";
+                    policyStatus = Convert.ToInt32(grdPolicy.Rows[e.RowIndex].Cells[23].Value.ToString());
 
                     if (policyStatus == (int)eSTATES.POLICY_EXPORTED || policyStatus == (int)9)
                     {

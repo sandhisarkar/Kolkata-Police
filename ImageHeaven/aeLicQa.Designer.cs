@@ -104,6 +104,23 @@ namespace ImageHeaven
             this.rdoOnHold = new System.Windows.Forms.RadioButton();
             this.cmdZoomIn = new System.Windows.Forms.Button();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.deLabel11 = new nControls.deLabel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.deLabel10 = new nControls.deLabel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.deLabel8 = new nControls.deLabel();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.deLabel9 = new nControls.deLabel();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.deLabel6 = new nControls.deLabel();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.deLabel7 = new nControls.deLabel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.deLabel4 = new nControls.deLabel();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.deLabel5 = new nControls.deLabel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.deLabel3 = new nControls.deLabel();
             this.deTextBox48 = new nControls.deTextBox();
             this.deLabel73 = new nControls.deLabel();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -156,23 +173,6 @@ namespace ImageHeaven
             this.label1 = new System.Windows.Forms.Label();
             this.tbImages = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.deLabel3 = new nControls.deLabel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.deLabel4 = new nControls.deLabel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.deLabel5 = new nControls.deLabel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.deLabel6 = new nControls.deLabel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.deLabel7 = new nControls.deLabel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.deLabel8 = new nControls.deLabel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.deLabel9 = new nControls.deLabel();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.deLabel10 = new nControls.deLabel();
-            this.deLabel11 = new nControls.deLabel();
             this.tabPage1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picControl)).BeginInit();
@@ -1112,6 +1112,160 @@ namespace ImageHeaven
             this.groupBox15.Text = "File Information :";
             this.groupBox15.Visible = false;
             // 
+            // deLabel11
+            // 
+            this.deLabel11.AutoSize = true;
+            this.deLabel11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel11.Location = new System.Drawing.Point(52, 35);
+            this.deLabel11.Name = "deLabel11";
+            this.deLabel11.Size = new System.Drawing.Size(59, 13);
+            this.deLabel11.TabIndex = 76;
+            this.deLabel11.Text = "Category :";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(161, 515);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.ReadOnly = true;
+            this.textBox9.Size = new System.Drawing.Size(114, 20);
+            this.textBox9.TabIndex = 75;
+            // 
+            // deLabel10
+            // 
+            this.deLabel10.AutoSize = true;
+            this.deLabel10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel10.Location = new System.Drawing.Point(79, 518);
+            this.deLabel10.Name = "deLabel10";
+            this.deLabel10.Size = new System.Drawing.Size(75, 13);
+            this.deLabel10.TabIndex = 74;
+            this.deLabel10.Text = "MR Case No :";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(159, 491);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.ReadOnly = true;
+            this.textBox7.Size = new System.Drawing.Size(116, 20);
+            this.textBox7.TabIndex = 73;
+            // 
+            // deLabel8
+            // 
+            this.deLabel8.AutoSize = true;
+            this.deLabel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel8.Location = new System.Drawing.Point(74, 494);
+            this.deLabel8.Name = "deLabel8";
+            this.deLabel8.Size = new System.Drawing.Size(79, 13);
+            this.deLabel8.TabIndex = 72;
+            this.deLabel8.Text = "MR Serial No :";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(158, 467);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.ReadOnly = true;
+            this.textBox8.Size = new System.Drawing.Size(117, 20);
+            this.textBox8.TabIndex = 71;
+            // 
+            // deLabel9
+            // 
+            this.deLabel9.AutoSize = true;
+            this.deLabel9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel9.Location = new System.Drawing.Point(95, 470);
+            this.deLabel9.Name = "deLabel9";
+            this.deLabel9.Size = new System.Drawing.Size(57, 13);
+            this.deLabel9.TabIndex = 70;
+            this.deLabel9.Text = "MR Date :";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(169, 431);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(105, 20);
+            this.textBox5.TabIndex = 69;
+            // 
+            // deLabel6
+            // 
+            this.deLabel6.AutoSize = true;
+            this.deLabel6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel6.Location = new System.Drawing.Point(113, 434);
+            this.deLabel6.Name = "deLabel6";
+            this.deLabel6.Size = new System.Drawing.Size(54, 13);
+            this.deLabel6.TabIndex = 68;
+            this.deLabel6.Text = "CR Date :";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(168, 408);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(106, 20);
+            this.textBox6.TabIndex = 67;
+            // 
+            // deLabel7
+            // 
+            this.deLabel7.AutoSize = true;
+            this.deLabel7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel7.Location = new System.Drawing.Point(94, 411);
+            this.deLabel7.Name = "deLabel7";
+            this.deLabel7.Size = new System.Drawing.Size(72, 13);
+            this.deLabel7.TabIndex = 66;
+            this.deLabel7.Text = "CR Case No :";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(164, 373);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(105, 20);
+            this.textBox3.TabIndex = 65;
+            // 
+            // deLabel4
+            // 
+            this.deLabel4.AutoSize = true;
+            this.deLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel4.Location = new System.Drawing.Point(108, 376);
+            this.deLabel4.Name = "deLabel4";
+            this.deLabel4.Size = new System.Drawing.Size(50, 13);
+            this.deLabel4.TabIndex = 64;
+            this.deLabel4.Text = "CI Date :";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(163, 350);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(106, 20);
+            this.textBox4.TabIndex = 63;
+            // 
+            // deLabel5
+            // 
+            this.deLabel5.AutoSize = true;
+            this.deLabel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel5.Location = new System.Drawing.Point(89, 353);
+            this.deLabel5.Name = "deLabel5";
+            this.deLabel5.Size = new System.Drawing.Size(68, 13);
+            this.deLabel5.TabIndex = 62;
+            this.deLabel5.Text = "CI Case No :";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(163, 313);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(123, 20);
+            this.textBox2.TabIndex = 61;
+            // 
+            // deLabel3
+            // 
+            this.deLabel3.AutoSize = true;
+            this.deLabel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.deLabel3.Location = new System.Drawing.Point(88, 316);
+            this.deLabel3.Name = "deLabel3";
+            this.deLabel3.Size = new System.Drawing.Size(74, 13);
+            this.deLabel3.TabIndex = 60;
+            this.deLabel3.Text = "FIR Case No :";
+            // 
             // deTextBox48
             // 
             this.deTextBox48.BackColor = System.Drawing.Color.White;
@@ -1476,9 +1630,9 @@ namespace ImageHeaven
             this.deLabel69.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deLabel69.Location = new System.Drawing.Point(17, 125);
             this.deLabel69.Name = "deLabel69";
-            this.deLabel69.Size = new System.Drawing.Size(204, 15);
+            this.deLabel69.Size = new System.Drawing.Size(91, 15);
             this.deLabel69.TabIndex = 7;
-            this.deLabel69.Text = "No action taken by Audit-I or Audit-II";
+            this.deLabel69.Text = "No action taken";
             // 
             // deLabel68
             // 
@@ -1486,9 +1640,9 @@ namespace ImageHeaven
             this.deLabel68.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deLabel68.Location = new System.Drawing.Point(18, 90);
             this.deLabel68.Name = "deLabel68";
-            this.deLabel68.Size = new System.Drawing.Size(183, 15);
+            this.deLabel68.Size = new System.Drawing.Size(70, 15);
             this.deLabel68.TabIndex = 6;
-            this.deLabel68.Text = "File rejected by Audit-I or Audit-II";
+            this.deLabel68.Text = "File rejected";
             // 
             // deLabel67
             // 
@@ -1496,9 +1650,9 @@ namespace ImageHeaven
             this.deLabel67.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deLabel67.Location = new System.Drawing.Point(18, 54);
             this.deLabel67.Name = "deLabel67";
-            this.deLabel67.Size = new System.Drawing.Size(198, 15);
+            this.deLabel67.Size = new System.Drawing.Size(76, 15);
             this.deLabel67.TabIndex = 5;
-            this.deLabel67.Text = "File accepted by Audit-I and Audit-II";
+            this.deLabel67.Text = "File accepted";
             // 
             // deLabel66
             // 
@@ -1506,9 +1660,9 @@ namespace ImageHeaven
             this.deLabel66.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.deLabel66.Location = new System.Drawing.Point(18, 20);
             this.deLabel66.Name = "deLabel66";
-            this.deLabel66.Size = new System.Drawing.Size(210, 15);
+            this.deLabel66.Size = new System.Drawing.Size(97, 15);
             this.deLabel66.TabIndex = 4;
-            this.deLabel66.Text = "File not accepted by Audit-I or Audit-II";
+            this.deLabel66.Text = "File not accepted";
             // 
             // panel7
             // 
@@ -1705,160 +1859,6 @@ namespace ImageHeaven
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(246, 35);
             this.panel2.TabIndex = 32;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(163, 313);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(123, 20);
-            this.textBox2.TabIndex = 61;
-            // 
-            // deLabel3
-            // 
-            this.deLabel3.AutoSize = true;
-            this.deLabel3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel3.Location = new System.Drawing.Point(88, 316);
-            this.deLabel3.Name = "deLabel3";
-            this.deLabel3.Size = new System.Drawing.Size(74, 13);
-            this.deLabel3.TabIndex = 60;
-            this.deLabel3.Text = "FIR Case No :";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(164, 373);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(105, 20);
-            this.textBox3.TabIndex = 65;
-            // 
-            // deLabel4
-            // 
-            this.deLabel4.AutoSize = true;
-            this.deLabel4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel4.Location = new System.Drawing.Point(108, 376);
-            this.deLabel4.Name = "deLabel4";
-            this.deLabel4.Size = new System.Drawing.Size(50, 13);
-            this.deLabel4.TabIndex = 64;
-            this.deLabel4.Text = "CI Date :";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(163, 350);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(106, 20);
-            this.textBox4.TabIndex = 63;
-            // 
-            // deLabel5
-            // 
-            this.deLabel5.AutoSize = true;
-            this.deLabel5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel5.Location = new System.Drawing.Point(89, 353);
-            this.deLabel5.Name = "deLabel5";
-            this.deLabel5.Size = new System.Drawing.Size(68, 13);
-            this.deLabel5.TabIndex = 62;
-            this.deLabel5.Text = "CI Case No :";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(169, 431);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(105, 20);
-            this.textBox5.TabIndex = 69;
-            // 
-            // deLabel6
-            // 
-            this.deLabel6.AutoSize = true;
-            this.deLabel6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel6.Location = new System.Drawing.Point(113, 434);
-            this.deLabel6.Name = "deLabel6";
-            this.deLabel6.Size = new System.Drawing.Size(54, 13);
-            this.deLabel6.TabIndex = 68;
-            this.deLabel6.Text = "CR Date :";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(168, 408);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(106, 20);
-            this.textBox6.TabIndex = 67;
-            // 
-            // deLabel7
-            // 
-            this.deLabel7.AutoSize = true;
-            this.deLabel7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel7.Location = new System.Drawing.Point(94, 411);
-            this.deLabel7.Name = "deLabel7";
-            this.deLabel7.Size = new System.Drawing.Size(72, 13);
-            this.deLabel7.TabIndex = 66;
-            this.deLabel7.Text = "CR Case No :";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(159, 491);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(116, 20);
-            this.textBox7.TabIndex = 73;
-            // 
-            // deLabel8
-            // 
-            this.deLabel8.AutoSize = true;
-            this.deLabel8.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel8.Location = new System.Drawing.Point(74, 494);
-            this.deLabel8.Name = "deLabel8";
-            this.deLabel8.Size = new System.Drawing.Size(79, 13);
-            this.deLabel8.TabIndex = 72;
-            this.deLabel8.Text = "MR Serial No :";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(158, 467);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(117, 20);
-            this.textBox8.TabIndex = 71;
-            // 
-            // deLabel9
-            // 
-            this.deLabel9.AutoSize = true;
-            this.deLabel9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel9.Location = new System.Drawing.Point(95, 470);
-            this.deLabel9.Name = "deLabel9";
-            this.deLabel9.Size = new System.Drawing.Size(57, 13);
-            this.deLabel9.TabIndex = 70;
-            this.deLabel9.Text = "MR Date :";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(161, 515);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(114, 20);
-            this.textBox9.TabIndex = 75;
-            // 
-            // deLabel10
-            // 
-            this.deLabel10.AutoSize = true;
-            this.deLabel10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel10.Location = new System.Drawing.Point(79, 518);
-            this.deLabel10.Name = "deLabel10";
-            this.deLabel10.Size = new System.Drawing.Size(75, 13);
-            this.deLabel10.TabIndex = 74;
-            this.deLabel10.Text = "MR Case No :";
-            // 
-            // deLabel11
-            // 
-            this.deLabel11.AutoSize = true;
-            this.deLabel11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel11.Location = new System.Drawing.Point(52, 35);
-            this.deLabel11.Name = "deLabel11";
-            this.deLabel11.Size = new System.Drawing.Size(59, 13);
-            this.deLabel11.TabIndex = 76;
-            this.deLabel11.Text = "Category :";
             // 
             // aeLicQa
             // 

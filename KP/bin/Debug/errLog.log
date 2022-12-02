@@ -105,3 +105,33 @@ Failure sending mail.
 System
 select distinct A.proj_key,A.batch_key,A.box_number,A.policy_number,A.page_name,A.doc_type from image_master A,metadata_entry B where A.proj_key=B.proj_code and A.batch_key=B.batch_key and A.policy_number=B.filename and A.proj_key=1 and A.batch_key=1 and A.box_number='1' and A.policy_number='GD02112022' and A.status= 29 and (B.status=4 or B.status = '30' or B.status = '31' or B.status = '7' or B.status = '8' or B.status = '9' or B.status = '40' or B.status = '41' or B.status=5 or B.status=6)
 --------End--------
+12/2/2022 10:33:12 PM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------
+12/2/2022 11:48:11 PM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------
+12/3/2022 12:08:24 AM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------
+12/3/2022 1:00:10 AM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------
+12/3/2022 1:00:41 AM
+Failure sending mail.
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at NovaNet.Utils.exLog.emailLogger.Log(Exception ex) in D:\Sandhi Software\KP\NovaNet\Utils\emailLogger.cs:line 83
+System
+--------End--------

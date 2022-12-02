@@ -56,3 +56,10 @@ D:\Sandhi Software\KP\KP\obj\Debug\KP.csproj.CoreCompileInputs.cache
 D:\Sandhi Software\KP\KP\obj\Debug\KP.csproj.CopyComplete
 D:\Sandhi Software\KP\KP\obj\Debug\KP.exe
 D:\Sandhi Software\KP\KP\obj\Debug\KP.pdb
+D:\Sandhi Software\KP\KP\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\Sandhi Software\KP\KP\bin\Debug\Syncfusion.OCRProcessor.Base.dll
+D:\Sandhi Software\KP\KP\bin\Debug\Syncfusion.Compression.Base.dll
+D:\Sandhi Software\KP\KP\bin\Debug\Microsoft.mshtml.dll
+D:\Sandhi Software\KP\KP\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\Sandhi Software\KP\KP\bin\Debug\Syncfusion.OCRProcessor.Base.xml
+D:\Sandhi Software\KP\KP\bin\Debug\Syncfusion.Compression.Base.xml
