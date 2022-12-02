@@ -889,7 +889,8 @@ namespace ImageHeaven
 
         private void auditToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            aeLicQa frm = new aeLicQa(sqlCon, crd, "1");
+            frm.ShowDialog(this);
         }
     }
 }
