@@ -389,7 +389,7 @@ namespace ImageHeaven
                                 txtCreateDate.Text = isDate;
                                 if (DateTime.TryParse(isDate, out temp) && DateTime.TryParse(nextDate, out temp) && DateTime.Parse(isDate) <= DateTime.Parse(currDate))
                                 {
-                                    checking = isDate.Substring(3, 4) + "_" + getBundleCount(deComboBox2.Text, psCode, deComboBox1.Text, divCode, deComboBox3.Text);
+                                    checking = isDate.Substring(3, 4) + "_" + getBundleCount(deComboBox2.Text, psCode, deComboBox1.Text, divCode, deComboBox3.Text, isDate);
                                     bundleCount = category + "_" + divCode + "_" + psCode;
                                     bundleCount = bundleCount + "_" + checking;
 
@@ -434,13 +434,13 @@ namespace ImageHeaven
 
             }
         }
-        private string getBundleCount(string pN, string pC, string dC, string dN, string cat)
+        private string getBundleCount(string pN, string pC, string dC, string dN, string cat, string monthYear)
         {
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
             string sql = "select Count(*) from bundle_master where ps_name = '" + pN + "' and ps_code = '" + pC + "' and div_name = '" + dN + "' " +
-                "and div_code = '" + dC + "' and category = '" + cat + "'";
+                "and div_code = '" + dC + "' and category = '" + cat + "' and substring(month_year,4,4) = '" + monthYear.Substring(3, 4) + "'";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sql, sqlCon);
             odap.Fill(dt);
