@@ -36,8 +36,6 @@ namespace ImageHeaven
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.auditToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.partIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.partIIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imageQualityControlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dashboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -96,6 +94,7 @@ namespace ImageHeaven
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(237, 22);
             this.toolStripMenuItem1.Text = "Batch Submission";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // toolStripSeparator2
             // 
@@ -111,24 +110,10 @@ namespace ImageHeaven
             // 
             // auditToolStripMenuItem
             // 
-            this.auditToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.partIToolStripMenuItem,
-            this.partIIToolStripMenuItem});
             this.auditToolStripMenuItem.Name = "auditToolStripMenuItem";
             this.auditToolStripMenuItem.Size = new System.Drawing.Size(48, 22);
             this.auditToolStripMenuItem.Text = "Audit";
-            // 
-            // partIToolStripMenuItem
-            // 
-            this.partIToolStripMenuItem.Name = "partIToolStripMenuItem";
-            this.partIToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.partIToolStripMenuItem.Text = "Phase - I";
-            // 
-            // partIIToolStripMenuItem
-            // 
-            this.partIIToolStripMenuItem.Name = "partIIToolStripMenuItem";
-            this.partIIToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
-            this.partIIToolStripMenuItem.Text = "Phase - II";
+            this.auditToolStripMenuItem.Click += new System.EventHandler(this.auditToolStripMenuItem_Click);
             // 
             // imageQualityControlToolStripMenuItem
             // 
@@ -235,14 +220,14 @@ namespace ImageHeaven
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip1.Size = new System.Drawing.Size(626, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(626, 25);
             this.toolStrip1.TabIndex = 12;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 31);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
             // toolStripButton1
             // 
@@ -258,7 +243,7 @@ namespace ImageHeaven
             // toolStripLabel1
             // 
             this.toolStripLabel1.Name = "toolStripLabel1";
-            this.toolStripLabel1.Size = new System.Drawing.Size(0, 28);
+            this.toolStripLabel1.Size = new System.Drawing.Size(0, 22);
             // 
             // toolStripButton3
             // 
@@ -458,8 +443,6 @@ namespace ImageHeaven
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem auditToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem partIToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem partIIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem imageQualityControlToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dashboardToolStripMenuItem;

@@ -887,5 +887,16 @@ namespace ImageHeaven
 
             }
         }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmBundleSubmit frm = new frmBundleSubmit(sqlCon, crd);
+            frm.ShowDialog(this);
+        }
+
+        private void auditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

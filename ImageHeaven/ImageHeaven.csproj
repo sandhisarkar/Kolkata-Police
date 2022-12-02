@@ -147,6 +147,12 @@
     <Compile Include="frmBundleSelect.Designer.cs">
       <DependentUpon>frmBundleSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBundleSubmit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBundleSubmit.Designer.cs">
+      <DependentUpon>frmBundleSubmit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBundleUpload.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -281,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBundleSelect.resx">
       <DependentUpon>frmBundleSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBundleSubmit.resx">
+      <DependentUpon>frmBundleSubmit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBundleUpload.resx">
       <DependentUpon>frmBundleUpload.cs</DependentUpon>
