@@ -562,7 +562,7 @@ namespace LItems
 
             try
             {
-                sqlStr = @"select filename from metadata_entry where proj_code=" + prmProjKey + " and batch_key=" + prmBatchKey + " and status="+ (int) eSTATES.POLICY_EXCEPTION;
+                sqlStr = @"select filename from metadata_entry where proj_code=" + prmProjKey + " and bundle_key=" + prmBatchKey + " and status="+ (int) eSTATES.POLICY_EXCEPTION;
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
                 sqlAdap.Fill(projDs);
             }

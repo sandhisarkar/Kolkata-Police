@@ -126,6 +126,12 @@
     <Compile Include="aeImageQc.Designer.cs">
       <DependentUpon>aeImageQc.cs</DependentUpon>
     </Compile>
+    <Compile Include="aeLicQa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aeLicQa.Designer.cs">
+      <DependentUpon>aeLicQa.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataLayerDefs.cs" />
     <Compile Include="DockHelper.cs" />
     <Compile Include="Extender.cs" />
@@ -278,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="aeImageQc.resx">
       <DependentUpon>aeImageQc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aeLicQa.resx">
+      <DependentUpon>aeLicQa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Files.resx">
       <DependentUpon>Files.cs</DependentUpon>

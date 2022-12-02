@@ -3013,8 +3013,38 @@ public bool UpdateStatus(int pStatus,Credentials prmCrd)
 			}
 			return commitBol;
 		}
-		
-		public bool SaveInventoryInException(NovaNet.Utils.Credentials prmCrd,int prmInvtInExcpType)
+        public bool InitiateQaPolicyException(NovaNet.Utils.Credentials prmCrd, string policy)
+        {
+            string sqlStr = null;
+            OdbcTransaction sqlTrans = null;
+            bool commitBol = true;
+            OdbcCommand sqlCmd = new OdbcCommand();
+            try
+            {
+                sqlTrans = sqlCon.BeginTransaction();
+                sqlCmd.Connection = sqlCon;
+                sqlCmd.Transaction = sqlTrans;
+
+                sqlStr = @"insert into lic_qa_log (proj_key,box_number,policy_number,batch_key,created_by,created_dttm) values(" + ctrlPolicy.ProjectKey + ",'" + ctrlPolicy.BoxNumber + "','" + policy + "'," + ctrlPolicy.BatchKey + ",'" + prmCrd.created_by + "','" + prmCrd.created_dttm + "')";
+                sqlCmd.CommandText = sqlStr;
+                sqlCmd.ExecuteNonQuery();
+
+                sqlTrans.Commit();
+                commitBol = true;
+            }
+            catch (Exception ex)
+            {
+                commitBol = false;
+                sqlTrans.Rollback();
+                sqlCmd.Dispose();
+                stateLog = new MemoryStream();
+                tmpWrite = new System.Text.ASCIIEncoding().GetBytes(sqlStr + "\n");
+                stateLog.Write(tmpWrite, 0, tmpWrite.Length);
+                exMailLog.Log(ex, this);
+            }
+            return commitBol;
+        }
+        public bool SaveInventoryInException(NovaNet.Utils.Credentials prmCrd,int prmInvtInExcpType)
 		{
 			string sqlStr=null;
 			OdbcTransaction sqlTrans=null;
