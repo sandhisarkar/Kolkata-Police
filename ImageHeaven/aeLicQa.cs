@@ -859,45 +859,25 @@ namespace ImageHeaven
             dt.Columns.Add("SrlNo");
 
             dt.Columns.Add("FileName");
-            dt.Columns.Add("Department");
             dt.Columns.Add("Category");
-            dt.Columns.Add("State_Name");
-            dt.Columns.Add("Emp_Name");
-            dt.Columns.Add("Designation");
-            dt.Columns.Add("FileID");
-            dt.Columns.Add("BirthDate");
-            dt.Columns.Add("JoiningDate");
-            dt.Columns.Add("DeathDate");
-            dt.Columns.Add("RetirementDate");
-            dt.Columns.Add("PSAName");
-            dt.Columns.Add("Section");
-            dt.Columns.Add("PensionFileNo");
-            dt.Columns.Add("PPO/FPPO No");
-            dt.Columns.Add("GPO/DGPO No");
-            dt.Columns.Add("PPO/GPO/CPO/Item No");
-            dt.Columns.Add("Mobile");
-            dt.Columns.Add("HRMS");
-            dt.Columns.Add("Spouse");
-            dt.Columns.Add("PaymentPlace");
-            dt.Columns.Add("RuleFileNo");
-            dt.Columns.Add("Volume");
-            dt.Columns.Add("Subject");
-            dt.Columns.Add("Series");
-            dt.Columns.Add("Account");
-            dt.Columns.Add("Subscriber");
-            dt.Columns.Add("LedgerYear");
-            dt.Columns.Add("AcceptanceDate");
-            dt.Columns.Add("FPAuthNo");
-            dt.Columns.Add("FPDate");
-            dt.Columns.Add("FamilyPensioner");
-            dt.Columns.Add("GENo");
-            dt.Columns.Add("PenNo");
-            dt.Columns.Add("PromotedDepartment");
-            dt.Columns.Add("SubDocType");
-            dt.Columns.Add("IndexNo");
-            dt.Columns.Add("PromotionDate");
-            dt.Columns.Add("IDNo");
-            dt.Columns.Add("BranchName");
+            dt.Columns.Add("Division_Name");
+            dt.Columns.Add("Division_Code");
+            dt.Columns.Add("PS_Name");
+            dt.Columns.Add("PS_Code");
+            dt.Columns.Add("GD_Start_Date");
+            dt.Columns.Add("GD_End_Date");
+            dt.Columns.Add("GD_Start_Serial");
+            dt.Columns.Add("GD_End_Serial");
+            dt.Columns.Add("GD_Serial_Date");
+            dt.Columns.Add("FIR_Case_No");
+            dt.Columns.Add("CI_Case_No");
+            dt.Columns.Add("CI_Date");
+            dt.Columns.Add("CR_Case_No");
+            dt.Columns.Add("CR_Date");
+            dt.Columns.Add("MR_Date");
+            dt.Columns.Add("MR_Serial_no");
+            dt.Columns.Add("MR_Case_no");
+            
 
             dt.Columns.Add("ScannedPages");
             dt.Columns.Add("TotalSize");
@@ -996,26 +976,24 @@ namespace ImageHeaven
 
 
                                     dr["FileName"] = dsPolicy.Tables[0].Rows[i]["filename"].ToString();
-                                    dr["Department"] = dsPolicy.Tables[0].Rows[i]["department"].ToString();
-                                    dr["Category"] = dsPolicy.Tables[0].Rows[i]["subcat"].ToString();
-                                    dr["State_Name"] = dsPolicy.Tables[0].Rows[i]["state_name"].ToString();
-                                    dr["Emp_Name"] = dsPolicy.Tables[0].Rows[i]["emp_name"].ToString();
-                                    dr["Designation"] = dsPolicy.Tables[0].Rows[i][5].ToString();
-                                    dr["FileID"] = dsPolicy.Tables[0].Rows[i][6].ToString();
-                                    dr["BirthDate"] = dsPolicy.Tables[0].Rows[i][7].ToString();
-                                    dr["JoiningDate"] = dsPolicy.Tables[0].Rows[i][8].ToString();
-                                    dr["DeathDate"] = dsPolicy.Tables[0].Rows[i][9].ToString();
-                                    dr["RetirementDate"] = dsPolicy.Tables[0].Rows[i][10].ToString();
-                                    dr["PSAName"] = dsPolicy.Tables[0].Rows[i][11].ToString();
-                                    dr["Section"] = dsPolicy.Tables[0].Rows[i][12].ToString();
-                                    dr["PensionFileNo"] = dsPolicy.Tables[0].Rows[i][13].ToString();
-                                    dr["PPO/FPPO No"] = dsPolicy.Tables[0].Rows[i][14].ToString();
-                                    dr["GPO/DGPO No"] = dsPolicy.Tables[0].Rows[i][15].ToString();
-                                    dr["PPO/GPO/CPO/Item No"] = dsPolicy.Tables[0].Rows[i][16].ToString();
-                                    dr["Mobile"] = dsPolicy.Tables[0].Rows[i][17].ToString();
-                                    dr["HRMS"] = dsPolicy.Tables[0].Rows[i][18].ToString();
-                                    dr["Spouse"] = dsPolicy.Tables[0].Rows[i][19].ToString();
-                                    dr["PaymentPlace"] = dsPolicy.Tables[0].Rows[i][20].ToString();
+                                    dr["Category"] = category;
+                                    dr["Division_Name"] = dsPolicy.Tables[0].Rows[i][4].ToString();
+                                    dr["Division_Code"] = dsPolicy.Tables[0].Rows[i][5].ToString();
+                                    dr["PS_Name"] = dsPolicy.Tables[0].Rows[i][6].ToString();
+                                    dr["PS_Code"] = dsPolicy.Tables[0].Rows[i][7].ToString();
+                                    dr["GD_Start_Date"] = dsPolicy.Tables[0].Rows[i][8].ToString();
+                                    dr["GD_End_Date"] = dsPolicy.Tables[0].Rows[i][9].ToString();
+                                    dr["GD_Start_Serial"] = dsPolicy.Tables[0].Rows[i][10].ToString();
+                                    dr["GD_End_Serial"] = dsPolicy.Tables[0].Rows[i][11].ToString();
+                                    dr["GD_Serial_Date"] = dsPolicy.Tables[0].Rows[i][12].ToString();
+                                    dr["FIR_Case_No"] = dsPolicy.Tables[0].Rows[i][13].ToString();
+                                    dr["CI_Case_No"] = dsPolicy.Tables[0].Rows[i][14].ToString();
+                                    dr["CI_Date"] = dsPolicy.Tables[0].Rows[i][15].ToString();
+                                    dr["CR_Case_No"] = dsPolicy.Tables[0].Rows[i][16].ToString();
+                                    dr["CR_Date"] = dsPolicy.Tables[0].Rows[i][17].ToString();
+                                    dr["MR_Date"] = dsPolicy.Tables[0].Rows[i][18].ToString();
+                                    dr["MR_Serial_no"] = dsPolicy.Tables[0].Rows[i][19].ToString();
+                                    dr["MR_Case_no"] = dsPolicy.Tables[0].Rows[i][20].ToString();
 
 
 
@@ -1098,26 +1076,24 @@ namespace ImageHeaven
                         dr["SrlNo"] = i + 1;
 
                         dr["FileName"] = dsPolicy.Tables[0].Rows[i]["filename"].ToString();
-                        dr["Department"] = dsPolicy.Tables[0].Rows[i]["department"].ToString();
-                        dr["Category"] = dsPolicy.Tables[0].Rows[i]["subcat"].ToString();
-                        dr["State_Name"] = dsPolicy.Tables[0].Rows[i]["state_name"].ToString();
-                        dr["Emp_Name"] = dsPolicy.Tables[0].Rows[i]["emp_name"].ToString();
-                        dr["Designation"] = dsPolicy.Tables[0].Rows[i][5].ToString();
-                        dr["FileID"] = dsPolicy.Tables[0].Rows[i][6].ToString();
-                        dr["BirthDate"] = dsPolicy.Tables[0].Rows[i][7].ToString();
-                        dr["JoiningDate"] = dsPolicy.Tables[0].Rows[i][8].ToString();
-                        dr["DeathDate"] = dsPolicy.Tables[0].Rows[i][9].ToString();
-                        dr["RetirementDate"] = dsPolicy.Tables[0].Rows[i][10].ToString();
-                        dr["PSAName"] = dsPolicy.Tables[0].Rows[i][11].ToString();
-                        dr["Section"] = dsPolicy.Tables[0].Rows[i][12].ToString();
-                        dr["PensionFileNo"] = dsPolicy.Tables[0].Rows[i][13].ToString();
-                        dr["PPO/FPPO No"] = dsPolicy.Tables[0].Rows[i][14].ToString();
-                        dr["GPO/DGPO No"] = dsPolicy.Tables[0].Rows[i][15].ToString();
-                        dr["PPO/GPO/CPO/Item No"] = dsPolicy.Tables[0].Rows[i][16].ToString();
-                        dr["Mobile"] = dsPolicy.Tables[0].Rows[i][17].ToString();
-                        dr["HRMS"] = dsPolicy.Tables[0].Rows[i][18].ToString();
-                        dr["Spouse"] = dsPolicy.Tables[0].Rows[i][19].ToString();
-                        dr["PaymentPlace"] = dsPolicy.Tables[0].Rows[i][20].ToString();
+                        dr["Category"] = category;
+                        dr["Division_Name"] = dsPolicy.Tables[0].Rows[i][4].ToString();
+                        dr["Division_Code"] = dsPolicy.Tables[0].Rows[i][5].ToString();
+                        dr["PS_Name"] = dsPolicy.Tables[0].Rows[i][6].ToString();
+                        dr["PS_Code"] = dsPolicy.Tables[0].Rows[i][7].ToString();
+                        dr["GD_Start_Date"] = dsPolicy.Tables[0].Rows[i][8].ToString();
+                        dr["GD_End_Date"] = dsPolicy.Tables[0].Rows[i][9].ToString();
+                        dr["GD_Start_Serial"] = dsPolicy.Tables[0].Rows[i][10].ToString();
+                        dr["GD_End_Serial"] = dsPolicy.Tables[0].Rows[i][11].ToString();
+                        dr["GD_Serial_Date"] = dsPolicy.Tables[0].Rows[i][12].ToString();
+                        dr["FIR_Case_No"] = dsPolicy.Tables[0].Rows[i][13].ToString();
+                        dr["CI_Case_No"] = dsPolicy.Tables[0].Rows[i][14].ToString();
+                        dr["CI_Date"] = dsPolicy.Tables[0].Rows[i][15].ToString();
+                        dr["CR_Case_No"] = dsPolicy.Tables[0].Rows[i][16].ToString();
+                        dr["CR_Date"] = dsPolicy.Tables[0].Rows[i][17].ToString();
+                        dr["MR_Date"] = dsPolicy.Tables[0].Rows[i][18].ToString();
+                        dr["MR_Serial_no"] = dsPolicy.Tables[0].Rows[i][19].ToString();
+                        dr["MR_Case_no"] = dsPolicy.Tables[0].Rows[i][20].ToString();
 
 
                         if ((Convert.ToInt32(dsPolicy.Tables[0].Rows[i]["status"].ToString()) != (int)eSTATES.POLICY_MISSING))
@@ -1201,13 +1177,12 @@ namespace ImageHeaven
                 {
                     for (int l = 0; l < grdPolicy.Rows.Count; l++)
                     {
-                        if (Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_CHECKED)
+                        if (Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_CHECKED)
                         {
                             if (licQAUsers(grdPolicy.Rows[l].Cells[1].Value.ToString()).Rows.Count > 0)
                             {
                                 string a1 = licQAUsers(grdPolicy.Rows[l].Cells[1].Value.ToString()).Rows[0][0].ToString();
-                                string a2 = licQAUsers(grdPolicy.Rows[l].Cells[1].Value.ToString()).Rows[0][1].ToString();
-                                if (a1 != "" && a2 != "")
+                                if (a1 != "")
                                 {
                                     grdPolicy.Rows[l].DefaultCellStyle.ForeColor = Color.Black;
                                     grdPolicy.Rows[l].DefaultCellStyle.BackColor = Color.Green;
@@ -1219,7 +1194,7 @@ namespace ImageHeaven
                                 }
                             }
                         }
-                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION) || (Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION))
+                        if ((Convert.ToInt32(grdPolicy.Rows[l].Cells[23].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION) || (Convert.ToInt32(grdPolicy.Rows[l].Cells[44].Value.ToString()) == (int)eSTATES.POLICY_EXCEPTION))
                         {
                             grdPolicy.Rows[l].DefaultCellStyle.ForeColor = Color.Black;
                             grdPolicy.Rows[l].DefaultCellStyle.BackColor = Color.Red;
@@ -1239,7 +1214,7 @@ namespace ImageHeaven
                 }
                 if (dt.Rows.Count > 0)
                 {
-                    grdPolicy.Columns[44].Visible = false;
+                    grdPolicy.Columns[23].Visible = false;
                     //grdPolicy.Columns[0].Width = 40;
                     //grdPolicy.Columns[1].Width = 70;
                     //grdPolicy.Columns[2].Width = 120;
@@ -1614,15 +1589,25 @@ namespace ImageHeaven
                 groupBox15.Visible = true;
 
                 deLabel94.Text = "File Name : " + grdPolicy.Rows[e.RowIndex].Cells[1].Value.ToString();
-                deTextBox61.Text = grdPolicy.Rows[e.RowIndex].Cells[4].Value.ToString();
-                deTextBox60.Text = grdPolicy.Rows[e.RowIndex].Cells[5].Value.ToString();
-                deTextBox55.Text = grdPolicy.Rows[e.RowIndex].Cells[6].Value.ToString();
-                deTextBox49.Text = grdPolicy.Rows[e.RowIndex].Cells[39].Value.ToString();
-                deTextBox48.Text = grdPolicy.Rows[e.RowIndex].Cells[40].Value.ToString();
-                deTextBox59.Text = grdPolicy.Rows[e.RowIndex].Cells[36].Value.ToString();
-                textBox18.Text = grdPolicy.Rows[e.RowIndex].Cells[8].Value.ToString();
-                textBox20.Text = grdPolicy.Rows[e.RowIndex].Cells[9].Value.ToString();
+                deLabel11.Text = "Category : " + category;
+                deTextBox61.Text = grdPolicy.Rows[e.RowIndex].Cells[3].Value.ToString();
+                deTextBox60.Text = grdPolicy.Rows[e.RowIndex].Cells[4].Value.ToString();
+                deTextBox55.Text = grdPolicy.Rows[e.RowIndex].Cells[5].Value.ToString();
+                deTextBox49.Text = grdPolicy.Rows[e.RowIndex].Cells[6].Value.ToString();
+                deTextBox48.Text = grdPolicy.Rows[e.RowIndex].Cells[7].Value.ToString();
+                deTextBox59.Text = grdPolicy.Rows[e.RowIndex].Cells[8].Value.ToString();
+                textBox18.Text = grdPolicy.Rows[e.RowIndex].Cells[9].Value.ToString();
+                textBox20.Text = grdPolicy.Rows[e.RowIndex].Cells[10].Value.ToString();
                 textBox19.Text = grdPolicy.Rows[e.RowIndex].Cells[11].Value.ToString();
+                textBox2.Text = grdPolicy.Rows[e.RowIndex].Cells[12].Value.ToString();
+                textBox4.Text = grdPolicy.Rows[e.RowIndex].Cells[13].Value.ToString();
+                textBox3.Text = grdPolicy.Rows[e.RowIndex].Cells[14].Value.ToString();
+                textBox6.Text = grdPolicy.Rows[e.RowIndex].Cells[15].Value.ToString();
+                textBox5.Text = grdPolicy.Rows[e.RowIndex].Cells[16].Value.ToString();
+                textBox8.Text = grdPolicy.Rows[e.RowIndex].Cells[17].Value.ToString();
+                textBox7.Text = grdPolicy.Rows[e.RowIndex].Cells[18].Value.ToString();
+                textBox9.Text = grdPolicy.Rows[e.RowIndex].Cells[19].Value.ToString();
+
 
 
                 policyRowIndex = e.RowIndex;
