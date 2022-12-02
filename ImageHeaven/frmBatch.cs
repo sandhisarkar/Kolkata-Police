@@ -439,8 +439,8 @@ namespace ImageHeaven
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            string sql = "select Count(*) from bundle_master where ps_name = '" + pN + "' and ps_code = '" + pC + "' and div_name = '" + dN + "' " +
-                "and div_code = '" + dC + "' and category = '" + cat + "' and substring(month_year,4,4) = '" + monthYear.Substring(3, 4) + "'";
+            string sql = "select Count(*) from bundle_master where ps_name = '" + pN + "' and ps_code = '" + pC + "' and div_name = '" + dC + "' " +
+                "and div_code = '" + dN + "' and category = '" + cat + "' and substring(month_year,4,4) = '" + monthYear.Substring(3, 4) + "'";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sql, sqlCon);
             odap.Fill(dt);
