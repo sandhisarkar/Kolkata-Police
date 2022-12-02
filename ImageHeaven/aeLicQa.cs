@@ -722,13 +722,13 @@ namespace ImageHeaven
                 {
                     if (prmState.Length == 0)
                     {
-                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                   "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode + " order by rand() limit " + limit;
                     }
                     else
                     {
 
-                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                   "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
 
 
@@ -751,13 +751,13 @@ namespace ImageHeaven
                 {
                     if (prmState.Length == 0)
                     {
-                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                   "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode + " order by a.item_no asc limit " + limit;
                     }
                     else
                     {
 
-                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                        sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                   "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
 
 
@@ -803,13 +803,13 @@ namespace ImageHeaven
                     //    "a.ledger_year,date_format(a.accept_date,'%Y-%m-%d'),a.fp_auth_no,date_format(a.fp_date,'%Y-%m-%d'),a.status,a.family_pensioner,a.ge_no,a.pen_no,a.promoted_dep,a.sub_doc_type," +
                     //    "a.index_no,a.promotion_date,a.id_no,a.branch_name from metadata_entry A where a.proj_code=" + projCode + " and a.batch_key=" + batchCode;
 
-                    sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                    sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                   "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
                 }
                 else
                 {
 
-                    sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+                    sqlStr = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                   "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + projCode + "' and bundle_key = '" + batchCode;
 
 

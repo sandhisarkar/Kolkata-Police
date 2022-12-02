@@ -365,7 +365,7 @@ namespace ImageHeaven
         public DataTable _GetFileCaseDetailsIndividual(string proj, string bundle, string fileName)
         {
             DataTable dt = new DataTable();
-            string sql = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,GD_serial_date,FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
+            string sql = "select distinct proj_code, bundle_Key,item_no,filename,ps_name,ps_code,div_name,div_code,date_format(GD_startdate,'%Y-%m-%d'),date_format(GD_enddate,'%Y-%m-%d'),GD_start_serial,GD_end_serial,date_format(GD_serial_date,'%Y-%m-%d'),FIR_caseno,CI_case_no,date_format(CI_date,'%Y-%m-%d'),CR_case_no,date_format(CR_date,'%Y-%m-%d')," +
                 "date_format(MR_date,'%Y-%m-%d'),MR_serial_no,MR_case_no from metadata_entry where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' and filename = '" + fileName + "' ";
             OdbcCommand cmd = new OdbcCommand(sql, sqlCon, txn);
             OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
