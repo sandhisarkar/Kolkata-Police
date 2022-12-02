@@ -892,5 +892,11 @@ namespace ImageHeaven
             aeLicQa frm = new aeLicQa(sqlCon, crd);
             frm.ShowDialog(this);
         }
+
+        private void exportToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmExport export = new frmExport(sqlCon, crd);
+            export.ShowDialog(this);
+        }
     }
 }
