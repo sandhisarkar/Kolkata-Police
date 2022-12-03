@@ -147,6 +147,10 @@ namespace ImageHeaven
             this.dgvbatch.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvbatch.Size = new System.Drawing.Size(194, 255);
             this.dgvbatch.TabIndex = 5;
+            this.dgvbatch.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbatch_CellClick);
+            this.dgvbatch.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbatch_CellContentClick);
+            this.dgvbatch.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvbatch_CellValueChanged);
+            this.dgvbatch.Click += new System.EventHandler(this.dgvbatch_Click);
             // 
             // Column1
             // 

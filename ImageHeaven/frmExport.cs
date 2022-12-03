@@ -155,7 +155,7 @@ namespace ImageHeaven
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            string sql = "select a.bundle_key, a.bundle_code from bundle_master a, project_master b where a.proj_code = b.proj_key and a.status = '9' and a.proj_code = '" + cmbProject.SelectedValue.ToString() + "'";
+            string sql = "select a.bundle_key, a.bundle_code from bundle_master a, project_master b where a.proj_code = b.proj_key and a.status = '8' and a.proj_code = '" + cmbProject.SelectedValue.ToString() + "'";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sql, sqlCon);
             odap.Fill(dt);
@@ -193,7 +193,7 @@ namespace ImageHeaven
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
 
-            string sql = "select a.bundle_key, a.bundle_code from bundle_master a, project_master b where a.proj_code = b.proj_key and (a.status = '8' or a.status = '7') and a.proj_code = '" + cmbProject.SelectedValue.ToString() + "'";
+            string sql = "select a.bundle_key, a.bundle_code from bundle_master a, project_master b where a.proj_code = b.proj_key and (a.status = '7') and a.proj_code = '" + cmbProject.SelectedValue.ToString() + "'";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sql, sqlCon);
             odap.Fill(dt);
@@ -241,7 +241,7 @@ namespace ImageHeaven
         {
             string sqlStr = null;
 
-            sqlStr = "select a.filename,a.proj_code,a.bundle_key from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "' and (b.status = '7') and order by a.item_no";
+            sqlStr = "select a.filename,a.proj_code,a.bundle_key from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "' and (b.status = '7' or b.status='8') and order by a.item_no";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sqlStr, sqlCon);
 
@@ -349,7 +349,7 @@ namespace ImageHeaven
             {
                 btnExport.Enabled = false;
 
-                if (GetStatus(cmbProject.SelectedValue.ToString(), cmbBatch.SelectedValue.ToString()) > 8)
+                if (GetStatus(cmbProject.SelectedValue.ToString(), cmbBatch.SelectedValue.ToString()) > 7)
                 {
 
 
@@ -1660,49 +1660,39 @@ namespace ImageHeaven
             string indexPageName = string.Empty;
 
             //sqlStr = "select a.District_Code,a.RO_Code,a.Book,a.Deed_year,a.Deed_no,a.Serial_No,a.Serial_Year,a.tran_maj_code,a.tran_min_code,a.Volume_No,a.Page_From,a.Page_To,a.Date_of_Completion,a.Date_of_Delivery,replace(replace(replace(a.Deed_Remarks,'\t',''),'\n',''),'\r','') as Deed_Remarks,a.Scan_doc_type,a.hold as Exception from deed_details a,deed_details_exception b where a.district_code = '" + Do_code + "' and a.Ro_code = '" + RO_Code + "' and a.book = '" + year + "' and a.deed_year = '" + deed_year + "'  and a.deed_no = '" + deed_no + "' and a.district_code = b.district_code and a.Ro_code = b.ro_code and a.book = b.book and a.deed_year =b.deed_year and a.deed_no = b.deed_no";
-            sqlStr = "SELECT b.batch_code as 'BatchNumber',a.filename as 'FileName', a.state_name as 'StateName', a.department as 'Department'," +
-                     "a.subcat as 'Sub_Category', a.emp_name as 'EmployeeName', a.desg as 'Designation', a.fileid as 'FileID', " +
-                     "DATE_FORMAT(a.birth_date, '%d-%m-%Y') as 'BirthDate',DATE_FORMAT(a.joining_date, '%d-%m-%Y') as 'JoiningDate'," +
-                    "DATE_FORMAT(a.retirement_date, '%d-%m-%Y') as 'RetirementDate', DATE_FORMAT(a.death_date, '%d-%m-%Y') as 'DateofDeath', " +
-                    "a.psa_name as 'PSA_Name',a.section as 'Section', a.pension_file_no as 'PensionCaseFileNo', a.ppo_fppo as 'PensionCaseFile_PPO/FPPO', " +
-                    "a.gpo_dgpo as 'PensionCaseFile_GPO/DPPO', a.ppo_gpo_cpo as 'PensionCaseRegister_PPO/GPO/CPO/Item', " +
-                    "a.mobile as 'MobileNumber', a.hrms_id as 'HRMS_ID', a.spouce as 'Spouse', a.place_payment as 'PlaceOfPayment', a.rule_file as 'RuleFile'," +
-                    "a.vol as 'Volume', a.subject as 'Subject',a.series as 'Series', a.acc as 'AccountNumber', a.subscriber_name as 'SubscriberName'," +
-                    "a.ledger_year as 'LedgerYear', DATE_FORMAT(a.accept_date, '%d-%m-%Y') as 'AcceptanceDate', a.fp_auth_no as 'FPAuthNumber', " +
-                    "DATE_FORMAT(a.fp_date, '%d-%m-%Y') as 'FP_Date',a.family_pensioner as 'Family_Pensioner',a.ge_no as 'GE_Number',a.pen_no as 'Pen_Number',a.promoted_dep as 'Promoted_Department'," +
-                    "a.sub_doc_type as 'Sub_Doc_Type',a.index_no as 'Index_number',date_format(a.promotion_date,'%Y-%m-%d') as 'Promotion_Date',a.id_no as 'ID_Number',a.branch_name as 'Branch_Name' " +
-                    "FROM metadata_entry a,batch_master b where a.proj_code = b.proj_code and a.batch_key = b.batch_key and a.proj_code = '" + proj_key + "' and a.batch_key = '" + batch_key + "'";
+            sqlStr = "SELECT b.bundle_code as 'BatchNumber',a.filename as 'FileName', a.div_name as 'Div_Name',a.div_code as 'Div_code',a.ps_name as 'PS_Name',a.ps_code as 'PS_code',date_format(a.GD_startdate,'%Y-%m-%d') as 'GD_Start_Date',date_format(a.GD_enddate,'%Y-%m-%d') as 'GD_End_Date'," +
+                "a.GD_start_serial as 'GD_Start_Serial',a.GD_end_serial as 'GD_End_Serial',date_format(a.GD_serial_date,'%Y-%m-%d') as 'GD_Serial_Date',a.FIR_caseno as 'FIR_Case_No'," +
+                "a.CI_case_no as 'CI_Case_No',date_format(a.CI_date,'%Y-%m-%d') as 'CI_Date',a.CR_case_no as 'CR_Case_No'," +
+                "date_format(a.CR_date,'%Y-%m-%d') as 'CR_Date'," +
+                "date_format(a.MR_date,'%Y-%m-%d') as 'MR_Date',a.MR_serial_no as 'MR_Serial_No',a.MR_case_no as 'MR_Case_No' " +
+                "FROM metadata_entry a,bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "'";
             try
             {
                 sqlAdap = new OdbcDataAdapter(sqlStr, sqlCon);
                 sqlAdap.Fill(dsImage);
 
-                dsImage.Tables[0].Columns.Add("Audit1_By");
-                dsImage.Tables[0].Columns.Add("Audit1_Datetime");
-                dsImage.Tables[0].Columns.Add("Audit2_By");
-                dsImage.Tables[0].Columns.Add("Audit2_Datetime");
+                dsImage.Tables[0].Columns.Add("Audit_By");
+                dsImage.Tables[0].Columns.Add("Audit_Datetime");
+                
 
                 for (int i = 0; i < dsImage.Tables[0].Rows.Count; i++)
                 {
                     string file = dsImage.Tables[0].Rows[i][1].ToString();
                     if (GetAuditDetails(proj_key, batch_key, file).Rows.Count > 0)
                     {
-                        string cred_1 = GetAuditDetails(proj_key, batch_key, file).Rows[0][0].ToString();
-                        string cred_1_date = GetAuditDetails(proj_key, batch_key, file).Rows[0][1].ToString();
-                        string cred_2 = GetAuditDetails(proj_key, batch_key, file).Rows[0][2].ToString();
-                        string cred_2_date = GetAuditDetails(proj_key, batch_key, file).Rows[0][3].ToString();
+                        string cred = GetAuditDetails(proj_key, batch_key, file).Rows[0][0].ToString();
+                        string cred_date = GetAuditDetails(proj_key, batch_key, file).Rows[0][1].ToString();
+                        
 
-                        dsImage.Tables[0].Rows[i]["Audit1_By"] = dsImage.Tables[0].Rows[i]["Audit1_By"] + cred_1;
-                        dsImage.Tables[0].Rows[i]["Audit1_Datetime"] = dsImage.Tables[0].Rows[i]["Audit1_Datetime"] + cred_1_date;
-                        dsImage.Tables[0].Rows[i]["Audit2_By"] = dsImage.Tables[0].Rows[i]["Audit2_By"] + cred_2;
-                        dsImage.Tables[0].Rows[i]["Audit2_Datetime"] = dsImage.Tables[0].Rows[i]["Audit2_Datetime"] + cred_2_date;
+                        dsImage.Tables[0].Rows[i]["Audit1_By"] = dsImage.Tables[0].Rows[i]["Audit_By"] + cred;
+                        dsImage.Tables[0].Rows[i]["Audit1_Datetime"] = dsImage.Tables[0].Rows[i]["Audit_Datetime"] + cred_date;
+                        
                     }
                     else
                     {
                         dsImage.Tables[0].Rows[i]["Audit1_By"] = dsImage.Tables[0].Rows[i]["Audit1_By"] + "";
                         dsImage.Tables[0].Rows[i]["Audit1_Datetime"] = dsImage.Tables[0].Rows[i]["Audit1_Datetime"] + "";
-                        dsImage.Tables[0].Rows[i]["Audit2_By"] = dsImage.Tables[0].Rows[i]["Audit2_By"] + "";
-                        dsImage.Tables[0].Rows[i]["Audit2_Datetime"] = dsImage.Tables[0].Rows[i]["Audit2_Datetime"] + "";
+                        
                     }
                 }
                 //for (int i = 0; i < dsImage.Tables[0].Rows.Count; i++)
@@ -1736,94 +1726,7 @@ namespace ImageHeaven
                 }
 
 
-                //    string addexception = "";
-                //    if (dsImage.Tables[0].Rows[i]["entryEx"].ToString() != null)
-                //    {
-                //        string[] split = dsImage.Tables[0].Rows[i]["entryEx"].ToString().Split(new string[] { "||" }, StringSplitOptions.None);
-
-
-
-                //        foreach (string judge in split)
-                //        {
-                //            Console.WriteLine(judge);
-                //            if (judge == null || judge == "")
-                //            {
-                //            }
-                //            else
-                //            {
-                //                if (judge == "01")
-                //                {
-                //                    addexception = addexception + "Petitioner Missing ;";
-                //                }
-                //                if (judge == "02")
-                //                {
-                //                    addexception = addexception + "Respondant Missing ;";
-                //                }
-                //            }
-
-
-                //        }
-                //    }
-
-
-                //    if (dsImage.Tables[0].Rows[i]["imageEx"].ToString() != null)
-                //    {
-                //        string[] split = dsImage.Tables[0].Rows[i]["imageEx"].ToString().Split(new string[] { "||" }, StringSplitOptions.None);
-
-
-
-                //        foreach (string judge in split)
-                //        {
-                //            Console.WriteLine(judge);
-                //            if (judge == null || judge == "")
-                //            {
-                //            }
-                //            else
-                //            {
-                //                if (judge == "03")
-                //                {
-                //                    addexception = addexception + "Main Petition Missing ;";
-                //                }
-                //                if (judge == "04")
-                //                {
-                //                    addexception = addexception + "Main Petition Annexure Missing ;";
-                //                }
-                //                if (judge == "06")
-                //                {
-                //                    addexception = addexception + "Vakalatnama Missing ;";
-                //                }
-                //                if (judge == "07")
-                //                {
-                //                    addexception = addexception + "Order Main Case Missing ;";
-                //                }
-                //                if (judge == "08")
-                //                {
-                //                    addexception = addexception + "Final Judgement Order Missing ;";
-                //                }
-                //            }
-
-
-                //        }
-                //    }
-                //    if (dsImage.Tables[0].Rows[i]["DepartmentalNotes"].ToString() != "")
-                //    {
-                //        dsImage.Tables[0].Rows[i]["DepartmentalNotes"] = dsImage.Tables[0].Rows[i]["DepartmentalNotes"] + "; " + addexception;
-                //    }
-                //    else
-                //    {
-                //        dsImage.Tables[0].Rows[i]["DepartmentalNotes"] = dsImage.Tables[0].Rows[i]["DepartmentalNotes"] + addexception;
-                //    }
-
-
-                //}
-                //dsImage.Tables[0].Columns.Remove("FileName");
-                //dsImage.Tables[0].Columns.Remove("entryEx");
-                //dsImage.Tables[0].Columns.Remove("imageEx");
-                //dsImage.Tables[0].Columns.Add("Exception_Type");
-                //for (int i = 0; i < dsImage.Tables[0].Rows.Count; i++)
-                //{
-                //    dsImage.Tables[0].Rows[i]["Exception_Type"] = exception.TrimEnd(';');
-                //}
+                
             }
             catch (Exception ex)
             {
@@ -2138,6 +2041,30 @@ namespace ImageHeaven
             {
 
             }
+        }
+
+        private void dgvbatch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dgvbatch_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            populateDeeds(dgvbatch.CurrentRow.Cells[2].Value.ToString(), dgvbatch.CurrentRow.Cells[3].Value.ToString(), dgvbatch.CurrentRow.Cells[1].Value.ToString());
+        }
+
+        private void dgvbatch_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+            {
+                dgvbatch.CommitEdit(DataGridViewDataErrorContexts.Commit);
+            }
+        }
+
+        private void dgvbatch_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0)
+                PopulateSelectedBatchCount();
         }
     }
 }
