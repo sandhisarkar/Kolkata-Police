@@ -77,7 +77,7 @@ namespace ImageHeaven
                 string dllPaths = string.Empty;
 
                 menuStrip1.Visible = false;
-
+                toolStrip1.Visible = false;
 
                 if (sqlCon.State == ConnectionState.Open)
                 {
@@ -326,7 +326,7 @@ namespace ImageHeaven
                         reportToolStripMenuItem.Visible = true;
                         dashboardToolStripMenuItem.Visible = true;
                     }
-                    else if (crd.role == "Audit 1")
+                    else if (crd.role == "Audit")
                     {
                         menuStrip1.Visible = true;
                         newToolStripMenuItem.Visible = false;
@@ -378,64 +378,6 @@ namespace ImageHeaven
 
                         auditToolStripMenuItem.Visible = true;
                         
-                        logoutToolStripMenuItem.Visible = true;
-
-                        reportToolStripMenuItem.Visible = true;
-                        dashboardToolStripMenuItem.Visible = true;
-                    }
-                    else if (crd.role == "Audit 2")
-                    {
-                        menuStrip1.Visible = true;
-                        newToolStripMenuItem.Visible = false;
-                        newToolStripMenuItem.Enabled = false;
-                        projectToolStripMenuItem.Enabled = false;
-                        projectToolStripMenuItem.Visible = false;
-                        batchToolStripMenuItem.Enabled = false;
-                        batchToolStripMenuItem.Visible = false;
-                        exitToolStripMenuItem.Visible = false;
-                        exitToolStripMenuItem.Enabled = false;
-
-                        transactionsToolStripMenuItem.Visible = false;
-                        dataEntryToolStripMenuItem.Visible = false;
-                        dataEntryToolStripMenuItem.Enabled = false;
-                        batchUploadToolStripMenuItem.Visible = false;
-                        batchUploadToolStripMenuItem.Enabled = false;
-                        bundleScanToolStripMenuItem.Enabled = false;
-                        bundleScanToolStripMenuItem.Visible = false;
-                        imageImportToolStripMenuItem.Visible = false;
-                        imageImportToolStripMenuItem.Enabled = false;
-                        imageQualityControlToolStripMenuItem.Visible = false;
-                        imageQualityControlToolStripMenuItem.Enabled = false;
-                        qualityControlFinalToolStripMenuItem.Visible = false;
-                        qualityControlFinalToolStripMenuItem.Enabled = false;
-                        toolStripMenuItem1.Enabled = false;
-                        toolStripMenuItem1.Visible = false;
-                        exportToolStripMenuItem.Enabled = false;
-                        exportToolStripMenuItem.Visible = false;
-
-
-                        toolsToolStripMenuItem.Enabled = true;
-                        toolsToolStripMenuItem.Visible = true;
-                        configurationToolStripMenuItem.Visible = false;
-                        newPasswordToolStripMenuItem.Visible = true;
-                        newUserToolStripMenuItem.Visible = false;
-                        onlineUsersToolStripMenuItem.Visible = false;
-
-                        toolStrip1.Visible = false;
-                        toolStripButton1.Visible = false;
-                        toolStripButton3.Visible = false;
-                        toolStripButton2.Visible = false;
-                        toolStripButton4.Visible = false;
-
-                        configurationToolStripMenuItem.Visible = false;
-
-                        helpToolStripMenuItem.Visible = true;
-
-                        aboutToolStripMenuItem.Visible = true;
-
-                        auditToolStripMenuItem.Visible = true;
-                        
-
                         logoutToolStripMenuItem.Visible = true;
 
                         reportToolStripMenuItem.Visible = true;
@@ -660,6 +602,7 @@ namespace ImageHeaven
             sqlCon.Open();
 
             menuStrip1.Visible = false;
+            toolStrip1.Visible = false;
             rbc.UnLockedUser(crd.created_by.ToString());
             frmMain_Load(sender, e);
         }

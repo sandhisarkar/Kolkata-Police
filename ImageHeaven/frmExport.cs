@@ -241,7 +241,7 @@ namespace ImageHeaven
         {
             string sqlStr = null;
 
-            sqlStr = "select a.filename,a.proj_code,a.bundle_key from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "' and (b.status = '7' or b.status = '8' or b.status = '9') and order by a.item_no";
+            sqlStr = "select a.filename,a.proj_code,a.bundle_key from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "' and (b.status = '7') and order by a.item_no";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sqlStr, sqlCon);
 

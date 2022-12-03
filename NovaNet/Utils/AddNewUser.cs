@@ -66,7 +66,7 @@ namespace NovaNet
 			{
 				// code for populating combobox for role description
 				
-				String sSelectSQL = "select role_id,role_description from ac_role where role_id <> '6' and role_id <> '7'";
+				String sSelectSQL = "select role_id,role_description from ac_role where role_id <> '6' and role_id <> '8'";
 	        	OdbcCommand oCommand = new OdbcCommand(sSelectSQL,sqlCon);
 	        	OdbcDataAdapter objDataAdapter = new OdbcDataAdapter(oCommand);
 				DataSet ds = new DataSet();
