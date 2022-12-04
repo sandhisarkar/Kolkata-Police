@@ -389,7 +389,7 @@ namespace ImageHeaven
                                 txtCreateDate.Text = isDate;
                                 if (DateTime.TryParse(isDate, out temp) && DateTime.TryParse(nextDate, out temp) && DateTime.Parse(isDate) <= DateTime.Parse(currDate))
                                 {
-                                    checking = isDate.Substring(3, 4) + "_" + getBundleCount(deComboBox2.Text, psCode, deComboBox1.Text, divCode, deComboBox3.Text, isDate);
+                                    checking = isDate.Substring(3, 4) + "_" + getBundleCount(deComboBox2.Text, psCode, deComboBox1.Text, divCode, deComboBox3.Text, isDate).PadLeft(2,'0');
                                     bundleCount = category + "_" + divCode + "_" + psCode;
                                     bundleCount = bundleCount + "_" + checking;
 
