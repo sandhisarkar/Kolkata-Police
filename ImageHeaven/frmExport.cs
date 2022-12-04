@@ -241,7 +241,7 @@ namespace ImageHeaven
         {
             string sqlStr = null;
 
-            sqlStr = "select a.filename,a.proj_code,a.bundle_key from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "' and (b.status = '7' or b.status='8') and order by a.item_no";
+            sqlStr = "select a.filename,a.proj_code,a.bundle_key from metadata_entry a, bundle_master b where a.proj_code = b.proj_code and a.bundle_key = b.bundle_key and a.proj_code = '" + proj_key + "' and a.bundle_key = '" + batch_key + "' and (b.status = '7' or b.status='8') order by a.item_no";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sqlStr, sqlCon);
 
@@ -1492,7 +1492,7 @@ namespace ImageHeaven
             OdbcCommand sqlCmd = new OdbcCommand();
 
             sqlStr = @"update bundle_master" +
-                " set status=" + (int)9 + " where " +
+                " set status=" + (int)8 + " where " +
                 " bundle_key=" + Batch_Key + " and proj_code = '" + Proj_Key + "'";
 
             try
@@ -1526,7 +1526,7 @@ namespace ImageHeaven
             OdbcCommand sqlCmd = new OdbcCommand();
 
             sqlStr = @"update metadata_entry" +
-                " set status=" + 9 + ",modified_by='" + prmCrd.created_by + "',modified_dttm='" + prmCrd.created_dttm + "' where proj_code=" + ProjectKey +
+                " set status=" + 8 + ",modified_by='" + prmCrd.created_by + "',modified_dttm='" + prmCrd.created_dttm + "' where proj_code=" + ProjectKey +
                 " and bundle_key=" + BatchKey +
                 " and filename='" + PolicyNumber + "' and status<>" + (int)eSTATES.POLICY_EXPORTED;
 
@@ -1589,7 +1589,7 @@ namespace ImageHeaven
                 OdbcTransaction sqlTrans = null;
                 OdbcCommand sqlCmdPolicy = new OdbcCommand();
                 OdbcCommand sqlRawdata = new OdbcCommand();
-                string sqlStr = @"update bundle_master set status='" + 9 + "' where "
+                string sqlStr = @"update bundle_master set status='" + 8 + "' where "
                                  + "proj_code='" + proj_key + "' and bundle_key='" + batch_key + "'";
                 sqlTrans = pTxn;
                 sqlCmdPolicy.Connection = sqlCon;
@@ -1684,14 +1684,14 @@ namespace ImageHeaven
                         string cred_date = GetAuditDetails(proj_key, batch_key, file).Rows[0][1].ToString();
                         
 
-                        dsImage.Tables[0].Rows[i]["Audit1_By"] = dsImage.Tables[0].Rows[i]["Audit_By"] + cred;
-                        dsImage.Tables[0].Rows[i]["Audit1_Datetime"] = dsImage.Tables[0].Rows[i]["Audit_Datetime"] + cred_date;
+                        dsImage.Tables[0].Rows[i]["Audit_By"] = dsImage.Tables[0].Rows[i]["Audit_By"] + cred;
+                        dsImage.Tables[0].Rows[i]["Audit_Datetime"] = dsImage.Tables[0].Rows[i]["Audit_Datetime"] + cred_date;
                         
                     }
                     else
                     {
-                        dsImage.Tables[0].Rows[i]["Audit1_By"] = dsImage.Tables[0].Rows[i]["Audit1_By"] + "";
-                        dsImage.Tables[0].Rows[i]["Audit1_Datetime"] = dsImage.Tables[0].Rows[i]["Audit1_Datetime"] + "";
+                        dsImage.Tables[0].Rows[i]["Audit_By"] = dsImage.Tables[0].Rows[i]["Audit_By"] + "";
+                        dsImage.Tables[0].Rows[i]["Audit_Datetime"] = dsImage.Tables[0].Rows[i]["Audit_Datetime"] + "";
                         
                     }
                 }
