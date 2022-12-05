@@ -115,3 +115,4 @@ D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.pdb
 D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.aeLicQa.resources
 D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.frmBundleSubmit.resources
 D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.frmExport.resources
+D:\Sandhi Software\KP\ImageHeaven\obj\Debug\ImageHeaven.frmJobDistribution.resources

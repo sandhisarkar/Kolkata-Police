@@ -841,5 +841,11 @@ namespace ImageHeaven
             frmExport export = new frmExport(sqlCon, crd);
             export.ShowDialog(this);
         }
+
+        private void dashboardToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmJobDistribution frm = new frmJobDistribution(sqlCon);
+            frm.ShowDialog(this);
+        }
     }
 }

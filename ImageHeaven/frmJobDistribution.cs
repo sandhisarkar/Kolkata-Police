@@ -210,7 +210,7 @@ namespace ImageHeaven
             this.textBox2.Text = "";
             this.textBox2.Focus();
 
-            label1.Text = "Total Batch Pending for Certification(Phase-I) : " + Dt.Rows.Count;
+            label1.Text = "Total Batch Pending for Certification : " + Dt.Rows.Count;
         }
         private void initPeExport()
         {
@@ -480,7 +480,7 @@ namespace ImageHeaven
         public System.Data.DataTable _GetResultBundle(string proj, string bundle)
         {
             System.Data.DataTable dt = new System.Data.DataTable();
-            string sql = "select distinct proj_code,bundle_key,batch_code as 'Batch Code',bundle_name as 'Batch Name' from bundle_master where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' ";
+            string sql = "select distinct proj_code,bundle_key,bundle_code as 'Batch Code',bundle_name as 'Batch Name' from bundle_master where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' ";
             OdbcCommand cmd = new OdbcCommand(sql, sqlCon);
             OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
             odap.Fill(dt);
@@ -889,14 +889,14 @@ namespace ImageHeaven
                 range.Borders.Color = ColorTranslator.ToOle(Color.Black);
 
 
-                Range range1 = worksheet.get_Range("A6", "K6");
+                Range range1 = worksheet.get_Range("A6", "J6");
                 range1.Borders.Color = ColorTranslator.ToOle(Color.Black);
 
                 for (int i = 1; i < grdStatus.Columns.Count + 1; i++)
                 {
 
 
-                    Range range2 = worksheet.get_Range("A6", "K6");
+                    Range range2 = worksheet.get_Range("A6", "J6");
                     range2.Borders.Color = ColorTranslator.ToOle(Color.Black);
                     range2.EntireRow.AutoFit();
                     range2.EntireColumn.AutoFit();

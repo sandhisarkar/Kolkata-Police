@@ -135,8 +135,9 @@ namespace ImageHeaven
             // dashboardToolStripMenuItem
             // 
             this.dashboardToolStripMenuItem.Name = "dashboardToolStripMenuItem";
-            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(131, 22);
+            this.dashboardToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.dashboardToolStripMenuItem.Text = "Dashboard";
+            this.dashboardToolStripMenuItem.Click += new System.EventHandler(this.dashboardToolStripMenuItem_Click);
             // 
             // toolsToolStripMenuItem
             // 
