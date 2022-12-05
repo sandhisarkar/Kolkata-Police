@@ -181,6 +181,7 @@ namespace ImageHeaven
             this.cmbBundle.Name = "cmbBundle";
             this.cmbBundle.Size = new System.Drawing.Size(196, 21);
             this.cmbBundle.TabIndex = 3;
+            this.cmbBundle.Leave += new System.EventHandler(this.cmbBundle_Leave);
             // 
             // deLabel2
             // 

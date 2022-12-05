@@ -51,6 +51,8 @@ namespace ImageHeaven
         int flag1 = 0;
         int flag2 = 0;
 
+        public static string category = string.Empty;
+
         public frmBundleUpload()
         {
             InitializeComponent();
@@ -264,7 +266,21 @@ namespace ImageHeaven
                 projKey = cmbProject.SelectedValue.ToString();
 
                 bundleKey = cmbBundle.SelectedValue.ToString();
+                if (category == "General Diary")
+                {
+                    string month_year = _GetBundleDetails(projKey, bundleKey).Rows[0][9].ToString();
+                    int month = Convert.ToInt32(month_year.Substring(0, 2));
+                    int year = Convert.ToInt32(month_year.Substring(3, 4));
+                    int noOfDays = DateTime.DaysInMonth(year, month);
 
+                    if(ReadDatabase().Tables[0].Rows.Count != noOfDays)
+                    {
+                        statusStrip1.Items.Clear();
+                        statusStrip1.Items.Add("Status: Uploading Cannot be Completed");
+                        MessageBox.Show(this, "Number of files dosen't match with number of days for the month", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+                }
                 //this.Hide();
                 statusStrip1.Items.Add("Status: Wait While Uploading the Database......");
                 bool updatebundle = updateBundle();
@@ -289,6 +305,19 @@ namespace ImageHeaven
                     MessageBox.Show(this, "Uploading Cannot be Completed", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+        }
+        public DataTable _GetBundleDetails(string proj, string bundle)
+        {
+            DataTable dt = new DataTable();
+            string sql = "select distinct proj_code, bundle_Key, bundle_name as 'Batch Name', bundle_code as 'Batch Code',category,ps_name,ps_code,div_name,div_code,month_year from bundle_master where proj_code = '" + proj + "' and bundle_key = '" + bundle + "' ";
+            OdbcCommand cmd = new OdbcCommand(sql, sqlCon);
+            OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
+            odap.Fill(dt);
+            return dt;
+        }
+        private void cmbBundle_Leave(object sender, EventArgs e)
+        {
+            category = _GetBundleDetails(projKey, cmbBundle.SelectedValue.ToString()).Rows[0][4].ToString();
         }
     }
 }
