@@ -1660,7 +1660,7 @@ namespace ImageHeaven
             string indexPageName = string.Empty;
 
             //sqlStr = "select a.District_Code,a.RO_Code,a.Book,a.Deed_year,a.Deed_no,a.Serial_No,a.Serial_Year,a.tran_maj_code,a.tran_min_code,a.Volume_No,a.Page_From,a.Page_To,a.Date_of_Completion,a.Date_of_Delivery,replace(replace(replace(a.Deed_Remarks,'\t',''),'\n',''),'\r','') as Deed_Remarks,a.Scan_doc_type,a.hold as Exception from deed_details a,deed_details_exception b where a.district_code = '" + Do_code + "' and a.Ro_code = '" + RO_Code + "' and a.book = '" + year + "' and a.deed_year = '" + deed_year + "'  and a.deed_no = '" + deed_no + "' and a.district_code = b.district_code and a.Ro_code = b.ro_code and a.book = b.book and a.deed_year =b.deed_year and a.deed_no = b.deed_no";
-            sqlStr = "SELECT b.bundle_code as 'BatchNumber',a.filename as 'FileName', a.div_name as 'Div_Name',a.div_code as 'Div_code',a.ps_name as 'PS_Name',a.ps_code as 'PS_code',date_format(a.GD_startdate,'%Y-%m-%d') as 'GD_Start_Date',date_format(a.GD_enddate,'%Y-%m-%d') as 'GD_End_Date'," +
+            sqlStr = "SELECT b.bundle_code as 'BatchNumber',b.category as 'Category',a.filename as 'FileName', a.div_name as 'Div_Name',a.div_code as 'Div_code',a.ps_name as 'PS_Name',a.ps_code as 'PS_code',date_format(a.GD_startdate,'%Y-%m-%d') as 'GD_Start_Date',date_format(a.GD_enddate,'%Y-%m-%d') as 'GD_End_Date'," +
                 "a.GD_start_serial as 'GD_Start_Serial',a.GD_end_serial as 'GD_End_Serial',date_format(a.GD_serial_date,'%Y-%m-%d') as 'GD_Serial_Date',a.FIR_caseno as 'FIR_Case_No'," +
                 "a.CI_case_no as 'CI_Case_No',date_format(a.CI_date,'%Y-%m-%d') as 'CI_Date',a.CR_case_no as 'CR_Case_No'," +
                 "date_format(a.CR_date,'%Y-%m-%d') as 'CR_Date'," +
@@ -1677,7 +1677,7 @@ namespace ImageHeaven
 
                 for (int i = 0; i < dsImage.Tables[0].Rows.Count; i++)
                 {
-                    string file = dsImage.Tables[0].Rows[i][1].ToString();
+                    string file = dsImage.Tables[0].Rows[i][2].ToString();
                     if (GetAuditDetails(proj_key, batch_key, file).Rows.Count > 0)
                     {
                         string cred = GetAuditDetails(proj_key, batch_key, file).Rows[0][0].ToString();
