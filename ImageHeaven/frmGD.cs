@@ -563,6 +563,21 @@ namespace ImageHeaven
 
             return retval;
         }
+        private int checkNextFile(string proj, string bundle, string file)
+        {
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
+
+            bool retval = false;
+
+            string sql = "select cast(substring(max(filename),3,2)+1 as SIGNED) = cast('"+file+"' as SIGNED) from metadata_entry where proj_code = '" + proj + "' and bundle_key = '" + bundle + "'  ";
+
+            OdbcDataAdapter odap = new OdbcDataAdapter(sql, sqlCon);
+            odap.Fill(dt);
+
+
+            return Convert.ToInt32(dt.Rows[0][0]);
+        }
         private DataTable itemCount(string proj, string bundle)
         {
             DataSet ds = new DataSet();
@@ -626,7 +641,7 @@ namespace ImageHeaven
 
             bool retval = false;
 
-            string sql = "select filename,proj_code,bundle_key from metadata_entry where filename = '" + file + "' and proj_code = '"+projK+"' and bundle_key = '"+bundleK+"' ";
+            string sql = "select filename,proj_code,bundle_key from metadata_entry where filename = '" + file + "' and proj_code = '" + projK + "' and bundle_key = '" + bundleK + "' ";
 
             OdbcDataAdapter odap = new OdbcDataAdapter(sql, sqlCon);
             odap.Fill(dt);
@@ -923,7 +938,26 @@ namespace ImageHeaven
 
                         if (checkFileNotExists(projKey, bundleKey, filename) == true)
                         {
-
+                            if (itemCount(projKey, bundleKey).Rows[0][0].ToString() == "0")
+                            { 
+                                if (deTextBox10.Text != "01")
+                                {
+                                    MessageBox.Show(this, "This is the first file of this batch...select correct GD start date", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    deTextBox10.Focus();
+                                    deTextBox10.Select();
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                if(checkNextFile(projKey,bundleKey, deTextBox10.Text) == 0)
+                                {
+                                    MessageBox.Show(this, "Next file is missing...please select correct GD start date", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    deTextBox10.Focus();
+                                    deTextBox10.Select();
+                                    return;
+                                }
+                            }
                             int item = Convert.ToInt32(itemCount(projKey, bundleKey).Rows[0][0].ToString()) + 1;
 
 
@@ -1025,7 +1059,7 @@ namespace ImageHeaven
                                 filename = casefile;
 
 
-                                bool updateMeta = updateMetaEdit(divname, divcode , psname, pscode, sDate, eDate, gdSTSerial, gdEdSerial);
+                                bool updateMeta = updateMetaEdit(divname, divcode, psname, pscode, sDate, eDate, gdSTSerial, gdEdSerial);
                                 bool updateimageMaster = updateImageEdit();
                                 bool updatetransLog = updateTransLogEdit();
                                 bool updatecusExc = updateCustExcEdit();
@@ -1137,7 +1171,7 @@ namespace ImageHeaven
                         }
                         else
                         {
-                            
+
                             casefile = filenumber.Trim();
 
 
