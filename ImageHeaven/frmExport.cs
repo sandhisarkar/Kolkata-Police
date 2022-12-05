@@ -1706,7 +1706,7 @@ namespace ImageHeaven
                 dsImage.Tables[0].Columns.Add("ImageCount");
                 for (int i = 0; i < dsImage.Tables[0].Rows.Count; i++)
                 {
-                    string filename = dsImage.Tables[0].Rows[i][1].ToString();
+                    string filename = dsImage.Tables[0].Rows[i][2].ToString();
                     string imgCount = string.Empty;
                     imgCount = GetTotalImageCount(proj_key, batch_key, filename).ToString();
                     dsImage.Tables[0].Rows[i]["ImageCount"] = imgCount;
@@ -1714,7 +1714,7 @@ namespace ImageHeaven
                 dsImage.Tables[0].Columns.Add("PdfPath");
                 for (int i = 0; i < dsImage.Tables[0].Rows.Count; i++)
                 {
-                    string filename = dsImage.Tables[0].Rows[i][1].ToString();
+                    string filename = dsImage.Tables[0].Rows[i][2].ToString();
                     string path = "C:" + "\\Nevaeh\\" + cmbBatch.Text + "\\" + filename + ".pdf";
                     string pdfnames = "";
                     if (File.Exists(path))
