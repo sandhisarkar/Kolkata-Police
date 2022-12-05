@@ -317,7 +317,7 @@ namespace ImageHeaven
         }
         private void cmbBundle_Leave(object sender, EventArgs e)
         {
-            category = _GetBundleDetails(projKey, cmbBundle.SelectedValue.ToString()).Rows[0][4].ToString();
+            category = _GetBundleDetails(cmbProject.SelectedValue.ToString(), cmbBundle.SelectedValue.ToString()).Rows[0][4].ToString();
         }
     }
 }
