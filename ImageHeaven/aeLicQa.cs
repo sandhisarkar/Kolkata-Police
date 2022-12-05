@@ -1590,10 +1590,10 @@ namespace ImageHeaven
 
                 deLabel94.Text = "File Name : " + grdPolicy.Rows[e.RowIndex].Cells[1].Value.ToString();
                 deLabel11.Text = "Category : " + category;
-                deTextBox61.Text = grdPolicy.Rows[e.RowIndex].Cells[5].Value.ToString();
-                deTextBox60.Text = grdPolicy.Rows[e.RowIndex].Cells[3].Value.ToString();
-                deTextBox55.Text = grdPolicy.Rows[e.RowIndex].Cells[6].Value.ToString();
-                deTextBox49.Text = grdPolicy.Rows[e.RowIndex].Cells[4].Value.ToString();
+                deTextBox61.Text = grdPolicy.Rows[e.RowIndex].Cells[3].Value.ToString();
+                deTextBox60.Text = grdPolicy.Rows[e.RowIndex].Cells[5].Value.ToString();
+                deTextBox55.Text = grdPolicy.Rows[e.RowIndex].Cells[4].Value.ToString();
+                deTextBox49.Text = grdPolicy.Rows[e.RowIndex].Cells[6].Value.ToString();
                 deTextBox48.Text = grdPolicy.Rows[e.RowIndex].Cells[7].Value.ToString();
                 deTextBox59.Text = grdPolicy.Rows[e.RowIndex].Cells[8].Value.ToString();
                 textBox18.Text = grdPolicy.Rows[e.RowIndex].Cells[9].Value.ToString();

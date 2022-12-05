@@ -1444,11 +1444,11 @@ namespace ImageHeaven
             // 
             this.deLabel92.AutoSize = true;
             this.deLabel92.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.deLabel92.Location = new System.Drawing.Point(39, 90);
+            this.deLabel92.Location = new System.Drawing.Point(-3, 92);
             this.deLabel92.Name = "deLabel92";
-            this.deLabel92.Size = new System.Drawing.Size(71, 13);
+            this.deLabel92.Size = new System.Drawing.Size(115, 13);
             this.deLabel92.TabIndex = 3;
-            this.deLabel92.Text = "State Name :";
+            this.deLabel92.Text = "Police Station Name :";
             // 
             // deLabel93
             // 
