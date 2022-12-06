@@ -253,7 +253,7 @@ namespace ImageHeaven
         public System.Data.DataTable _GetEntriesMeta()
         {
             System.Data.DataTable dt = new System.Data.DataTable();
-            string sql = "select  distinct proj_code,batch_key,bundle_code as 'Batch Code',bundle_name as 'Batch Name' from bundle_master where status = 0 and bundle_key not in (select bundle_key from metadata_entry) group by proj_code,bundle_key";
+            string sql = "select  distinct proj_code,bundle_key,bundle_code as 'Batch Code',bundle_name as 'Batch Name' from bundle_master where status = 0 and bundle_key not in (select bundle_key from metadata_entry) group by proj_code,bundle_key";
             OdbcCommand cmd = new OdbcCommand(sql, sqlCon);
             OdbcDataAdapter odap = new OdbcDataAdapter(cmd);
             odap.Fill(dt);

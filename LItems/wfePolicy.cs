@@ -1630,10 +1630,10 @@ namespace LItems
                         {
                             if (j == 0)
                             {
-                                sqlStr = sqlStr + " and (a.status=" + 4 + " or a.status = " + 5 + " or a.status = " + 9 + " or a.status = " + 31 + " or a.status = " + 40;
+                                sqlStr = sqlStr + " and (a.status=" + 4 + " or a.status = " + 5 + " or a.status = " + 8 + " or a.status = " + 31 + " or a.status = " + 40;
                             }
                             else
-                                sqlStr = sqlStr + " or a.status=" + 4 + " or a.status = " + 5 + " or a.status = " + 9 + " or a.status = " + 31 + " or a.status = " + 40;
+                                sqlStr = sqlStr + " or a.status=" + 4 + " or a.status = " + 5 + " or a.status = " + 8 + " or a.status = " + 31 + " or a.status = " + 40;
                         }
                     }
                     sqlStr = sqlStr + ")";
