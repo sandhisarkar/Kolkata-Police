@@ -938,26 +938,26 @@ namespace ImageHeaven
 
                         if (checkFileNotExists(projKey, bundleKey, filename) == true)
                         {
-                            if (itemCount(projKey, bundleKey).Rows[0][0].ToString() == "0")
-                            { 
-                                if (deTextBox10.Text != "01")
-                                {
-                                    MessageBox.Show(this, "This is the first file of this batch...select correct GD start date", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    deTextBox10.Focus();
-                                    deTextBox10.Select();
-                                    return;
-                                }
-                            }
-                            else
-                            {
-                                if(checkNextFile(projKey,bundleKey, deTextBox10.Text) == 0)
-                                {
-                                    MessageBox.Show(this, "Next file is missing...please select correct GD start date", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                                    deTextBox10.Focus();
-                                    deTextBox10.Select();
-                                    return;
-                                }
-                            }
+                            //if (itemCount(projKey, bundleKey).Rows[0][0].ToString() == "0")
+                            //{ 
+                            //    if (deTextBox10.Text != "01")
+                            //    {
+                            //        MessageBox.Show(this, "This is the first file of this batch...select correct GD start date", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            //        deTextBox10.Focus();
+                            //        deTextBox10.Select();
+                            //        return;
+                            //    }
+                            //}
+                            //else
+                            //{
+                            //    if(checkNextFile(projKey,bundleKey, deTextBox10.Text) == 0)
+                            //    {
+                            //        MessageBox.Show(this, "Next file is missing...please select correct GD start date", "B'Zer - KP", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            //        deTextBox10.Focus();
+                            //        deTextBox10.Select();
+                            //        return;
+                            //    }
+                            //}
                             int item = Convert.ToInt32(itemCount(projKey, bundleKey).Rows[0][0].ToString()) + 1;
 
 
