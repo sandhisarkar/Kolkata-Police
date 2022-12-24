@@ -266,22 +266,21 @@ namespace ImageHeaven
                 projKey = cmbProject.SelectedValue.ToString();
 
                 bundleKey = cmbBundle.SelectedValue.ToString();
-                if (category == "General Diary")
-                {
-                    string month_year = _GetBundleDetails(projKey, bundleKey).Rows[0][9].ToString();
-                    int month = Convert.ToInt32(month_year.Substring(0, 2));
-                    int year = Convert.ToInt32(month_year.Substring(3, 4));
-                    int noOfDays = DateTime.DaysInMonth(year, month);
+                //if (category == "General Diary")
+                //{
+                //    string month_year = _GetBundleDetails(projKey, bundleKey).Rows[0][9].ToString();
+                //    int month = Convert.ToInt32(month_year.Substring(0, 2));
+                //    int year = Convert.ToInt32(month_year.Substring(3, 4));
+                //    int noOfDays = DateTime.DaysInMonth(year, month);
 
-                    if(ReadDatabase().Tables[0].Rows.Count != noOfDays)
-                    {
-                        statusStrip1.Items.Clear();
-                        statusStrip1.Items.Add("Status: Uploading Cannot be Completed");
-                        MessageBox.Show(this, "Number of files dosen't match with number of days for the month", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        return;
-                    }
-                }
-                //this.Hide();
+                //    if(ReadDatabase().Tables[0].Rows.Count != noOfDays)
+                //    {
+                //        statusStrip1.Items.Clear();
+                //        statusStrip1.Items.Add("Status: Uploading Cannot be Completed");
+                //        MessageBox.Show(this, "Number of files dosen't match with number of days for the month", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //        return;
+                //    }
+                //}
                 statusStrip1.Items.Add("Status: Wait While Uploading the Database......");
                 bool updatebundle = updateBundle();
                 bool updatecasefile = updateCaseFile();
